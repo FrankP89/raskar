@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /RobotModel1
         - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 623
@@ -128,10 +129,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        world:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -169,7 +166,7 @@ Visualization Manager:
           Value: true
         fr_right_wheel:
           Value: true
-        world:
+        odom:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -177,38 +174,39 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        world:
-          base_footprint:
-            base_link:
-              bk_corner_left_ultrasound:
-                {}
-              bk_corner_right_ultrasound:
-                {}
-              bk_left_wheel:
-                {}
-              bk_right_wheel:
-                {}
-              fr_corner_left_ultrasound:
-                {}
-              fr_corner_right_ultrasound:
-                {}
-              fr_left_wheel:
-                {}
-              fr_nocorner_center_lidar:
-                {}
-              fr_nocorner_left_ultrasound:
-                {}
-              fr_nocorner_right_ultrasound:
-                {}
-              fr_right_wheel:
-                {}
+        base_footprint:
+          base_link:
+            bk_corner_left_ultrasound:
+              {}
+            bk_corner_right_ultrasound:
+              {}
+            bk_left_wheel:
+              {}
+            bk_right_wheel:
+              {}
+            fr_corner_left_ultrasound:
+              {}
+            fr_corner_right_ultrasound:
+              {}
+            fr_left_wheel:
+              {}
+            fr_nocorner_center_lidar:
+              {}
+            fr_nocorner_left_ultrasound:
+              {}
+            fr_nocorner_right_ultrasound:
+              {}
+            fr_right_wheel:
+              {}
+        odom:
+          {}
       Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
   Tools:
@@ -239,18 +237,18 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.011782437562942505
-        Y: -0.09288517385721207
-        Z: -0.1322653889656067
+        X: -0.05753181502223015
+        Y: 0.3407956659793854
+        Z: 0.013838999904692173
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0647956132888794
+      Pitch: 0.49479565024375916
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.4585700035095215
+      Yaw: 5.339939594268799
     Saved: ~
 Window Geometry:
   Displays:

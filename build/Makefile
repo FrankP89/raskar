@@ -285,6 +285,32 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named move_base_msgs_generate_messages_py
+
+# Build rule for target.
+move_base_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_py
+.PHONY : move_base_msgs_generate_messages_py
+
+# fast build rule for target.
+move_base_msgs_generate_messages_py/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
+.PHONY : move_base_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named move_base_msgs_generate_messages_eus
+
+# Build rule for target.
+move_base_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_eus
+.PHONY : move_base_msgs_generate_messages_eus
+
+# fast build rule for target.
+move_base_msgs_generate_messages_eus/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
+.PHONY : move_base_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -322,6 +348,19 @@ tf2_msgs_generate_messages_lisp: cmake_check_build_system
 tf2_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named raskar_urdf
+
+# Build rule for target.
+raskar_urdf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 raskar_urdf
+.PHONY : raskar_urdf
+
+# fast build rule for target.
+raskar_urdf/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/raskar_urdf.dir/build.make raskar_urdf/CMakeFiles/raskar_urdf.dir/build
+.PHONY : raskar_urdf/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_eus
@@ -532,6 +571,19 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named move_base_msgs_generate_messages_lisp
+
+# Build rule for target.
+move_base_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_lisp
+.PHONY : move_base_msgs_generate_messages_lisp
+
+# fast build rule for target.
+move_base_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
+.PHONY : move_base_msgs_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -543,6 +595,19 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 rosgraph_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f raskar_urdf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make raskar_urdf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named move_base_msgs_generate_messages_cpp
+
+# Build rule for target.
+move_base_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_cpp
+.PHONY : move_base_msgs_generate_messages_cpp
+
+# fast build rule for target.
+move_base_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
+.PHONY : move_base_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
@@ -634,6 +699,19 @@ geometry_msgs_generate_messages_nodejs: cmake_check_build_system
 geometry_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f raskar_urdf/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make raskar_urdf/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named move_base_msgs_generate_messages_nodejs
+
+# Build rule for target.
+move_base_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_nodejs
+.PHONY : move_base_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+move_base_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
+.PHONY : move_base_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
@@ -891,9 +969,12 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... move_base_msgs_generate_messages_py"
+	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... raskar_urdf"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
@@ -910,7 +991,9 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... move_base_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... move_base_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
@@ -918,6 +1001,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... move_base_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"

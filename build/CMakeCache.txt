@@ -381,8 +381,14 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/melodic/share/move_base_msgs/cmake
+
 //Value Computed by CMake
 raskar_urdf_BINARY_DIR:STATIC=/home/frank/Documents/ws_tester/urdf_tester/build/raskar_urdf
+
+//The directory containing a CMake configuration file for raskar_urdf.
+raskar_urdf_DIR:PATH=raskar_urdf_DIR-NOTFOUND
 
 //Value Computed by CMake
 raskar_urdf_SOURCE_DIR:STATIC=/home/frank/Documents/ws_tester/urdf_tester/src/raskar_urdf

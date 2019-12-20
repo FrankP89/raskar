@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot>
+
+  <!-- Gazebo initializer -->
+  <gazebo>
+    <static>false</static>
+    
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/raskar</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+
+
+  <!-- Link1 -->
+  <gazebo reference="wheel_left_back">
+    <material>Gazebo/dark_yellow</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.0</minDepth>
+  </gazebo>
+
+  <!-- Link2 -->
+  <gazebo reference="wheel_left_front">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/dark_yellow</material>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.0</minDepth>
+  </gazebo>
+
+  <!-- Link3 -->
+  <gazebo reference="wheel_right_front">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/dark_yellow</material>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.0</minDepth>
+  </gazebo>
+
+  <!-- Link3 -->
+  <gazebo reference="wheel_right_back">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/dark_yellow</material>
+    <maxVel>1.0</maxVel>
+    <minDepth>0.0</minDepth>
+  </gazebo>
+
+
+
+
+</robot>

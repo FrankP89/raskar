@@ -22,15 +22,56 @@
   <!-- Import Rviz colors -->
   <xacro:include filename="$(find raskar_urdf)/urdf/materials.xacro"      />
 
+  <!-- Other mechanical elements -->
+  <!-- Import Wheels -->
+  <xacro:include filename="$(find raskar_urdf)/urdf/wheel.urdf.xacro" /> 
+
+
+  <!-- Macro for calculating inertia of cylinder -->
+  <macro name="cylinder_inertia" params="m r h">
+    <inertia  ixx="${m*(3*r*r+h*h)/12}" ixy = "0" ixz = "0"
+              iyy="${m*(3*r*r+h*h)/12}" iyz = "0"
+              izz="${m*r*r/2}" /> 
+  </macro>
+
 
   <!-- Used for fixing robot to Gazebo -->
-  <!--link name="world"/>
+  <!-- link name="world"/>
 
   <joint name="fixed" type="fixed">
     <parent link="world"/>
-    <child link="base_link"/>
-  </joint-->
+    <child link="base_footprint"/>
+  </joint -->
 
+  <!-- BASE-FOOTPRINT -->
+  <!-- base_footprint is a fictitious link(frame) that is on the ground right below base_link origin -->
+  <link name="base_footprint">
+    <inertial>
+      <mass value="0.0001" />
+      <origin xyz="0 0 0" />
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0"
+          iyy="0.0001" iyz="0.0" 
+          izz="0.0001" />
+    </inertial>
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <box size="0.001 0.001 0.001" />
+        </geometry>
+    </visual>
+  </link>
+
+  <gazebo reference="base_footprint">
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_footprint"/>
+    <child link="base_link" />
+  </joint>
+
+  <!-- BASE-LINK -->
   <link name="base_link">
     <visual>
       <origin rpy="1.571 0 0" xyz="0 0 -0.075"/>
@@ -55,178 +96,49 @@
     </inertial>
   </link>
 
-  <link name="wheel_left_back">
-    <visual>
-      <origin rpy="1.571 0 0" xyz="0 0 0"/>
-      <geometry>	
-        <mesh filename="package://raskar_urdf/meshes/5_in_mecanum.stl" scale="0.001 0.001 0.001" />	
-      </geometry>
-      <material name="dark_yellow"/>
-    </visual>
-    <inertial>
-      <mass value="${mass_wheel}"/>
-      <inertia 
-	  ixx="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" ixy="0.0" ixz="0.0"
-	  iyy="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" iyz="0.0"
-	  izz="${mass_wheel / 2.0 * (diam_wheel*diam_wheel/4)}"/>
-     </inertial>
-  </link>
+  <!-- Wheels definition -->
 
-  <joint name="base_link_to_wheel_left_back" type="continuous">
-    <axis xyz="0 1 0"/>
-    <parent link="base_link"/>
-    <child link="wheel_left_back"/>
-    <origin rpy="0 0 0" xyz="-0.260 0.2670 0.0635"/>
-    <dynamics damping="0.7"/>
-  </joint>
+  <wheel fb="back"  lr="left"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="front" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="front" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="back"  lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
 
-  <link name="wheel_left_front">
-    <visual>
-      <origin rpy="1.571 0 0" xyz="0 0 0"/>
-      <geometry>	
-        <mesh filename="package://raskar_urdf/meshes/5_in_mecanum.stl" scale="0.001 0.001 0.001" />	
-      </geometry>
-      <material name="dark_yellow"/>
-    </visual>
-    <inertial>
-      <mass value="${mass_wheel}"/>
-      <inertia 
-	  ixx="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" ixy="0.0" ixz="0.0"
-	  iyy="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" iyz="0.0"
-	  izz="${mass_wheel / 2.0 * (diam_wheel*diam_wheel/4)}"/>
-    </inertial>
-  </link>
 
-  <joint name="base_link_to_wheel_left_front" type="continuous">
-    <axis xyz="0 1 0"/>
-    <parent link="base_link"/>
-    <child link="wheel_left_front"/>
-    <origin rpy="0 0 0" xyz="0.260 0.2670 0.0635"/>
-    <dynamics damping="0.7"/>
-  </joint>
-
-  <link name="wheel_right_front">
-    <visual>
-      <origin rpy="1.571 0 0" xyz="0 0 0"/>
-      <geometry>	
-        <mesh filename="package://raskar_urdf/meshes/5_in_mecanum.stl" scale="0.001 0.001 0.001" />	
-      </geometry>
-      <material name="dark_yellow"/>
-    </visual>
-    <inertial>
-      <mass value="${mass_wheel}"/>
-      <inertia 
-	  ixx="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" ixy="0.0" ixz="0.0"
-	  iyy="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" iyz="0.0"
-	  izz="${mass_wheel / 2.0 * (diam_wheel*diam_wheel/4)}"/>
-      </inertial>
-  </link>
-
-  <joint name="base_link_to_wheel_right_front" type="continuous">
-    <axis xyz="0 1 0"/>
-    <parent link="base_link"/>
-    <child link="wheel_right_front"/>
-    <origin rpy="0 0 0" xyz="0.260 -0.2670 0.0635"/>
-    <dynamics damping="0.7"/>
-  </joint>
-
-  <link name="wheel_right_back">
-    <visual>
-      <origin rpy="1.571 0 0" xyz="0 0 0"/>
-      <geometry>	
-        <mesh filename="package://raskar_urdf/meshes/5_in_mecanum.stl" scale="0.001 0.001 0.001" />	
-      </geometry>
-      <material name="dark_yellow"/>
-    </visual>
-    <inertial>
-      <mass value="${mass_wheel}"/>
-      <inertia 
-	  ixx="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" ixy="0.0" ixz="0.0"
-	  iyy="${mass_wheel / 12.0 * (3*diam_wheel*diam_wheel/4 + thickness_wheel)}" iyz="0.0"
-	  izz="${mass_wheel / 2.0 * (diam_wheel*diam_wheel/4)}"/>
-    </inertial>
-  </link>
-
-  <joint name="base_link_to_wheel_right_back" type="continuous">
-    <axis xyz="0 1 0"/>
-    <parent link="base_link"/>
-    <child link="wheel_right_back"/>
-    <origin rpy="0 0 0" xyz="-0.260 -0.2670 0.0635"/>
-    <dynamics damping="0.7"/>
-  </joint>
-
-  <!--link name="rplidar_a2_front">echo 'LC_NUMERIC="en_US.UTF-8"' | sudo tee -a /etc/default/locale
-    <visual>
-      <origin rpy="1.571 0 3.1415" xyz="0 0 0"/>
-      <geometry>	
-        <mesh filename="package://raskar_urdf/meshes/rplidar_a2m4.stl" scale="0.000417 0.000417 0.000417" />	
-      </geometry>
-      <material name="shiny_black"/>
-    </visual>
-    <inertial>
-      <mass value="${mass_lidar}"/>
-      <inertia 
-	  ixx="${mass_lidar / 12.0 * (3*diam_lidar*diam_lidar/4 + thickness_lidar)}" ixy="0.0" ixz="0.0"
-	  iyy="${mass_lidar / 12.0 * (3*diam_lidar*diam_lidar/4 + thickness_lidar)}" iyz="0.0"
-	  izz="${mass_lidar / 2.0 * (diam_lidar*diam_lidar/4)}"/>
-      </inertial>
-  </link>
-
-  <joint name="base_link_to_rplidar_a2_front" type="fixed">
-    <parent link="base_link"/>
-    <child link="rplidar_a2_front"/>
-    <origin rpy="0 0 -0.7853" xyz="0.415 -0.335 0.15"/>    
-  </joint-->
+  <!-- Lidar definition -->
 
 
 
 
-  <transmission name="tran1">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="base_link_to_wheel_left_back">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="motor1">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+  <!-- Motion controller -->
+  
+  <!-- Planar drive controller  -->
+  <gazebo>
+    <plugin name="omni_steering" filename="libgazebo_ros_planar_move.so">
 
-  <transmission name="tran2">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="base_link_to_wheel_left_front">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="motor2">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+      <!-- rosDebugLevel>Debug</rosDebugLevel>
+      <publishWheelTF>false</publishWheelTF>
+      <robotNamespace>/</robotNamespace>
+      
+      <publishWheelJointState>false</publishWheelJointState>
+      <alwaysOn>true</alwaysOn>
+      <updateRate>100.0</updateRate>
+      <leftJoint>front_left_wheel_joint</leftJoint>
+      <rightJoint>front_right_wheel_joint</rightJoint>
+      <wheelSeparation>${2*base_radius}</wheelSeparation>
+      <wheelDiameter>${2*wheel_radius}</wheelDiameter>
+      <broadcastTF>1</broadcastTF>
+      <wheelTorque>30</wheelTorque>
+      <wheelAcceleration>1.8</wheelAcceleration -->
 
-  <transmission name="tran3">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="base_link_to_wheel_right_front">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="motor3">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryFrame>odom</odometryFrame> 
+      <odometryTopic>odom</odometryTopic> 
+      <odometryRate>50.0</odometryRate> 
+      <robotBaseFrame>base_footprint</robotBaseFrame>
+      <publishTf>false</publishTf>
 
-  <transmission name="tran4">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="base_link_to_wheel_right_back">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="motor4">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-
-
+    </plugin>
+  </gazebo> 
 
 
 </robot>

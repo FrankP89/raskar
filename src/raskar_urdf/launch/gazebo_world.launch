@@ -2,13 +2,14 @@
 
 <launch>
 
+  
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="model" default="$(find raskar_urdf)/urdf/raskar_gazebo.urdf"/>
+  <!-- arg name="model" default="$(find raskar_urdf)/urdf/raskar_gazebo.urdf"/ -->
   <arg name="rvizconfig" default="$(find raskar_urdf)/rviz/rviz_raskar.rviz" />
 
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
@@ -18,7 +19,7 @@
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="headless" value="$(arg headless)"/>
-  </include>
+  </include >
 
    <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description"
@@ -27,7 +28,7 @@
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
-  <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" /-->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
   
 
   <rosparam command="load"
@@ -38,6 +39,8 @@
     args="raskar_urdf_joint_state_controller
           --shutdown-timeout 3"/>
 
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen" args="-param robot_description -urdf -model raskar_gazebo" /> 
+  <!-- Spawn model -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -x 0 -y 0 -z 0  -model raskar_gazebo -param robot_description"/>
 
 </launch>

@@ -1,29 +1,14 @@
-<?xml version="1.0"?>
-
 <launch>
 
-  <arg name="model" default="$(find raskar_urdf)/urdf/raskar_gazebo.urdf"/>
+  <arg name="model" default="$(find raskar_urdf)/urdf/raskar_rviz.xacro"/>
   <arg name="gui" default="true" />
   <arg name="rvizconfig" default="$(find raskar_urdf)/rviz/rviz_raskar.rviz" />
 
-  <param name="robot_description"
-    command="$(find xacro)/xacro --inorder '$(find raskar_urdf)/urdf/raskar_gazebo.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
   <param name="use_gui" value="$(arg gui)"/>
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-  <arg name="use_tf_static" default="false"/> 
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
-          <param name="use_tf_static" value="$(arg use_tf_static)"/>
- </node>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
-  
-
-  <rosparam command="load"
-            file="$(find raskar_urdf)/config/joints.yaml"
-            ns="raskar_urdf_joint_state_controller" />
-
-  <node name="raskar_urdf_controller_spawner" pkg="controller_manager" type="spawner"
-    args="raskar_urdf_joint_state_controller
-          --shutdown-timeout 3"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 
 </launch>

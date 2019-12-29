@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<robot name="raskar" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- General purpose testing file -->
+
+  <!-- Constants for robot dimensions -->
+  <xacro:property name="Pi"              value="3.1415926535897931"/>
+  <xacro:property name="mass_body"       value="68.0"  /> <!-- Mass of car        -->
+  <xacro:property name="mass_wheel"      value="1.8"   /> <!-- Mass of wheel      -->
+  <xacro:property name="mass_lidar"      value="0.1"   /> <!-- Mass of lidar      -->
+  <xacro:property name="width_body"      value="0.628" /> <!-- Width of car       -->
+  <xacro:property name="length_body"     value="0.948" /> <!-- Length of car      -->
+  <xacro:property name="height_body"     value="0.282" /> <!-- Height of car      -->
+  <xacro:property name="diam_wheel"      value="0.127" /> <!-- Diameter of wheel  -->
+  <xacro:property name="thickness_wheel" value="0.066" /> <!-- Thickness of wheel -->
+  <xacro:property name="diam_lidar"      value="0.075" /> <!-- Angle of lidar     -->
+  <xacro:property name="thickness_lidar" value="0.045" /> <!-- Thickness of wheel -->
+  <xacro:property name="safety_offset"   value="1.25"  /> <!-- Percentage safety  -->
+
+ 
+  <!-- Gazebo initializer -->
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find raskar_urdf)/urdf/raskar_params.gazebo" />
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find raskar_urdf)/urdf/materials.xacro"      />
+
+  <!-- Other mechanical elements -->
+  <!-- Import Wheels -->
+  <xacro:include filename="$(find raskar_urdf)/urdf/wheel.urdf.xacro" /> 
+
+
+
+  <!-- Used for fixing robot to Gazebo -->
+  <link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_footprint"/>
+  </joint>
+
+  <!-- BASE-FOOTPRINT -->
+  <!-- base_footprint is a fictitious link(frame) that is on the ground right below base_link origin -->
+  <link name="base_footprint">
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <box size="0.001 0.001 0.001" />
+        </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_footprint"/>
+    <child link="base_link" />
+  </joint>
+
+  <!-- BASE-LINK -->
+  <link name="base_link">
+    <visual>
+      <origin rpy="1.571 0 0" xyz="0 0 -0.075"/>
+      <geometry>	
+        <mesh filename="package://raskar_urdf/meshes/body_parts.stl" scale="0.001 0.001 0.001" />	
+      </geometry>
+      <material name="pale_grey"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
+      <geometry>
+        <!--box size="0.948 0.636 0.3"/-->
+        <box size="0.998 0.678 0.35"/>
+      </geometry>      
+    </collision>
+  </link>
+
+  <!-- Wheel Definitions -->
+
+  <wheel fb="back"  lr="left"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="front" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="front" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="back"  lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
+
+
+</robot>

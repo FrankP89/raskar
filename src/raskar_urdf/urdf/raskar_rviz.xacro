@@ -78,10 +78,10 @@
 
   <!-- Wheels Definition -->
 
-  <wheel fb="bk" lr="left"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="fr" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="fr" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
-  <wheel fb="bk" lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="bk" lr="right"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="fr" lr="right"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="fr" lr="left"   parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="bk" lr="left"   parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
 
 
   <!-- Ultrasound sensors definition -->

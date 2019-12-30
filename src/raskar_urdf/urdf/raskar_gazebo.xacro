@@ -99,16 +99,13 @@
   </link>
 
   <!-- Wheels definition -->
-
   <wheel fb="bk" lr="right"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
   <wheel fb="fr" lr="right"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
   <wheel fb="fr" lr="left"   parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
   <wheel fb="bk" lr="left"   parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
 
-
   <!-- Lidar definition -->
-
-
+  <lidar fb="fr"  cnc="nocorner"   lrc="center"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="0" flipY="0" flipZ="0"/>
 
   <!-- Ultrasound sensors Definitions -->
   <ultrasound fb="front" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="1" flipX="90" flipY="0" flipZ="90"/>
@@ -120,8 +117,7 @@
   <ultrasound fb="back"  cnc="corner"   lr="right"  parent="base_link" translateX="-0.8991870987" translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="315"/>
   <ultrasound fb="back"  cnc="corner"   lr="left"   parent="base_link" translateX="-0.8991870987" translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="225"/>
 
-
-
+	
   <!-- Motion controller -->
   
   <!-- Planar drive controller  -->

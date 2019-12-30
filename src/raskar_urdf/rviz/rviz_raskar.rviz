@@ -6,8 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1
-        - /TF1
+        - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 639
   - Class: rviz/Selection
@@ -62,26 +61,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        back_corner_left_ultrasound:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        back_corner_right_ultrasound:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        back_left_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        back_right_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         base_footprint:
           Alpha: 1
           Show Axes: false
@@ -92,36 +71,65 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        front_corner_left_ultrasound:
+        bk_corner_left_ultrasound:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_corner_right_ultrasound:
+        bk_corner_right_ultrasound:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_left_wheel:
+        bk_left_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_nocorner_left_ultrasound:
+        bk_right_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_nocorner_right_ultrasound:
+        fr_corner_left_ultrasound:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        front_right_wheel:
+        fr_corner_right_ultrasound:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        fr_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_nocorner_center_lidar:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_nocorner_left_ultrasound:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_nocorner_right_ultrasound:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -129,19 +137,71 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        bk_corner_left_ultrasound:
+          Value: true
+        bk_corner_right_ultrasound:
+          Value: true
+        bk_left_wheel:
+          Value: true
+        bk_right_wheel:
+          Value: true
+        fr_corner_left_ultrasound:
+          Value: true
+        fr_corner_right_ultrasound:
+          Value: true
+        fr_left_wheel:
+          Value: true
+        fr_nocorner_center_lidar:
+          Value: true
+        fr_nocorner_left_ultrasound:
+          Value: true
+        fr_nocorner_right_ultrasound:
+          Value: true
+        fr_right_wheel:
+          Value: true
+        world:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        {}
+        world:
+          base_footprint:
+            base_link:
+              bk_corner_left_ultrasound:
+                {}
+              bk_corner_right_ultrasound:
+                {}
+              bk_left_wheel:
+                {}
+              bk_right_wheel:
+                {}
+              fr_corner_left_ultrasound:
+                {}
+              fr_corner_right_ultrasound:
+                {}
+              fr_left_wheel:
+                {}
+              fr_nocorner_center_lidar:
+                {}
+              fr_nocorner_left_ultrasound:
+                {}
+              fr_nocorner_right_ultrasound:
+                {}
+              fr_right_wheel:
+                {}
       Update Interval: 0
-      Value: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -167,25 +227,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.63237309
+      Distance: 2.45316482
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.187583119
-        Y: -0.0286652911
-        Z: 0.134312704
-      Focal Shape Fixed Size: true
+        X: 0.0117824376
+        Y: -0.0928851739
+        Z: -0.132265389
+      Focal Shape Fixed Size: false
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.299796373
+      Pitch: 0.784795761
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.418641865
+      Yaw: 0.740383387
     Saved: ~
 Window Geometry:
   Displays:

@@ -99,16 +99,13 @@
   </link>
 
   <!-- Wheels definition -->
-
-  <wheel fb="back"  lr="left"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="front" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="front" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
-  <wheel fb="back"  lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
-
+  <wheel fb="bk" lr="right"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="fr" lr="right"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="fr" lr="left"   parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="bk" lr="left"   parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
 
   <!-- Lidar definition -->
-
-
+  <lidar fb="fr"  cnc="nocorner"   lrc="center"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="0" flipY="0" flipZ="0"/>
 
   <!-- Ultrasound sensors Definitions -->
   <ultrasound fb="front" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="1" flipX="90" flipY="0" flipZ="90"/>

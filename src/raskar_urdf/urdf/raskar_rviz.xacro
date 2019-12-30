@@ -27,6 +27,8 @@
   <!-- Other mechanical elements -->
   <!-- Import Wheels -->
   <xacro:include filename="$(find raskar_urdf)/urdf/wheel.urdf.xacro" /> 
+  <!-- Import Sensors -->
+  <xacro:include filename="$(find raskar_urdf)/urdf/ultrasound.urdf.xacro" /> 
 
 
 
@@ -58,7 +60,7 @@
   <!-- BASE-LINK -->
   <link name="base_link">
     <visual>
-      <origin rpy="1.571 0 0" xyz="0 0 -0.075"/>
+      <origin rpy="1.571 0 0" xyz="0 0 -0.0127"/>
       <geometry>	
         <mesh filename="package://raskar_urdf/meshes/body_parts.stl" scale="0.001 0.001 0.001" />	
       </geometry>
@@ -79,6 +81,17 @@
   <wheel fb="front" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
   <wheel fb="front" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
   <wheel fb="back"  lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
+
+
+  <!-- Ultrasound sensors Definitions -->
+  <ultrasound fb="front" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="1" flipX="90" flipY="0" flipZ="90"/>
+  <ultrasound fb="front" cnc="nocorner" lr="left"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="90" flipY="0" flipZ="90"/>
+
+  <ultrasound fb="front" cnc="corner"   lr="right"  parent="base_link" translateX="0.8991870987"  translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="45"/>
+  <ultrasound fb="front" cnc="corner"   lr="left"   parent="base_link" translateX="0.8991870987"  translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="135"/>
+
+  <ultrasound fb="back"  cnc="corner"   lr="right"  parent="base_link" translateX="-0.8991870987" translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="315"/>
+  <ultrasound fb="back"  cnc="corner"   lr="left"   parent="base_link" translateX="-0.8991870987" translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="225"/>
 
 
 </robot>

@@ -7,7 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/frank/ws_raskar_urdf/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/frank/ws_raskar_urdf/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/frank/ws_raskar_urdf/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/frank/ws_raskar_urdf/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH="/home/frank/Documents/ws_sensor_bosch/CISS_BOSCH_INTEGRATION/ciss_ros_wrapper/devel/lib:/opt/ros/melodic/lib"
+export PKG_CONFIG_PATH="/home/frank/Documents/ws_sensor_bosch/CISS_BOSCH_INTEGRATION/ciss_ros_wrapper/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig"
+export PWD="/home/frank/Documents/ws_tester/urdf_tester/build"

@@ -29,6 +29,7 @@
   <xacro:include filename="$(find raskar_urdf)/urdf/wheel.urdf.xacro" /> 
   <!-- Import Sensors -->
   <xacro:include filename="$(find raskar_urdf)/urdf/ultrasound.urdf.xacro" /> 
+  <xacro:include filename="$(find raskar_urdf)/urdf/lidar.urdf.xacro" /> 
 
 
 
@@ -75,23 +76,27 @@
     </collision>
   </link>
 
-  <!-- Wheel Definitions -->
+  <!-- Wheels Definition -->
 
-  <wheel fb="back"  lr="left"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="front" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="front" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
-  <wheel fb="back"  lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="bk" lr="left"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="fr" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
+  <wheel fb="fr" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="bk" lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
 
 
-  <!-- Ultrasound sensors Definitions -->
-  <ultrasound fb="front" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="1" flipX="90" flipY="0" flipZ="90"/>
-  <ultrasound fb="front" cnc="nocorner" lr="left"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="90" flipY="0" flipZ="90"/>
+  <!-- Ultrasound sensors definition -->
+  <ultrasound fb="fr" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="0"/>
+  <ultrasound fb="fr" cnc="nocorner" lr="left"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="0"/>
 
-  <ultrasound fb="front" cnc="corner"   lr="right"  parent="base_link" translateX="0.8991870987"  translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="45"/>
-  <ultrasound fb="front" cnc="corner"   lr="left"   parent="base_link" translateX="0.8991870987"  translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="135"/>
+  <ultrasound fb="fr" cnc="corner"   lr="right"  parent="base_link" translateX="0.8991870987"  translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="90"   rotateTheta="-45"/>
+  <ultrasound fb="fr" cnc="corner"   lr="left"   parent="base_link" translateX="0.8991870987"  translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="90"   rotateTheta="45"/>
 
-  <ultrasound fb="back"  cnc="corner"   lr="right"  parent="base_link" translateX="-0.8991870987" translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="315"/>
-  <ultrasound fb="back"  cnc="corner"   lr="left"   parent="base_link" translateX="-0.8991870987" translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="225"/>
+  <ultrasound fb="bk"  cnc="corner"   lr="right"  parent="base_link" translateX="-0.8991870987" translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="225"/>
+  <ultrasound fb="bk"  cnc="corner"   lr="left"   parent="base_link" translateX="-0.8991870987" translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="135"/>
+
+
+  <!-- Lidar definition -->
+  <lidar fb="fr"  cnc="nocorner"   lrc="center"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="0" flipY="0" flipZ="0"/>
 
 
 </robot>

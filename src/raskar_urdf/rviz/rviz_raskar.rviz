@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 639
@@ -206,7 +207,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -227,25 +228,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.45316482
+      Distance: 2.09478736
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0117824376
-        Y: -0.0928851739
-        Z: -0.132265389
+        X: -0.0396540463
+        Y: 0.0437475704
+        Z: 0.211720824
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.784795761
+      Pitch: 0.699795783
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.740383387
+      Yaw: 1.10355294
     Saved: ~
 Window Geometry:
   Displays:

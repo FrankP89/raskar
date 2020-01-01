@@ -8,14 +8,20 @@
   <xacro:property name="mass_body"       value="68.0"  /> <!-- Mass of car        -->
   <xacro:property name="mass_wheel"      value="1.8"   /> <!-- Mass of wheel      -->
   <xacro:property name="mass_lidar"      value="0.1"   /> <!-- Mass of lidar      -->
+
   <xacro:property name="width_body"      value="0.628" /> <!-- Width of car       -->
   <xacro:property name="length_body"     value="0.948" /> <!-- Length of car      -->
   <xacro:property name="height_body"     value="0.282" /> <!-- Height of car      -->
+
   <xacro:property name="diam_wheel"      value="0.127" /> <!-- Diameter of wheel  -->
   <xacro:property name="thickness_wheel" value="0.066" /> <!-- Thickness of wheel -->
+
   <xacro:property name="diam_lidar"      value="0.075" /> <!-- Angle of lidar     -->
   <xacro:property name="thickness_lidar" value="0.045" /> <!-- Thickness of wheel -->
+
   <xacro:property name="safety_offset"   value="1.25"  /> <!-- Percentage safety  -->
+  <xacro:property name="floor_clearance" value="0.0350"/> <!-- Floor clearance    -->
+  <xacro:property name="model_offset"    value="0.0127"/> <!-- Floor clearance    -->
 
  
   <!-- Gazebo initializer -->

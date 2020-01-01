@@ -33,10 +33,11 @@
 
 
 
-  <!-- Used for fixing robot to Gazebo -->
+   <!-- Used for fixing robot to Gazebo -->
   <link name="world"/>
 
   <joint name="fixed" type="fixed">
+    <origin xyz="0 0 ${floor_clearance}" rpy="0 0 0" />
     <parent link="world"/>
     <child link="base_footprint"/>
   </joint>
@@ -53,7 +54,7 @@
   </link>
 
   <joint name="base_footprint_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0 0 ${height_body/2}" rpy="0 0 0" />
     <parent link="base_footprint"/>
     <child link="base_link" />
   </joint>
@@ -61,7 +62,7 @@
   <!-- BASE-LINK -->
   <link name="base_link">
     <visual>
-      <origin rpy="1.571 0 0" xyz="0 0 -0.0127"/>
+      <origin rpy="1.571 0 0" xyz="0 0 ${-height_body/2-floor_clearance-model_offset}"/>
       <geometry>	
         <mesh filename="package://raskar_urdf/meshes/body_parts.stl" scale="0.001 0.001 0.001" />	
       </geometry>
@@ -78,25 +79,25 @@
 
   <!-- Wheels Definition -->
 
-  <wheel fb="bk" lr="right"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="fr" lr="right"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="fr" lr="left"   parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
-  <wheel fb="bk" lr="left"   parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
+  <wheel fb="bk" lr="left"  parent="base_link" translateX="-1" translateY="-1" translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
+  <wheel fb="fr" lr="left"  parent="base_link" translateX="1"  translateY="-1" translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
+  <wheel fb="fr" lr="right" parent="base_link" translateX="1"  translateY="1"  translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
+  <wheel fb="bk" lr="right" parent="base_link" translateX="-1" translateY="1"  translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
 
 
   <!-- Ultrasound sensors definition -->
-  <ultrasound fb="fr" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="0"/>
-  <ultrasound fb="fr" cnc="nocorner" lr="left"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="0"/>
+  <ultrasound fb="fr" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="${((-height_body/2)-floor_clearance)}" flipX="90" flipY="0" flipZ="90" rotateTheta="0"/>
+  <ultrasound fb="fr" cnc="nocorner" lr="left"   parent="base_link" translateX="1" translateY="1"  translateZ="${((-height_body/2)-floor_clearance)}" flipX="90" flipY="0" flipZ="90" rotateTheta="0"/>
 
-  <ultrasound fb="fr" cnc="corner"   lr="right"  parent="base_link" translateX="0.8991870987"  translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="90"   rotateTheta="-45"/>
-  <ultrasound fb="fr" cnc="corner"   lr="left"   parent="base_link" translateX="0.8991870987"  translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="90"   rotateTheta="45"/>
+  <ultrasound fb="fr" cnc="corner"   lr="right"  parent="base_link" translateX="0.8991870987"  translateY="-2.5038" translateZ="${((-height_body/2)-floor_clearance)}" flipX="90" flipY="0" flipZ="90" rotateTheta="-45"/>
+  <ultrasound fb="fr" cnc="corner"   lr="left"   parent="base_link" translateX="0.8991870987"  translateY="2.5038"  translateZ="${((-height_body/2)-floor_clearance)}" flipX="90" flipY="0" flipZ="90" rotateTheta="45"/>
 
-  <ultrasound fb="bk"  cnc="corner"   lr="right"  parent="base_link" translateX="-0.8991870987" translateY="-2.5038" translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="225"/>
-  <ultrasound fb="bk"  cnc="corner"   lr="left"   parent="base_link" translateX="-0.8991870987" translateY="2.5038"  translateZ="1" flipX="90" flipY="0" flipZ="90" rotateTheta="135"/>
+  <ultrasound fb="bk" cnc="corner"   lr="right"  parent="base_link" translateX="-0.8991870987" translateY="-2.5038" translateZ="${((-height_body/2)-floor_clearance)}" flipX="90" flipY="0" flipZ="90" rotateTheta="225"/>
+  <ultrasound fb="bk" cnc="corner"   lr="left"   parent="base_link" translateX="-0.8991870987" translateY="2.5038"  translateZ="${((-height_body/2)-floor_clearance)}" flipX="90" flipY="0" flipZ="90" rotateTheta="135"/>
 
 
   <!-- Lidar definition -->
-  <lidar fb="fr"  cnc="nocorner"   lrc="center"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="0" flipY="0" flipZ="0"/>
+  <lidar fb="fr"  cnc="nocorner"   lrc="center"  parent="base_link" translateX="1" translateY="1"  translateZ="${((-height_body/2)-floor_clearance)}" flipX="0" flipY="0" flipZ="0"/>
 
 
 </robot>

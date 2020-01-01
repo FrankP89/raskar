@@ -54,7 +54,7 @@
     <joint name="${fb}_${cnc}_${lr}_ultrasound_joint" type="fixed">
       <parent link="${parent}"/>
       <child link="${fb}_${cnc}_${lr}_ultrasound"/>
-      <origin xyz="${translateX * base_x_origin_to_ultrasound_origin} ${translateY * base_y_origin_to_ultrasound_origin} ${translateZ * base_z_origin_to_ultrasound_origin}" rpy="0 0 ${rotateTheta*Pi/180}"/> 
+      <origin xyz="${translateX * base_x_origin_to_ultrasound_origin} ${translateY * base_y_origin_to_ultrasound_origin} ${base_z_origin_to_ultrasound_origin + translateZ}" rpy="0 0 ${rotateTheta*Pi/180}"/> 
     </joint>
 
     <!-- Transmission is important to link the joints and the controller -->

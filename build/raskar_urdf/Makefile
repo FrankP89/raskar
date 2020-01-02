@@ -78,6 +78,17 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -122,17 +133,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/ws_raskar_urdf/build/CMakeFiles /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/progress.marks
@@ -164,6 +164,66 @@ preinstall/fast:
 depend:
 	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/raskar_urdf.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/raskar_urdf.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/raskar_urdf.dir/rule
+
+# Convenience name for target.
+raskar_urdf: raskar_urdf/CMakeFiles/raskar_urdf.dir/rule
+
+.PHONY : raskar_urdf
+
+# fast build rule for target.
+raskar_urdf/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/raskar_urdf.dir/build.make raskar_urdf/CMakeFiles/raskar_urdf.dir/build
+.PHONY : raskar_urdf/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+move_base_msgs_generate_messages_py: raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
+
+.PHONY : move_base_msgs_generate_messages_py
+
+# fast build rule for target.
+move_base_msgs_generate_messages_py/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
+.PHONY : move_base_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+move_base_msgs_generate_messages_lisp: raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : move_base_msgs_generate_messages_lisp
+
+# fast build rule for target.
+move_base_msgs_generate_messages_lisp/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
+.PHONY : move_base_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+move_base_msgs_generate_messages_eus: raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
+
+.PHONY : move_base_msgs_generate_messages_eus
+
+# fast build rule for target.
+move_base_msgs_generate_messages_eus/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
+.PHONY : move_base_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
@@ -314,6 +374,21 @@ roscpp_generate_messages_nodejs: raskar_urdf/CMakeFiles/roscpp_generate_messages
 roscpp_generate_messages_nodejs/fast:
 	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make raskar_urdf/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+move_base_msgs_generate_messages_nodejs: raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : move_base_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+move_base_msgs_generate_messages_nodejs/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
+.PHONY : move_base_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 raskar_urdf/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
@@ -494,21 +569,6 @@ geometry_msgs_generate_messages_eus: raskar_urdf/CMakeFiles/geometry_msgs_genera
 geometry_msgs_generate_messages_eus/fast:
 	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make raskar_urdf/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_py: raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_py
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 raskar_urdf/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
@@ -796,6 +856,36 @@ actionlib_msgs_generate_messages_lisp/fast:
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+move_base_msgs_generate_messages_cpp: raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : move_base_msgs_generate_messages_cpp
+
+# fast build rule for target.
+move_base_msgs_generate_messages_cpp/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
+.PHONY : move_base_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
 raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
 	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 .PHONY : raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
@@ -840,6 +930,33 @@ tf2_msgs_generate_messages_py/fast:
 	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
+src/simple_navigation_goals.o: src/simple_navigation_goals.cpp.o
+
+.PHONY : src/simple_navigation_goals.o
+
+# target to build an object file
+src/simple_navigation_goals.cpp.o:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/raskar_urdf.dir/build.make raskar_urdf/CMakeFiles/raskar_urdf.dir/src/simple_navigation_goals.cpp.o
+.PHONY : src/simple_navigation_goals.cpp.o
+
+src/simple_navigation_goals.i: src/simple_navigation_goals.cpp.i
+
+.PHONY : src/simple_navigation_goals.i
+
+# target to preprocess a source file
+src/simple_navigation_goals.cpp.i:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/raskar_urdf.dir/build.make raskar_urdf/CMakeFiles/raskar_urdf.dir/src/simple_navigation_goals.cpp.i
+.PHONY : src/simple_navigation_goals.cpp.i
+
+src/simple_navigation_goals.s: src/simple_navigation_goals.cpp.s
+
+.PHONY : src/simple_navigation_goals.s
+
+# target to generate assembly for a file
+src/simple_navigation_goals.cpp.s:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/raskar_urdf.dir/build.make raskar_urdf/CMakeFiles/raskar_urdf.dir/src/simple_navigation_goals.cpp.s
+.PHONY : src/simple_navigation_goals.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -848,6 +965,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... raskar_urdf"
+	@echo "... move_base_msgs_generate_messages_py"
+	@echo "... move_base_msgs_generate_messages_lisp"
+	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_eus"
@@ -860,6 +982,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tf_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... move_base_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -874,7 +997,6 @@ help:
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_py"
@@ -894,10 +1016,14 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... move_base_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... install/strip"
+	@echo "... src/simple_navigation_goals.o"
+	@echo "... src/simple_navigation_goals.i"
+	@echo "... src/simple_navigation_goals.s"
 .PHONY : help
 
 

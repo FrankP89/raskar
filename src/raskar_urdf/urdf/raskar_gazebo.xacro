@@ -112,17 +112,6 @@
     </inertial>
   </link>
 
-<<<<<<< HEAD
-  <!-- Wheels definition -->
-  <wheel fb="bk" lr="right"  parent="base_link" translateX="-1" translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="fr" lr="right"  parent="base_link" translateX="1"  translateY="-1" translateZ="1" flipY="1"/>
-  <wheel fb="fr" lr="left"   parent="base_link" translateX="1"  translateY="1"  translateZ="1" flipY="1"/>
-  <wheel fb="bk" lr="left"   parent="base_link" translateX="-1" translateY="1"  translateZ="1" flipY="1"/>
-
-  <!-- Lidar definition -->
-  <lidar fb="fr"  cnc="nocorner"   lrc="center"   parent="base_link" translateX="1" translateY="1"  translateZ="1" flipX="0" flipY="0" flipZ="0"/>
-=======
-
 
   <!-- Wheels Definition -->
 
@@ -131,7 +120,6 @@
   <wheel fb="fr" lr="left" parent="base_link" translateX="1"  translateY="1"  translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
   <wheel fb="bk" lr="left" parent="base_link" translateX="-1" translateY="1"  translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
 
->>>>>>> b2afef46d33e9755fd909ccf55dd974d8138fe6e
 
   <!-- Ultrasound sensors definition -->
   <ultrasound fb="fr" cnc="nocorner" lr="right"  parent="base_link" translateX="1" translateY="-1" translateZ="${((-height_body/2)-floor_clearance)}" flipX="90" flipY="0" flipZ="90" rotateTheta="0"/>

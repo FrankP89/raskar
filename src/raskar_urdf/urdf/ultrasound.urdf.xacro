@@ -5,7 +5,7 @@
   <property name="height_usound"    value="0.045" /> <!-- height of sensor  -->
   <property name="width_usound"     value="0.020" /> <!-- width of sensor   -->
   <property name="depth_usound"     value="0.015" /> <!-- length of sensor  -->
-  <property name="mass_usound"      value="0.045" /> <!-- Mass of sensor    -->
+  <property name="mass_usound"      value="0.100" /> <!-- Mass of sensor    -->
   
   <property name="base_x_origin_to_ultrasound_origin" value="0.45639" />
   <property name="base_y_origin_to_ultrasound_origin" value="0.10000" />
@@ -42,13 +42,9 @@
     </link>
 
     <gazebo reference="${fb}_${cnc}_${lr}_ultrasound">
-      <mu1 value="1.0"/>
-      <mu2 value="1.0"/>
-      <kp  value="10000000.0" />
-      <kd  value="1.0" />
-      <fdir1 value="1 0 0"/>
-      <material>Gazebo/Grey</material>
-      <turnGravityOff>false</turnGravityOff>
+      <static>true</static>
+      <material>Gazebo/Blue</material>
+      <turnGravityOff>true</turnGravityOff>
     </gazebo>
 
     <joint name="${fb}_${cnc}_${lr}_ultrasound_joint" type="fixed">
@@ -57,17 +53,6 @@
       <origin xyz="${translateX * base_x_origin_to_ultrasound_origin} ${translateY * base_y_origin_to_ultrasound_origin} ${base_z_origin_to_ultrasound_origin + translateZ}" rpy="0 0 ${rotateTheta*Pi/180}"/> 
     </joint>
 
-    <!-- Transmission is important to link the joints and the controller -->
-    <transmission name="${fb}_${cnc}_${lr}_ultrasound_joint_trans">
-      <type>transmission_interface/SimpleTransmission</type>
-      <joint name="${fb}_${cnc}_${lr}_ultrasound_joint">
-        <hardwareInterface>EffortJointInterface</hardwareInterface>
-      </joint>
-      <actuator name="${fb}_${cnc}_${lr}_ultrasound_joint_motor">
-        <hardwareInterface>EffortJointInterface</hardwareInterface>
-        <mechanicalReduction>1</mechanicalReduction>
-      </actuator>
-    </transmission>
    
   </xacro:macro>
 </robot>

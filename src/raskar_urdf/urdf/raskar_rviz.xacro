@@ -22,11 +22,6 @@
   <xacro:property name="safety_offset"   value="1.25"  /> <!-- Percentage safety  -->
   <xacro:property name="floor_clearance" value="0.0350"/> <!-- Floor clearance    -->
   <xacro:property name="model_offset"    value="0.0127"/> <!-- Floor clearance    -->
-<<<<<<< HEAD
-
-
-=======
->>>>>>> b2afef46d33e9755fd909ccf55dd974d8138fe6e
 
  
   <!-- Gazebo initializer -->
@@ -41,7 +36,6 @@
   <!-- Import Sensors -->
   <xacro:include filename="$(find raskar_urdf)/urdf/ultrasound.urdf.xacro" /> 
   <xacro:include filename="$(find raskar_urdf)/urdf/lidar.urdf.xacro" /> 
-
 
 
    <!-- Used for fixing robot to Gazebo -->

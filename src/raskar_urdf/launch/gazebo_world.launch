@@ -29,6 +29,10 @@
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
+
+  <!-- Navigation information -->
+  <!-- Publish wheel odometry from MCU encoder data -->
+  <node pkg="raskar_urdf" name="odometry_sim" type="odometry_sim" />
   
 
   <rosparam command="load"

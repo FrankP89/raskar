@@ -1,4 +1,4 @@
-#!
+
 #include <ros/ros.h>
 #include <move_base_msgs/MoveBaseAction.h>
 #include <actionlib/client/simple_action_client.h>
@@ -18,41 +18,21 @@ double xOffice3 = 35.20 ;
 double yOffice3 = 13.50;
 
 bool goalReached = false;
- int main(int argc, char** argv){
-   ros::init(argc, argv, "map_navigation_node");
-   ros::NodeHandle n;   
-   ros::spinOnce();
-   
+int main(int argc, char** argv){
+ros::init(argc, argv, "map_navigation_node");
+ROS_INFO("ROS Node created");
+ros::NodeHandle n;   
+ros::spinOnce();
 
-   /*char choice = 'q';
-   do{
-      choice =choose();
-      if (choice == '0'){*/
-         goalReached = moveToGoal(xCafe, yCafe);
-      /*}else if (choice == '1'){
-         goalReached = moveToGoal(xOffice1, yOffice1);
-      }else if (choice == '2'){
-         goalReached = moveToGoal(xOffice2, yOffice2);
-      }else if (choice == '3'){
-         goalReached = moveToGoal(xOffice3, yOffice3);
-      }
-      if (choice!='q'){
-         if (goalReached){
-            ROS_INFO("Congratulations!");
-            ros::spinOnce();            
+goalReached = moveToGoal(xCafe, yCafe);
 
-         }else{
-            ROS_INFO("Hard Luck!");            
-         }
-      }
-   }while(choice !='q');*/
-   return 0;
+return 0;
 }
 
 bool moveToGoal(double xGoal, double yGoal){
 
    //define a client for to send goal requests to the move_base server through a SimpleActionClient
-   actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> ac("move_base", true);
+   actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> ac("move_base_simple", true);
 
    //wait for the action server to come up
    while(!ac.waitForServer(ros::Duration(5.0))){
@@ -62,7 +42,7 @@ bool moveToGoal(double xGoal, double yGoal){
    move_base_msgs::MoveBaseGoal goal;
 
    //set up the frame parameters
-   goal.target_pose.header.frame_id = "map";
+   goal.target_pose.header.frame_id = "base_link";
    goal.target_pose.header.stamp = ros::Time::now();
 
    /* moving towards the goal*/

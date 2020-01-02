@@ -126,6 +126,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -163,7 +167,7 @@ Visualization Manager:
           Value: true
         fr_right_wheel:
           Value: true
-        odom:
+        world:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -171,7 +175,7 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        odom:
+        world:
           base_footprint:
             base_link:
               bk_corner_left_ultrasound:
@@ -202,7 +206,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: odom
+    Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
   Tools:
@@ -238,10 +242,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.37979576
+      Pitch: -0.0102044046
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.761734426
+      Yaw: 1.20673311
     Saved: ~
 Window Geometry:
   Displays:

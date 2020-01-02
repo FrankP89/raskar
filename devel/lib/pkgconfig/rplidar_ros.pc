@@ -1,0 +1,8 @@
+prefix=/home/frank/ws_raskar_urdf/devel
+
+Name: rplidar_ros
+Description: Description of rplidar_ros
+Version: 1.10.0
+Cflags: 
+Libs: -L/home/frank/ws_raskar_urdf/devel/lib 
+Requires: 

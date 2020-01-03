@@ -65,6 +65,7 @@
 /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/list_install_components.dir
 /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/test.dir
 /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/install/strip.dir
+/home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/lidar_front.dir
 /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/odometry_sim.dir
 /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/navigation.dir
 /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/install/local.dir

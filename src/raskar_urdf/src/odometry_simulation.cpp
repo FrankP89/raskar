@@ -13,6 +13,11 @@ int main(int argc, char** argv){
   double y = 0.0;
   double th = 0.0;
 
+  /* TODO: Update vx, vy, vth values 
+  * With information from the motors 
+  * Utilize each motor info.
+  */
+
   double vx = 0.1;
   double vy = -0.1;
   double vth = 0.1;

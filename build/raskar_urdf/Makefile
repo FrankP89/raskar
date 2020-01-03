@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+raskar_urdf/CMakeFiles/lidar_front.dir/rule:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/lidar_front.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/lidar_front.dir/rule
+
+# Convenience name for target.
+lidar_front: raskar_urdf/CMakeFiles/lidar_front.dir/rule
+
+.PHONY : lidar_front
+
+# fast build rule for target.
+lidar_front/fast:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_front.dir/build.make raskar_urdf/CMakeFiles/lidar_front.dir/build
+.PHONY : lidar_front/fast
+
+# Convenience name for target.
 raskar_urdf/CMakeFiles/odometry_sim.dir/rule:
 	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/odometry_sim.dir/rule
 .PHONY : raskar_urdf/CMakeFiles/odometry_sim.dir/rule
@@ -645,6 +660,33 @@ move_base_msgs_generate_messages_eus/fast:
 	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
 .PHONY : move_base_msgs_generate_messages_eus/fast
 
+src/lidar_frame_transformer.o: src/lidar_frame_transformer.cpp.o
+
+.PHONY : src/lidar_frame_transformer.o
+
+# target to build an object file
+src/lidar_frame_transformer.cpp.o:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_front.dir/build.make raskar_urdf/CMakeFiles/lidar_front.dir/src/lidar_frame_transformer.cpp.o
+.PHONY : src/lidar_frame_transformer.cpp.o
+
+src/lidar_frame_transformer.i: src/lidar_frame_transformer.cpp.i
+
+.PHONY : src/lidar_frame_transformer.i
+
+# target to preprocess a source file
+src/lidar_frame_transformer.cpp.i:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_front.dir/build.make raskar_urdf/CMakeFiles/lidar_front.dir/src/lidar_frame_transformer.cpp.i
+.PHONY : src/lidar_frame_transformer.cpp.i
+
+src/lidar_frame_transformer.s: src/lidar_frame_transformer.cpp.s
+
+.PHONY : src/lidar_frame_transformer.s
+
+# target to generate assembly for a file
+src/lidar_frame_transformer.cpp.s:
+	cd /home/frank/ws_raskar_urdf/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_front.dir/build.make raskar_urdf/CMakeFiles/lidar_front.dir/src/lidar_frame_transformer.cpp.s
+.PHONY : src/lidar_frame_transformer.cpp.s
+
 src/odometry_simulation.o: src/odometry_simulation.cpp.o
 
 .PHONY : src/odometry_simulation.o
@@ -708,6 +750,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... test"
 	@echo "... install/strip"
+	@echo "... lidar_front"
 	@echo "... odometry_sim"
 	@echo "... navigation"
 	@echo "... install/local"
@@ -744,6 +787,9 @@ help:
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... move_base_msgs_generate_messages_eus"
+	@echo "... src/lidar_frame_transformer.o"
+	@echo "... src/lidar_frame_transformer.i"
+	@echo "... src/lidar_frame_transformer.s"
 	@echo "... src/odometry_simulation.o"
 	@echo "... src/odometry_simulation.i"
 	@echo "... src/odometry_simulation.s"

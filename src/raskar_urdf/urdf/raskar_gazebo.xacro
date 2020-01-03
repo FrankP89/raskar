@@ -133,7 +133,7 @@
 
 
   <!-- Lidar definition -->
-  <lidar fb="fr"  cnc="nocorner"   lrc="center"  parent="base_link" translateX="1" translateY="1"  translateZ="${(-height_body/2)-floor_clearance}" flipX="0" flipY="0" flipZ="0"/>
+  <lidar fb="fr"  cnc="nocorner"   lrc="center"  parent="base_link" translateX="1" translateY="1"  translateZ="${(-height_body/2)-floor_clearance}" flipX="0" flipY="0" flipZ="180"/>
 
 	
   <!-- Motion controller -->

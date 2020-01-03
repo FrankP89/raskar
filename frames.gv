@@ -1,0 +1,15 @@
+digraph G {
+"base_footprint" -> "base_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "base_footprint"[label="Broadcaster: /gazebo\nAverage rate: 71.429 Hz\nMost recent transform: 1.750 ( 0.011 sec old)\nBuffer length: 0.042 sec\n"];
+"base_link" -> "bk_corner_left_ultrasound"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "bk_corner_right_ultrasound"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "fr_corner_left_ultrasound"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "fr_corner_right_ultrasound"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "fr_nocorner_center_lidar"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "fr_nocorner_left_ultrasound"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "fr_nocorner_right_ultrasound"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1.761 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1.761"[ shape=plaintext ] ;
+ }->"odom";
+}

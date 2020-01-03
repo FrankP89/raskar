@@ -19,7 +19,7 @@
   <xacro:macro name="lidar" params="fb cnc lrc parent translateX translateY translateZ flipX flipY flipZ"> <!--fb : front, back ; cnc: corner, no corner; lr: left, right -->
     <link name="${fb}_${cnc}_${lrc}_lidar">
       <visual>
-        <origin xyz="0 0 0" rpy="${flipX*Pi/180} ${flipY*Pi/180} ${flipZ*Pi/180}"/> 
+        <origin xyz="0 0 0" rpy="0 0 0"/> 
         <geometry>
           <cylinder length="${thickness_lidar}" radius="${diam_lidar/2}" />
         </geometry>
@@ -47,7 +47,7 @@
     <joint name="${fb}_${cnc}_${lrc}_lidar_joint" type="fixed">
       <parent link="${parent}"/>
       <child link="${fb}_${cnc}_${lrc}_lidar"/>
-      <origin xyz="${translateX * base_x_origin_to_lidar_origin} ${translateY * base_y_origin_to_lidar_origin} ${base_z_origin_to_lidar_origin + (thickness_lidar/2) + translateZ}" rpy="0 0 0" /> 
+      <origin xyz="${translateX * base_x_origin_to_lidar_origin} ${translateY * base_y_origin_to_lidar_origin} ${base_z_origin_to_lidar_origin + (thickness_lidar/2) + translateZ}" rpy="${flipX*Pi/180} ${flipY*Pi/180} ${flipZ*Pi/180}" /> 
     </joint>
 
    

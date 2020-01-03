@@ -141,6 +141,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/raskar_urdf_node.cpp)
 add_executable(navigation src/simple_navigation_goals.cpp)
 add_executable(odometry_sim src/odometry_simulation.cpp)
+add_executable(lidar_front src/lidar_frame_transformer.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -153,7 +154,7 @@ add_executable(odometry_sim src/odometry_simulation.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(navigation ${catkin_EXPORTED_TARGETS})
 add_dependencies(odometry_sim ${catkin_EXPORTED_TARGETS})
-
+add_dependencies(lidar_front ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
@@ -161,6 +162,7 @@ add_dependencies(odometry_sim ${catkin_EXPORTED_TARGETS})
 # )
 target_link_libraries(navigation ${catkin_LIBRARIES})
 target_link_libraries(odometry_sim ${catkin_LIBRARIES})
+target_link_libraries(lidar_front ${catkin_LIBRARIES})
 
 #############
 ## Install ##

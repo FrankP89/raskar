@@ -634,6 +634,19 @@ sensor_msgs_generate_messages_lisp/fast:
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named lidar_front
+
+# Build rule for target.
+lidar_front: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lidar_front
+.PHONY : lidar_front
+
+# fast build rule for target.
+lidar_front/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/lidar_front.dir/build.make raskar_urdf/CMakeFiles/lidar_front.dir/build
+.PHONY : lidar_front/fast
+
+#=============================================================================
 # Target rules for targets named odometry_sim
 
 # Build rule for target.
@@ -1098,6 +1111,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... lidar_front"
 	@echo "... odometry_sim"
 	@echo "... navigation"
 	@echo "... nav_msgs_generate_messages_py"

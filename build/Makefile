@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named odometry_publisher
+
+# Build rule for target.
+odometry_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 odometry_publisher
+.PHONY : odometry_publisher
+
+# fast build rule for target.
+odometry_publisher/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/odometry_publisher.dir/build.make raskar_urdf/CMakeFiles/odometry_publisher.dir/build
+.PHONY : odometry_publisher/fast
+
+#=============================================================================
 # Target rules for targets named navigation
 
 # Build rule for target.
@@ -296,6 +309,84 @@ navigation: cmake_check_build_system
 navigation/fast:
 	$(MAKE) -f raskar_urdf/CMakeFiles/navigation.dir/build.make raskar_urdf/CMakeFiles/navigation.dir/build
 .PHONY : navigation/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_nodejs
+
+# Build rule for target.
+nav_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_nodejs
+.PHONY : nav_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nav_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_lisp
+
+# Build rule for target.
+nav_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_lisp
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named lidar_transformer_front
+
+# Build rule for target.
+lidar_transformer_front: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lidar_transformer_front
+.PHONY : lidar_transformer_front
+
+# fast build rule for target.
+lidar_transformer_front/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/lidar_transformer_front.dir/build.make raskar_urdf/CMakeFiles/lidar_transformer_front.dir/build
+.PHONY : lidar_transformer_front/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_eus
+
+# Build rule for target.
+nav_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_cpp
+
+# Build rule for target.
+nav_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_py
+
+# Build rule for target.
+nav_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_py
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named move_base_msgs_generate_messages_py
@@ -969,7 +1060,14 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... odometry_publisher"
 	@echo "... navigation"
+	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... lidar_transformer_front"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... nav_msgs_generate_messages_py"
 	@echo "... move_base_msgs_generate_messages_py"
 	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_nodejs"

@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+raskar_urdf/CMakeFiles/odometry_publisher.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/odometry_publisher.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/odometry_publisher.dir/rule
+
+# Convenience name for target.
+odometry_publisher: raskar_urdf/CMakeFiles/odometry_publisher.dir/rule
+
+.PHONY : odometry_publisher
+
+# fast build rule for target.
+odometry_publisher/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/odometry_publisher.dir/build.make raskar_urdf/CMakeFiles/odometry_publisher.dir/build
+.PHONY : odometry_publisher/fast
+
+# Convenience name for target.
 raskar_urdf/CMakeFiles/navigation.dir/rule:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/navigation.dir/rule
 .PHONY : raskar_urdf/CMakeFiles/navigation.dir/rule
@@ -181,6 +196,96 @@ navigation: raskar_urdf/CMakeFiles/navigation.dir/rule
 navigation/fast:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/navigation.dir/build.make raskar_urdf/CMakeFiles/navigation.dir/build
 .PHONY : navigation/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_nodejs: raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : nav_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nav_msgs_generate_messages_nodejs/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_lisp: raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/lidar_transformer_front.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/lidar_transformer_front.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/lidar_transformer_front.dir/rule
+
+# Convenience name for target.
+lidar_transformer_front: raskar_urdf/CMakeFiles/lidar_transformer_front.dir/rule
+
+.PHONY : lidar_transformer_front
+
+# fast build rule for target.
+lidar_transformer_front/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_transformer_front.dir/build.make raskar_urdf/CMakeFiles/lidar_transformer_front.dir/build
+.PHONY : lidar_transformer_front/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_eus: raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_cpp: raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_py: raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule:
@@ -932,6 +1037,60 @@ actionlib_generate_messages_py/fast:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/actionlib_generate_messages_py.dir/build.make raskar_urdf/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
 
+src/lidar_frame_transformer.o: src/lidar_frame_transformer.cpp.o
+
+.PHONY : src/lidar_frame_transformer.o
+
+# target to build an object file
+src/lidar_frame_transformer.cpp.o:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_transformer_front.dir/build.make raskar_urdf/CMakeFiles/lidar_transformer_front.dir/src/lidar_frame_transformer.cpp.o
+.PHONY : src/lidar_frame_transformer.cpp.o
+
+src/lidar_frame_transformer.i: src/lidar_frame_transformer.cpp.i
+
+.PHONY : src/lidar_frame_transformer.i
+
+# target to preprocess a source file
+src/lidar_frame_transformer.cpp.i:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_transformer_front.dir/build.make raskar_urdf/CMakeFiles/lidar_transformer_front.dir/src/lidar_frame_transformer.cpp.i
+.PHONY : src/lidar_frame_transformer.cpp.i
+
+src/lidar_frame_transformer.s: src/lidar_frame_transformer.cpp.s
+
+.PHONY : src/lidar_frame_transformer.s
+
+# target to generate assembly for a file
+src/lidar_frame_transformer.cpp.s:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/lidar_transformer_front.dir/build.make raskar_urdf/CMakeFiles/lidar_transformer_front.dir/src/lidar_frame_transformer.cpp.s
+.PHONY : src/lidar_frame_transformer.cpp.s
+
+src/odometry_simulation.o: src/odometry_simulation.cpp.o
+
+.PHONY : src/odometry_simulation.o
+
+# target to build an object file
+src/odometry_simulation.cpp.o:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/odometry_publisher.dir/build.make raskar_urdf/CMakeFiles/odometry_publisher.dir/src/odometry_simulation.cpp.o
+.PHONY : src/odometry_simulation.cpp.o
+
+src/odometry_simulation.i: src/odometry_simulation.cpp.i
+
+.PHONY : src/odometry_simulation.i
+
+# target to preprocess a source file
+src/odometry_simulation.cpp.i:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/odometry_publisher.dir/build.make raskar_urdf/CMakeFiles/odometry_publisher.dir/src/odometry_simulation.cpp.i
+.PHONY : src/odometry_simulation.cpp.i
+
+src/odometry_simulation.s: src/odometry_simulation.cpp.s
+
+.PHONY : src/odometry_simulation.s
+
+# target to generate assembly for a file
+src/odometry_simulation.cpp.s:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/odometry_publisher.dir/build.make raskar_urdf/CMakeFiles/odometry_publisher.dir/src/odometry_simulation.cpp.s
+.PHONY : src/odometry_simulation.cpp.s
+
 src/simple_navigation_goals.o: src/simple_navigation_goals.cpp.o
 
 .PHONY : src/simple_navigation_goals.o
@@ -966,9 +1125,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
-	@echo "... edit_cache"
+	@echo "... odometry_publisher"
 	@echo "... navigation"
+	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... edit_cache"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... lidar_transformer_front"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... install"
+	@echo "... nav_msgs_generate_messages_py"
 	@echo "... move_base_msgs_generate_messages_py"
 	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_nodejs"
@@ -1023,6 +1189,12 @@ help:
 	@echo "... test"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
+	@echo "... src/lidar_frame_transformer.o"
+	@echo "... src/lidar_frame_transformer.i"
+	@echo "... src/lidar_frame_transformer.s"
+	@echo "... src/odometry_simulation.o"
+	@echo "... src/odometry_simulation.i"
+	@echo "... src/odometry_simulation.s"
 	@echo "... src/simple_navigation_goals.o"
 	@echo "... src/simple_navigation_goals.i"
 	@echo "... src/simple_navigation_goals.s"

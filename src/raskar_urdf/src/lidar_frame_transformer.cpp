@@ -38,7 +38,7 @@ class convert_RawLaserScan_to_LaserScanObject
 
 int main(int argc, char** argv){
   // Start ROS
-  ros::init(argc, argv, "lidar_transformer");
+  ros::init(argc, argv, "lidar_transformer_front");
 
   ros::NodeHandle n;
 

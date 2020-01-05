@@ -1,8 +1,8 @@
-prefix=/home/frank/Documents/ws_tester/urdf_tester/devel
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/devel
 
 Name: raskar_urdf
 Description: Description of raskar_urdf
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/frank/Documents/ws_tester/urdf_tester/devel/lib 
+Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/devel/lib 
 Requires: 

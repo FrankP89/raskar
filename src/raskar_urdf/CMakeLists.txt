@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   tf
   move_base_msgs
+  nav_msgs
   actionlib
 )
 
@@ -122,6 +123,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${PROJECT_SOURCE_DIR}
 )
 
 ## Declare a C++ library
@@ -134,11 +136,16 @@ include_directories(
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+file(GLOB_RECURSE HEADERS include/*.hpp include/*.h)
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/raskar_urdf_node.cpp)
-add_executable(raskar_urdf src/simple_navigation_goals.cpp)
+add_executable(
+  ${HEADERS} # for qtcreator...
+  navigation src/simple_navigation_goals.cpp)
+add_executable(odometry_sim src/odometry_simulation.cpp)
+add_executable(lidar_front src/lidar_frame_transformer.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -149,14 +156,17 @@ add_executable(raskar_urdf src/simple_navigation_goals.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(raskar_urdf ${catkin_EXPORTED_TARGETS})
-
+add_dependencies(navigation ${catkin_EXPORTED_TARGETS})
+add_dependencies(odometry_sim ${catkin_EXPORTED_TARGETS})
+add_dependencies(lidar_front ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(raskar_urdf ${catkin_LIBRARIES})
+target_link_libraries(navigation ${catkin_LIBRARIES})
+target_link_libraries(odometry_sim ${catkin_LIBRARIES})
+target_link_libraries(lidar_front ${catkin_LIBRARIES})
 
 #############
 ## Install ##

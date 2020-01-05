@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Documents/ws_tester/urdf_tester/src
+CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Documents/ws_tester/urdf_tester/build
+CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
 
 # Utility rule file for tf_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/build: tf_generate_messages
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/build
 
 raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/clean:
-	cd /home/frank/Documents/ws_tester/urdf_tester/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/clean
 
 raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/depend:
-	cd /home/frank/Documents/ws_tester/urdf_tester/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Documents/ws_tester/urdf_tester/src /home/frank/Documents/ws_tester/urdf_tester/src/raskar_urdf /home/frank/Documents/ws_tester/urdf_tester/build /home/frank/Documents/ws_tester/urdf_tester/build/raskar_urdf /home/frank/Documents/ws_tester/urdf_tester/build/raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Documents/ws_raskar/ws_raskar/src /home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf /home/frank/Documents/ws_raskar/ws_raskar/build /home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf /home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/depend
 

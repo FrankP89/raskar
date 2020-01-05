@@ -1,2 +1,2 @@
 raskar_urdf
--DCATKIN_DEVEL_PREFIX=/home/frank/Documents/ws_tester/urdf_tester/devel -DCMAKE_INSTALL_PREFIX=/home/frank/Documents/ws_tester/urdf_tester/install -G Unix Makefiles
+-G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/frank/Documents/ws_raskar/ws_raskar/devel -DCMAKE_INSTALL_PREFIX=/home/frank/Documents/ws_raskar/ws_raskar/install

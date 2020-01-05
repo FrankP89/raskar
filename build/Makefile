@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Documents/ws_tester/urdf_tester/src
+CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Documents/ws_tester/urdf_tester/build
+CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_tester/urdf_tester/build/CMakeFiles /home/frank/Documents/ws_tester/urdf_tester/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_tester/urdf_tester/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named navigation
+
+# Build rule for target.
+navigation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navigation
+.PHONY : navigation
+
+# fast build rule for target.
+navigation/fast:
+	$(MAKE) -f raskar_urdf/CMakeFiles/navigation.dir/build.make raskar_urdf/CMakeFiles/navigation.dir/build
+.PHONY : navigation/fast
+
+#=============================================================================
 # Target rules for targets named move_base_msgs_generate_messages_py
 
 # Build rule for target.
@@ -348,19 +361,6 @@ tf2_msgs_generate_messages_lisp: cmake_check_build_system
 tf2_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make raskar_urdf/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named raskar_urdf
-
-# Build rule for target.
-raskar_urdf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 raskar_urdf
-.PHONY : raskar_urdf
-
-# fast build rule for target.
-raskar_urdf/fast:
-	$(MAKE) -f raskar_urdf/CMakeFiles/raskar_urdf.dir/build.make raskar_urdf/CMakeFiles/raskar_urdf.dir/build
-.PHONY : raskar_urdf/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_eus
@@ -969,12 +969,12 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... navigation"
 	@echo "... move_base_msgs_generate_messages_py"
 	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... raskar_urdf"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"

@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/frank/Documents/ws_tester/urdf_tester/build"
+export PWD="/home/frank/Documents/ws_raskar/ws_raskar/build"

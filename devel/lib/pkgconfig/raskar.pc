@@ -1,0 +1,8 @@
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/devel
+
+Name: raskar
+Description: Description of raskar
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/devel/lib 
+Requires: 

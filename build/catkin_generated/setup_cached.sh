@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/frank/ws_raskar_urdf/devel:$CMAKE_PREFIX_PATH"
 export PWD="/home/frank/ws_raskar_urdf/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/frank/ws_raskar_urdf/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/frank/ws_raskar_urdf/src:$ROS_PACKAGE_PATH"

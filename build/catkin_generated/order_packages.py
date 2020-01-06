@@ -2,4 +2,4 @@
 source_root_dir = "/home/frank/ws_raskar_urdf/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/opt/ros/kinetic".split(';') if "/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/frank/ws_raskar_urdf/devel;/opt/ros/kinetic".split(';') if "/home/frank/ws_raskar_urdf/devel;/opt/ros/kinetic" != "" else []

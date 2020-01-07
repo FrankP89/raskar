@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD="/home/frank/Documents/ws_raskar/ws_raskar/build"
+export PYTHONPATH="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/python2.7/dist-packages:$PYTHONPATH"

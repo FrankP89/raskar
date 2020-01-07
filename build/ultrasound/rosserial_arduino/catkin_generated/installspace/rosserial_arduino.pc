@@ -1,0 +1,8 @@
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/install
+
+Name: rosserial_arduino
+Description: Description of rosserial_arduino
+Version: 0.8.0
+Cflags: -I/home/frank/Documents/ws_raskar/ws_raskar/install/include
+Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/install/lib 
+Requires: message_runtime

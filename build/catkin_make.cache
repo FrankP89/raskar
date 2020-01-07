@@ -1,2 +1,2 @@
-raskar_urdf:rplidar
+raskar_urdf:rplidar:ultrasound/rosserial:ultrasound/rosserial_arduino:ultrasound/rosserial_client:ultrasound/rosserial_embeddedlinux:ultrasound/rosserial_mbed:ultrasound/rosserial_msgs:ultrasound/rosserial_python:ultrasound/rosserial_server:ultrasound/rosserial_test:ultrasound/rosserial_tivac:ultrasound/rosserial_vex_cortex:ultrasound/rosserial_vex_v5:ultrasound/rosserial_windows:ultrasound/rosserial_xbee
 -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/frank/Documents/ws_raskar/ws_raskar/devel -DCMAKE_INSTALL_PREFIX=/home/frank/Documents/ws_raskar/ws_raskar/install

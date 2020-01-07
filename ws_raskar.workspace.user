@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.9.2, 2020-01-05T23:58:39. -->
+<!-- Written by QtCreator 4.9.2, 2020-01-07T22:12:47. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -108,9 +108,10 @@
      <value type="QString">CMAKE_PREFIX_PATH=/home/frank/Documents/ws_raskar/ws_raskar/devel:/opt/ros/melodic</value>
      <value type="QString">LD_LIBRARY_PATH=/home/frank/Documents/ws_raskar/ws_raskar/devel/lib:/opt/ros/melodic/lib</value>
      <value type="QString">PKG_CONFIG_PATH=/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig</value>
+     <value type="QString">PYTHONPATH=/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages</value>
      <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/frank/Documents/ws_raskar/ws_raskar/devel/share/common-lisp</value>
      <value type="QString">ROS_PACKAGE_PATH=/home/frank/Documents/ws_raskar/ws_raskar/src:/opt/ros/melodic/share</value>
-     <value type="QString">SHLVL=9</value>
+     <value type="QString">SHLVL=17</value>
      <value type="QString">TERM=xterm</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>

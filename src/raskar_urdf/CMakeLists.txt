@@ -147,7 +147,7 @@ add_executable(
 
 add_executable(
   ${HEADERS} # for qtcreator...
-  odometry_publisher src/odometry_simulation.cpp)
+  odometry_sim src/odometry_simulation.cpp)
 
 add_executable(
   ${HEADERS} # for qtcreator...
@@ -163,7 +163,7 @@ add_executable(
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(navigation ${catkin_EXPORTED_TARGETS})
-add_dependencies(odometry_publisher ${catkin_EXPORTED_TARGETS})
+add_dependencies(odometry_sim ${catkin_EXPORTED_TARGETS})
 add_dependencies(lidar_transformer_front ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
@@ -171,7 +171,7 @@ add_dependencies(lidar_transformer_front ${catkin_EXPORTED_TARGETS})
 #   ${catkin_LIBRARIES}
 # )
 target_link_libraries(navigation ${catkin_LIBRARIES})
-target_link_libraries(odometry_publisher ${catkin_LIBRARIES})
+target_link_libraries(odometry_sim ${catkin_LIBRARIES})
 target_link_libraries(lidar_transformer_front ${catkin_LIBRARIES})
 
 #############

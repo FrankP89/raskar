@@ -5,7 +5,7 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rospy\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rospy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_filters\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_filters\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_ros\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_ros\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_generation\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_generation\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_py\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_py\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\move_base_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\move_base_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\src\;CMake Files\..\..\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\build\;CMake Files\..\build\catkin\;CMake Files\..\build\catkin\catkin_generated\;CMake Files\..\build\catkin\catkin_generated\version\;CMake Files\..\build\catkin_generated\;CMake Files\..\build\catkin_generated\installspace\;CMake Files\..\build\raskar_urdf\;CMake Files\..\build\raskar_urdf\catkin_generated\;CMake Files\raskar_urdf\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rospy\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rospy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_filters\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_filters\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_ros\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_ros\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_generation\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_generation\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_py\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_py\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\move_base_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\move_base_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\src\;CMake Files\..\..\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\build\;CMake Files\..\build\catkin\;CMake Files\..\build\catkin\catkin_generated\;CMake Files\..\build\catkin\catkin_generated\version\;CMake Files\..\build\catkin_generated\;CMake Files\..\build\catkin_generated\installspace\;CMake Files\..\build\rplidar\;CMake Files\..\build\rplidar\catkin_generated\;CMake Files\..\build\raskar_urdf\;CMake Files\..\build\raskar_urdf\catkin_generated\;CMake Files\rplidar\;CMake Files\raskar_urdf\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build"/>
@@ -353,19 +353,20 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/gtest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="odometry_publisher">
-				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf/odometry_publisher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf"/>
+			<Target title="rplidarNodeClient">
+				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNodeClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
-					<Add option="-DROS_PACKAGE_NAME=&quot;raskar_urdf&quot;"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;rplidar_ros&quot;"/>
 					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/include"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/src"/>
 					<Add directory="/opt/ros/melodic/include"/>
 					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
-					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -376,36 +377,547 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 odometry_publisher"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rplidarNodeClient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rplidarNodeClient/fast">
+				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNodeClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;rplidar_ros&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/include"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/src"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rplidarNodeClient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rplidarNode">
+				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;rplidar_ros&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/include"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/src"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rplidarNode"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rplidarNode/fast">
+				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;rplidar_ros&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/include"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/src"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rplidarNode/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sensor_msgs_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sensor_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sensor_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roscpp_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roscpp_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roscpp_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosgraph_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sensor_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sensor_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roscpp_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosgraph_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosgraph_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosgraph_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosgraph_msgs_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roscpp_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf2_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_cpp"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="odometry_publisher/fast">
-				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf/odometry_publisher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
-					<Add option="-DROS_PACKAGE_NAME=&quot;raskar_urdf&quot;"/>
-					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
-					<Add directory="/opt/ros/melodic/include"/>
-					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
-					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+			<Target title="actionlib_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 odometry_publisher/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="move_base_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_msgs_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf2_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nav_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf2_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf2_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tf2_msgs_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_py"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
@@ -469,6 +981,46 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="move_base_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="move_base_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="move_base_msgs_generate_messages_lisp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nav_msgs_generate_messages_cpp">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="nav_msgs_generate_messages_nodejs">
 				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
 				<Option type="4"/>
@@ -479,11 +1031,31 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="nav_msgs_generate_messages_lisp">
+			<Target title="move_base_msgs_generate_messages_py">
 				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_lisp"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nav_msgs_generate_messages_py">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nav_msgs_generate_messages_eus">
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_eus"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
@@ -547,511 +1119,59 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="nav_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
+			<Target title="odometry_sim">
+				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf/odometry_sim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;raskar_urdf&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_eus"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 odometry_sim"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="nav_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
+			<Target title="odometry_sim/fast">
+				<Option output="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf/odometry_sim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/raskar_urdf"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;raskar_urdf&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/opt/ros/melodic/include"/>
+					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="nav_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="move_base_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="move_base_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf2_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf2_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf2_msgs_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf2_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf2_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf2_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="std_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="std_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="std_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rosgraph_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rosgraph_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="std_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="std_msgs_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sensor_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sensor_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="move_base_msgs_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rosgraph_msgs_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="move_base_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rosgraph_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rosgraph_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="move_base_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 move_base_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sensor_msgs_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_cpp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sensor_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_generate_messages_eus">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="tf_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 tf_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sensor_msgs_generate_messages_py">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 sensor_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_generate_messages_lisp">
-				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_lisp"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 odometry_sim/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1067,11 +1187,11 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="actionlib_generate_messages_py">
+			<Target title="actionlib_generate_messages_cpp">
 				<Option working_dir="/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_py"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 actionlib_generate_messages_cpp"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1082,10 +1202,40 @@
 			<Option target="lidar_transformer_front"/>
 		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/src/odometry_simulation.cpp">
-			<Option target="odometry_publisher"/>
+			<Option target="odometry_sim"/>
 		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/src/simple_navigation_goals.cpp">
 			<Option target="navigation"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_serial.h">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/timer.cpp">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/timer.h">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/hal/thread.cpp">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/hal/thread.h">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/rplidar_driver.cpp">
+			<Option target="rplidarNode"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/client.cpp">
+			<Option target="rplidarNodeClient"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/node.cpp">
+			<Option target="rplidarNode"/>
 		</Unit>
 		<Unit filename="/usr/src/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
@@ -1279,12 +1429,6 @@
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/catkin/cmake/em/pkg.pc.em">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\em\"/>
 		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/joint_state_publisher/cmake/joint_state_publisherConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\cmake\"/>
-		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/joint_state_publisher/cmake/joint_state_publisherConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\cmake\"/>
-		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/roscpp/cmake/roscpp-msg-extras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\cmake\"/>
 		</Unit>
@@ -1360,6 +1504,30 @@
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/xmlrpcpp/cmake/xmlrpcppConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\cmake\"/>
 		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/sensor_msgs/cmake/sensor_msgs-msg-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/sensor_msgs/cmake/sensor_msgsConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/sensor_msgs/cmake/sensor_msgsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgs-msg-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgsConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/joint_state_publisher/cmake/joint_state_publisherConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\cmake\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/joint_state_publisher/cmake/joint_state_publisherConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\joint_state_publisher\cmake\"/>
+		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/rospy/cmake/rospyConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rospy\cmake\"/>
 		</Unit>
@@ -1375,29 +1543,11 @@
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/tf/cmake/tfConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf\cmake\"/>
 		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgs-msg-extras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\"/>
-		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgsConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\"/>
-		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgsConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\"/>
-		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/message_filters/cmake/message_filtersConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_filters\cmake\"/>
 		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/message_filters/cmake/message_filtersConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_filters\cmake\"/>
-		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/sensor_msgs/cmake/sensor_msgs-msg-extras.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\"/>
-		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/sensor_msgs/cmake/sensor_msgsConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\"/>
-		</Unit>
-		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/sensor_msgs/cmake/sensor_msgsConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\sensor_msgs\cmake\"/>
 		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../../../../../../opt/ros/melodic/share/tf2_ros/cmake/tf2_rosConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\tf2_ros\cmake\"/>
@@ -1552,11 +1702,23 @@
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../build/catkin_generated/installspace/_setup_util.py">
 			<Option virtualFolder="CMake Files\..\build\catkin_generated\installspace\"/>
 		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../build/rplidar/catkin_generated/ordered_paths.cmake">
+			<Option virtualFolder="CMake Files\..\build\rplidar\catkin_generated\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../build/rplidar/catkin_generated/package.cmake">
+			<Option virtualFolder="CMake Files\..\build\rplidar\catkin_generated\"/>
+		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../build/raskar_urdf/catkin_generated/ordered_paths.cmake">
 			<Option virtualFolder="CMake Files\..\build\raskar_urdf\catkin_generated\"/>
 		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/../build/raskar_urdf/catkin_generated/package.cmake">
 			<Option virtualFolder="CMake Files\..\build\raskar_urdf\catkin_generated\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rplidar\"/>
+		</Unit>
+		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/package.xml">
+			<Option virtualFolder="CMake Files\rplidar\"/>
 		</Unit>
 		<Unit filename="/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\raskar_urdf\"/>

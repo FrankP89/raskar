@@ -281,3 +281,17 @@
 /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_windows/CMakeFiles/install/local.dir
 /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_windows/CMakeFiles/rebuild_cache.dir
 /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_windows/CMakeFiles/install.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/install/strip.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/install.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/list_install_components.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/edit_cache.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/install/local.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/test.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/clean_test_results_ciss_imu.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/rebuild_cache.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check_launch.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu.dir
+/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check_launch.dir

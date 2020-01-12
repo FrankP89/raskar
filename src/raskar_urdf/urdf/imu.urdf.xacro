@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<robot name="imu" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- imu sensors -->
+  <property name="height_imu"    value="0.0233" /> <!-- height of sensor  -->
+  <property name="width_imu"     value="0.0800" /> <!-- width of sensor   -->
+  <property name="depth_imu"     value="0.0532" /> <!-- length of sensor  -->
+  <property name="mass_imu"      value="0.0100" /> <!-- Mass of sensor    -->
+
+  <property name="base_x_origin_to_imu_origin" value="0.40000" />
+  <property name="base_y_origin_to_imu_origin" value="0.00000" />
+  <property name="base_z_origin_to_imu_origin" value="0.29350" />
+
+  <macro name="cuboid_inertia" params="m h d w">
+    <inertia  ixx="${m*(w*w+d*d)/12}" ixy = "0" ixz = "0"
+              iyy="${m*(d*d+h*h)/12}" iyz = "0"
+              izz="${m*(w*w+h*h)/12}" />
+  </macro>
+
+  <xacro:macro name="imu" params="fb lrc parent translateX translateY translateZ flipX flipY flipZ rotateTheta"> <!--fb : front, back ; lrc: left, right -->
+    <link name="${fb}_${lrc}_imu">
+      <visual>
+        <origin xyz="0 0 0" rpy="${flipX*Pi/180} ${flipY*Pi/180} ${flipZ*Pi/180}"/>
+        <geometry>
+          <!-- cylinder length="${thickness_imu}" radius="${diam_imu/2}" /-->
+          <mesh filename="package://ciss_imu/meshes/ciss_bosch.stl" scale="0.1 0.1 0.1"/>
+        </geometry>
+        <material name="white" />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="${flipX*Pi/180} ${flipY*Pi/180} ${flipZ*Pi/180}"/>
+        <geometry>
+          <!-- cylinder length="${thickness_imu}" radius="${diam_imu/2}" /-->
+          <mesh filename="package://ciss_imu/meshes/ciss_bosch.stl" scale="0.1 0.1 0.1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="${mass_imu}" />
+        <origin xyz="0 0 0" />
+        <cuboid_inertia  m="${mass_imu}" h="${height_imu}" d="${depth_imu}" w="${width_imu}" />
+      </inertial>
+    </link>
+
+    <gazebo reference="${fb}_${lrc}_imu">
+      <static>true</static>
+      <material>Gazebo/White</material>
+      <turnGravityOff>true</turnGravityOff>
+    </gazebo>
+
+    <joint name="${fb}_${lrc}_imu_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${fb}_${lrc}_imu"/>
+      <origin xyz="${translateX * base_x_origin_to_imu_origin} ${translateY * base_y_origin_to_imu_origin} ${base_z_origin_to_imu_origin + translateZ}" rpy="0 0 ${rotateTheta*Pi/180}"/>
+    </joint>
+
+
+  </xacro:macro>
+</robot>

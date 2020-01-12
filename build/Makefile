@@ -2026,6 +2026,97 @@ clean_test_results_rosserial_test/fast:
 	$(MAKE) -f ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build.make ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build
 .PHONY : clean_test_results_rosserial_test/fast
 
+#=============================================================================
+# Target rules for targets named clean_test_results_ciss_imu
+
+# Build rule for target.
+clean_test_results_ciss_imu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_ciss_imu
+.PHONY : clean_test_results_ciss_imu
+
+# fast build rule for target.
+clean_test_results_ciss_imu/fast:
+	$(MAKE) -f imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/clean_test_results_ciss_imu.dir/build.make imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/clean_test_results_ciss_imu.dir/build
+.PHONY : clean_test_results_ciss_imu/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_ciss_imu_roslaunch-check
+
+# Build rule for target.
+_run_tests_ciss_imu_roslaunch-check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_ciss_imu_roslaunch-check
+.PHONY : _run_tests_ciss_imu_roslaunch-check
+
+# fast build rule for target.
+_run_tests_ciss_imu_roslaunch-check/fast:
+	$(MAKE) -f imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check.dir/build.make imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check.dir/build
+.PHONY : _run_tests_ciss_imu_roslaunch-check/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_ciss_imu
+
+# Build rule for target.
+run_tests_ciss_imu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_ciss_imu
+.PHONY : run_tests_ciss_imu
+
+# fast build rule for target.
+run_tests_ciss_imu/fast:
+	$(MAKE) -f imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu.dir/build.make imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu.dir/build
+.PHONY : run_tests_ciss_imu/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_ciss_imu_roslaunch-check
+
+# Build rule for target.
+run_tests_ciss_imu_roslaunch-check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_ciss_imu_roslaunch-check
+.PHONY : run_tests_ciss_imu_roslaunch-check
+
+# fast build rule for target.
+run_tests_ciss_imu_roslaunch-check/fast:
+	$(MAKE) -f imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check.dir/build.make imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check.dir/build
+.PHONY : run_tests_ciss_imu_roslaunch-check/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_ciss_imu_roslaunch-check_launch
+
+# Build rule for target.
+run_tests_ciss_imu_roslaunch-check_launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_ciss_imu_roslaunch-check_launch
+.PHONY : run_tests_ciss_imu_roslaunch-check_launch
+
+# fast build rule for target.
+run_tests_ciss_imu_roslaunch-check_launch/fast:
+	$(MAKE) -f imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check_launch.dir/build.make imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check_launch.dir/build
+.PHONY : run_tests_ciss_imu_roslaunch-check_launch/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_ciss_imu
+
+# Build rule for target.
+_run_tests_ciss_imu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_ciss_imu
+.PHONY : _run_tests_ciss_imu
+
+# fast build rule for target.
+_run_tests_ciss_imu/fast:
+	$(MAKE) -f imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu.dir/build.make imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu.dir/build
+.PHONY : _run_tests_ciss_imu/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_ciss_imu_roslaunch-check_launch
+
+# Build rule for target.
+_run_tests_ciss_imu_roslaunch-check_launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_ciss_imu_roslaunch-check_launch
+.PHONY : _run_tests_ciss_imu_roslaunch-check_launch
+
+# fast build rule for target.
+_run_tests_ciss_imu_roslaunch-check_launch/fast:
+	$(MAKE) -f imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check_launch.dir/build.make imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check_launch.dir/build
+.PHONY : _run_tests_ciss_imu_roslaunch-check_launch/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2182,6 +2273,13 @@ help:
 	@echo "... run_tests_rosserial_test_rostest_test_rosserial_python_socket.test"
 	@echo "... _run_tests_rosserial_test_rostest"
 	@echo "... clean_test_results_rosserial_test"
+	@echo "... clean_test_results_ciss_imu"
+	@echo "... _run_tests_ciss_imu_roslaunch-check"
+	@echo "... run_tests_ciss_imu"
+	@echo "... run_tests_ciss_imu_roslaunch-check"
+	@echo "... run_tests_ciss_imu_roslaunch-check_launch"
+	@echo "... _run_tests_ciss_imu"
+	@echo "... _run_tests_ciss_imu_roslaunch-check_launch"
 .PHONY : help
 
 

@@ -147,6 +147,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_embeddedlinux/cmake_install.cmake")
   include("/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test/cmake_install.cmake")
   include("/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_windows/cmake_install.cmake")
+  include("/home/frank/Documents/ws_raskar/ws_raskar/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/cmake_install.cmake")
 
 endif()
 

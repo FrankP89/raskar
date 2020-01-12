@@ -45,6 +45,11 @@
   </node>
   <node pkg="raskar_urdf" name="lidar_front" type="lidar_front" />
 
+  <!-- Publish imu sensor information -->
+  <node name="sensor_bosch" pkg="ciss_imu" type="ciss_broadcaster.py" respawn="false" output="screen" >
+      <param name="sensor" type="string" value="sensor_imu" />
+  </node>
+
 
   <!-- Controller managers -->
   <rosparam command="load"

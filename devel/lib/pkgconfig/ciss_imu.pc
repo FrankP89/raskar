@@ -1,0 +1,8 @@
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/devel
+
+Name: ciss_imu
+Description: Description of ciss_imu
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/devel/lib 
+Requires: 

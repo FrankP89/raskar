@@ -13,6 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/catkin_generated/ordered_paths.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/catkin_generated/package.cmake"
   "raskar_urdf/catkin_generated/ordered_paths.cmake"
   "raskar_urdf/catkin_generated/package.cmake"
   "rplidar/catkin_generated/ordered_paths.cmake"
@@ -62,6 +64,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/frank/Documents/ws_raskar/ws_raskar/devel/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake"
   "/home/frank/Documents/ws_raskar/ws_raskar/devel/share/rosserial_server/cmake/rosserial_serverConfig.cmake"
   "/home/frank/Documents/ws_raskar/ws_raskar/src/CMakeLists.txt"
+  "/home/frank/Documents/ws_raskar/ws_raskar/src/imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeLists.txt"
+  "/home/frank/Documents/ws_raskar/ws_raskar/src/imu_bosch/ciss_ros_wrapper/src/ciss_imu/package.xml"
   "/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/CMakeLists.txt"
   "/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/package.xml"
   "/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/CMakeLists.txt"
@@ -241,6 +245,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/melodic/share/rosgraph_msgs/cmake/rosgraph_msgs-msg-extras.cmake"
   "/opt/ros/melodic/share/rosgraph_msgs/cmake/rosgraph_msgsConfig-version.cmake"
   "/opt/ros/melodic/share/rosgraph_msgs/cmake/rosgraph_msgsConfig.cmake"
+  "/opt/ros/melodic/share/roslaunch/cmake/roslaunch-extras.cmake"
+  "/opt/ros/melodic/share/roslaunch/cmake/roslaunchConfig-version.cmake"
+  "/opt/ros/melodic/share/roslaunch/cmake/roslaunchConfig.cmake"
   "/opt/ros/melodic/share/rospy/cmake/rospyConfig-version.cmake"
   "/opt/ros/melodic/share/rospy/cmake/rospyConfig.cmake"
   "/opt/ros/melodic/share/rostest/cmake/rostest-extras.cmake"
@@ -368,6 +375,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ultrasound/rosserial_embeddedlinux/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ultrasound/rosserial_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ultrasound/rosserial_windows/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -515,4 +523,11 @@ set(CMAKE_DEPEND_INFO_FILES
   "ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/DependInfo.cmake"
   "ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/DependInfo.cmake"
   "ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/DependInfo.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/clean_test_results_ciss_imu.dir/DependInfo.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check.dir/DependInfo.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu.dir/DependInfo.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check.dir/DependInfo.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/run_tests_ciss_imu_roslaunch-check_launch.dir/DependInfo.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu.dir/DependInfo.cmake"
+  "imu_bosch/ciss_ros_wrapper/src/ciss_imu/CMakeFiles/_run_tests_ciss_imu_roslaunch-check_launch.dir/DependInfo.cmake"
   )

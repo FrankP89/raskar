@@ -34,6 +34,7 @@
   <!-- Import Sensors -->
   <xacro:include filename="$(find raskar_urdf)/urdf/ultrasound.urdf.xacro" /> 
   <xacro:include filename="$(find raskar_urdf)/urdf/lidar.urdf.xacro" /> 
+  <xacro:include filename="$(find raskar_urdf)/urdf/imu.urdf.xacro" />
 
 
   <!-- Macro for calculating inertia of cylinder -->
@@ -49,7 +50,6 @@
               iyy="${m*(w*w+l*l)/12}" iyz = "0"
               izz="${m*(w*w+h*h)/12}" /> 
   </macro>
-
 
 
   <!-- Used for fixing robot to Gazebo -->
@@ -113,9 +113,7 @@
   </link>
 
 
-
   <!-- Wheels Definition -->
-
   <wheel fb="bk" lr="right"  parent="base_link" translateX="-1" translateY="-1" translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
   <wheel fb="fr" lr="right"  parent="base_link" translateX="1"  translateY="-1" translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
   <wheel fb="fr" lr="left" parent="base_link" translateX="1"  translateY="1"  translateZ="${((-height_body/2)-floor_clearance)}" flipY="1"/>
@@ -136,9 +134,12 @@
   <!-- Lidar definition -->
   <lidar fb="fr"  cnc="nocorner"   lrc="center"  parent="base_link" translateX="1" translateY="1"  translateZ="${(-height_body/2)-floor_clearance}" flipX="0" flipY="0" flipZ="0"/>
 
+
+  <!-- IMU definition -->
+  <imu fb="fr"  lrc="center"  parent="base_link" translateX="1" translateY="1"  translateZ="${(-height_body/2)-floor_clearance}" flipX="0" flipY="0" flipZ="0" rotateTheta="0"/>
+
 	
-  <!-- Motion controller -->
-  
+  <!-- Motion controller -->  
   <!-- Planar drive controller  -->
   <gazebo>
     <plugin name="omni_steering" filename="libgazebo_ros_planar_move.so">

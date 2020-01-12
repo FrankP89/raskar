@@ -1,0 +1,2 @@
+ciss_imu
+-DCATKIN_DEVEL_PREFIX=/home/frank/Documents/ws_sensor_bosch/CISS_BOSCH_INTEGRATION/ciss_ros_wrapper/devel -DCMAKE_INSTALL_PREFIX=/home/frank/Documents/ws_sensor_bosch/CISS_BOSCH_INTEGRATION/ciss_ros_wrapper/install -G Unix Makefiles

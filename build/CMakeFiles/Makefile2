@@ -409,6 +409,56 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory raskar_navigation
+
+# Convenience name for "all" pass in the directory.
+raskar_navigation/all:
+
+.PHONY : raskar_navigation/all
+
+# Convenience name for "clean" pass in the directory.
+raskar_navigation/clean: raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : raskar_navigation/clean
+
+# Convenience name for "preinstall" pass in the directory.
+raskar_navigation/preinstall:
+
+.PHONY : raskar_navigation/preinstall
+
+#=============================================================================
+# Target rules for target raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/build.make raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/build.make raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles 0
+.PHONY : raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/build.make raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+# clean rule for target.
+clean: raskar_navigation/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory ultrasound/rosserial
 
 # Convenience name for "all" pass in the directory.
@@ -417,7 +467,7 @@ ultrasound/rosserial/all:
 .PHONY : ultrasound/rosserial/all
 
 # Convenience name for "clean" pass in the directory.
-ultrasound/rosserial/clean: ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/clean
+ultrasound/rosserial/clean:
 
 .PHONY : ultrasound/rosserial/clean
 
@@ -425,38 +475,6 @@ ultrasound/rosserial/clean: ultrasound/rosserial/CMakeFiles/_catkin_empty_export
 ultrasound/rosserial/preinstall:
 
 .PHONY : ultrasound/rosserial/preinstall
-
-#=============================================================================
-# Target rules for target ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/build.make ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/build.make ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles 0
-.PHONY : ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/build.make ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-# clean rule for target.
-clean: ultrasound/rosserial/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory ultrasound/rosserial_arduino

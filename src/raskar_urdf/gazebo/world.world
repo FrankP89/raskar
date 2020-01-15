@@ -4,14 +4,14 @@
       <cast_shadows>1</cast_shadows>
       <pose frame=''>0 0 10 0 -0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
+      <specular>0.2 0.2 0.2 1</specular>
       <attenuation>
         <range>1000</range>
         <constant>0.9</constant>
         <linear>0.01</linear>
         <quadratic>0.001</quadratic>
       </attenuation>
-      <direction>-0.5 0.5 -1</direction>
+      <direction>-0.5 0.1 -0.9</direction>
     </light>
     <model name='ground_plane'>
       <static>1</static>
@@ -24,6 +24,10 @@
             </plane>
           </geometry>
           <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
             <friction>
               <ode>
                 <mu>100</mu>
@@ -33,9 +37,6 @@
                 <ode/>
               </torsional>
             </friction>
-            <contact>
-              <ode/>
-            </contact>
             <bounce/>
           </surface>
           <max_contacts>10</max_contacts>
@@ -56,8 +57,8 @@
           </material>
         </visual>
         <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
     </model>
     <gravity>0 0 -9.8</gravity>
@@ -73,6 +74,10 @@
       <background>0.7 0.7 0.7 1</background>
       <shadows>1</shadows>
     </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <latitude_deg>0</latitude_deg>
@@ -81,25 +86,25 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='raskar_gazebo'>
-      <link name='base_robot'>
+      <link name='base_footprint'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <inertial>
-          <pose frame=''>0.021842 -0.017632 0.007895 0 -0 0</pose>
-          <mass>1.9</mass>
+          <pose frame=''>0.001867 -0 0.140153 0 -0 0</pose>
+          <mass>68.71</mass>
           <inertia>
-            <ixx>5.55647</ixx>
-            <ixy>0.0131708</ixy>
-            <ixz>-0.00589737</ixz>
-            <iyy>7.34636</iyy>
-            <iyz>0.00476053</iyz>
-            <izz>2.7125</izz>
+            <ixx>5.58141</ixx>
+            <ixy>-6.47728e-21</ixy>
+            <ixz>0.00600321</ixz>
+            <iyy>7.45983</iyy>
+            <iyz>2.94002e-21</iyz>
+            <izz>2.83403</izz>
           </inertia>
         </inertial>
-        <collision name='base_robot_collision'>
-          <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+          <pose frame=''>0 0 0.141 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.998 0.678 0.35</size>
+              <size>0.998 0.678 0.3</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -116,71 +121,393 @@
             </friction>
           </surface>
         </collision>
-        <visual name='base_robot_visual'>
-          <pose frame=''>0 0 -0.075 1.571 -0 0</pose>
+        <collision name='base_footprint_fixed_joint_lump__bk_corner_left_ultrasound_collision_1'>
+          <pose frame=''>-0.41038 0.25038 0.019 0 -0 2.35619</pose>
           <geometry>
             <mesh>
-              <scale>1 1 1</scale>
-              <uri>/home/frank/ws_raskar_urdf/src/raskar_urdf/meshes/body_parts.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
             </mesh>
           </geometry>
-        </visual>
-        <visual name='base_robot_fixed_joint_lump__rplidar_a2_front_visual_1'>
-          <pose frame=''>0.415 -0.335 0.15 1.571 0 2.3562</pose>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__bk_corner_right_ultrasound_collision_2'>
+          <pose frame=''>-0.41038 -0.25038 0.019 0 -0 -2.35619</pose>
           <geometry>
             <mesh>
-              <scale>1 1 1</scale>
-              <uri>/home/frank/ws_raskar_urdf/src/raskar_urdf/meshes/rplidar_a2m4.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
             </mesh>
           </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <joint name='fixed' type='revolute'>
-        <child>base_robot</child>
-        <parent>world</parent>
-        <axis>
-          <limit>
-            <lower>0</lower>
-            <upper>0</upper>
-          </limit>
-          <dynamics>
-            <damping>0</damping>
-            <friction>0</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-          <use_parent_model_frame>1</use_parent_model_frame>
-          <xyz>0 0 1</xyz>
-        </axis>
-      </joint>
-      <link name='wheel_left_back'>
-        <pose frame=''>-0.26 0.267 0.0635 0 -0 0</pose>
-        <inertial>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__fr_center_imu_collision_3'>
+          <pose frame=''>0.4 0 0.2585 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.1 0.1 0.1</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/imu_bosch/ciss_ros_wrapper/src/ciss_imu/meshes/ciss_bosch.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__fr_corner_left_ultrasound_collision_4'>
+          <pose frame=''>0.41038 0.25038 0.019 0 -0 0.785398</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__fr_corner_right_ultrasound_collision_5'>
+          <pose frame=''>0.41038 -0.25038 0.019 0 0 -0.785398</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__fr_nocorner_center_lidar_collision_6'>
+          <pose frame=''>0.33 0 0.279 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.041</length>
+              <radius>0.038</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__fr_nocorner_left_ultrasound_collision_7'>
+          <pose frame=''>0.45639 0.1 0.019 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__fr_nocorner_right_ultrasound_collision_8'>
+          <pose frame=''>0.45639 -0.1 0.019 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='base_footprint_visual'>
           <pose frame=''>0 0 0 0 -0 0</pose>
-          <mass>1.8</mass>
-          <inertia>
-            <ixx>0.0117145</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.0117145</iyy>
-            <iyz>0</iyz>
-            <izz>0.00362903</izz>
-          </inertia>
-        </inertial>
-        <visual name='wheel_left_back_visual'>
-          <pose frame=''>0 0 0 1.571 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.001 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>__default__</uri>
+              <name>__default__</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_link_visual_1'>
+          <pose frame=''>0 0 -0.0477 1.571 -0 0</pose>
           <geometry>
             <mesh>
-              <scale>1 1 1</scale>
-              <uri>/home/frank/ws_raskar_urdf/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/body_parts.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__bk_corner_left_ultrasound_visual_2'>
+          <pose frame=''>-0.41038 0.25038 0.019 1.5708 -0 -2.35619</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <name>Gazebo/dark_yellow</name>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__bk_corner_right_ultrasound_visual_3'>
+          <pose frame=''>-0.41038 -0.25038 0.019 1.5708 -0 -0.785398</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__fr_center_imu_visual_4'>
+          <pose frame=''>0.4 0 0.2585 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.1 0.1 0.1</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/imu_bosch/ciss_ros_wrapper/src/ciss_imu/meshes/ciss_bosch.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__fr_corner_left_ultrasound_visual_5'>
+          <pose frame=''>0.41038 0.25038 0.019 1.5708 -0 2.35619</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__fr_corner_right_ultrasound_visual_6'>
+          <pose frame=''>0.41038 -0.25038 0.019 1.5708 0 0.785398</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__fr_nocorner_center_lidar_visual_7'>
+          <pose frame=''>0.33 0 0.279 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.041</length>
+              <radius>0.038</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__fr_nocorner_left_ultrasound_visual_8'>
+          <pose frame=''>0.45639 0.1 0.019 1.5708 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__fr_nocorner_right_ultrasound_visual_9'>
+          <pose frame=''>0.45639 -0.1 0.019 1.5708 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/ultrasound_hc_sr04.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>0</gravity>
+        <velocity_decay/>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='bk_left_wheel'>
+        <pose frame=''>-0.26 0.267 0.0285 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>1.8</mass>
+          <inertia>
+            <ixx>0.00246791</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00246791</iyy>
+            <iyz>0</iyz>
+            <izz>0.00362903</izz>
+          </inertia>
+        </inertial>
+        <collision name='bk_left_wheel_collision'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='bk_left_wheel_visual'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
             </script>
           </material>
@@ -188,11 +515,12 @@
         <gravity>1</gravity>
         <velocity_decay/>
         <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <joint name='base_robot_to_wheel_left_back' type='revolute'>
-        <child>wheel_left_back</child>
-        <parent>base_robot</parent>
+      <joint name='bk_left_wheel_joint' type='revolute'>
+        <child>bk_left_wheel</child>
+        <parent>base_footprint</parent>
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
@@ -200,39 +528,66 @@
             <upper>1e+16</upper>
           </limit>
           <dynamics>
-            <damping>0.7</damping>
-            <friction>0</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
           <use_parent_model_frame>1</use_parent_model_frame>
         </axis>
       </joint>
-      <link name='wheel_left_front'>
-        <pose frame=''>0.26 0.267 0.0635 0 -0 0</pose>
+      <link name='bk_right_wheel'>
+        <pose frame=''>-0.26 -0.267 0.0285 0 -0 0</pose>
         <inertial>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <mass>1.8</mass>
           <inertia>
-            <ixx>0.0117145</ixx>
+            <ixx>0.00246791</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.0117145</iyy>
+            <iyy>0.00246791</iyy>
             <iyz>0</iyz>
             <izz>0.00362903</izz>
           </inertia>
         </inertial>
-        <visual name='wheel_left_front_visual'>
-          <pose frame=''>0 0 0 1.571 -0 0</pose>
+        <collision name='bk_right_wheel_collision'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
           <geometry>
             <mesh>
-              <scale>1 1 1</scale>
-              <uri>/home/frank/ws_raskar_urdf/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='bk_right_wheel_visual'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <name>Gazebo/dark_yellow</name>
+              <name>Gazebo/Grey</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
             </script>
           </material>
@@ -240,11 +595,12 @@
         <gravity>1</gravity>
         <velocity_decay/>
         <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <joint name='base_robot_to_wheel_left_front' type='revolute'>
-        <child>wheel_left_front</child>
-        <parent>base_robot</parent>
+      <joint name='bk_right_wheel_joint' type='revolute'>
+        <child>bk_right_wheel</child>
+        <parent>base_footprint</parent>
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
@@ -252,39 +608,66 @@
             <upper>1e+16</upper>
           </limit>
           <dynamics>
-            <damping>0.7</damping>
-            <friction>0</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
           <use_parent_model_frame>1</use_parent_model_frame>
         </axis>
       </joint>
-      <link name='wheel_right_back'>
-        <pose frame=''>-0.26 -0.267 0.0635 0 -0 0</pose>
+      <link name='fr_left_wheel'>
+        <pose frame=''>0.26 0.267 0.0285 0 -0 0</pose>
         <inertial>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <mass>1.8</mass>
           <inertia>
-            <ixx>0.0117145</ixx>
+            <ixx>0.00246791</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.0117145</iyy>
+            <iyy>0.00246791</iyy>
             <iyz>0</iyz>
             <izz>0.00362903</izz>
           </inertia>
         </inertial>
-        <visual name='wheel_right_back_visual'>
-          <pose frame=''>0 0 0 1.571 -0 0</pose>
+        <collision name='fr_left_wheel_collision'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
           <geometry>
             <mesh>
-              <scale>1 1 1</scale>
-              <uri>/home/frank/ws_raskar_urdf/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='fr_left_wheel_visual'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <name>Gazebo/dark_yellow</name>
+              <name>Gazebo/Grey</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
             </script>
           </material>
@@ -292,11 +675,12 @@
         <gravity>1</gravity>
         <velocity_decay/>
         <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <joint name='base_robot_to_wheel_right_back' type='revolute'>
-        <child>wheel_right_back</child>
-        <parent>base_robot</parent>
+      <joint name='fr_left_wheel_joint' type='revolute'>
+        <child>fr_left_wheel</child>
+        <parent>base_footprint</parent>
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
@@ -304,39 +688,66 @@
             <upper>1e+16</upper>
           </limit>
           <dynamics>
-            <damping>0.7</damping>
-            <friction>0</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
           <use_parent_model_frame>1</use_parent_model_frame>
         </axis>
       </joint>
-      <link name='wheel_right_front'>
-        <pose frame=''>0.26 -0.267 0.0635 0 -0 0</pose>
+      <link name='fr_right_wheel'>
+        <pose frame=''>0.26 -0.267 0.0285 0 -0 0</pose>
         <inertial>
           <pose frame=''>0 0 0 0 -0 0</pose>
           <mass>1.8</mass>
           <inertia>
-            <ixx>0.0117145</ixx>
+            <ixx>0.00246791</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.0117145</iyy>
+            <iyy>0.00246791</iyy>
             <iyz>0</iyz>
             <izz>0.00362903</izz>
           </inertia>
         </inertial>
-        <visual name='wheel_right_front_visual'>
-          <pose frame=''>0 0 0 1.571 -0 0</pose>
+        <collision name='fr_right_wheel_collision'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
           <geometry>
             <mesh>
-              <scale>1 1 1</scale>
-              <uri>/home/frank/ws_raskar_urdf/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>1 0 0</fdir1>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='fr_right_wheel_visual'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/meshes/5_in_mecanum.stl</uri>
             </mesh>
           </geometry>
           <material>
             <script>
-              <name>Gazebo/dark_yellow</name>
+              <name>Gazebo/Grey</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
             </script>
           </material>
@@ -344,11 +755,12 @@
         <gravity>1</gravity>
         <velocity_decay/>
         <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <joint name='base_robot_to_wheel_right_front' type='revolute'>
-        <child>wheel_right_front</child>
-        <parent>base_robot</parent>
+      <joint name='fr_right_wheel_joint' type='revolute'>
+        <child>fr_right_wheel</child>
+        <parent>base_footprint</parent>
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
@@ -356,27 +768,148 @@
             <upper>1e+16</upper>
           </limit>
           <dynamics>
-            <damping>0.7</damping>
-            <friction>0</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
           <use_parent_model_frame>1</use_parent_model_frame>
         </axis>
       </joint>
-      <static>0</static>
+      <link name='hokuyo_link_fake'>
+        <pose frame=''>0.33 0 0.279 0 -0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://hokuyo/meshes/hokuyo.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision-base'>
+          <pose frame=''>0 0 -0.0145 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.041</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='collision-top'>
+          <pose frame=''>0 0 0.0205 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.021</radius>
+              <length>0.029</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <sensor name='laser' type='ray'>
+          <pose frame=''>0 0 0.05 0 -0 0</pose>
+          <topic>~/hokuyo_laser_fake</topic>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>640</samples>
+                <resolution>1</resolution>
+                <min_angle>-2.26889</min_angle>
+                <max_angle>2.2689</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.08</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+          </ray>
+          <plugin name='laser' filename='libgazebo_ros_laser.so'>
+            <topicName>/hokuyo_laser_fake</topicName>
+            <frameName>fr_nocorner_center_lidar</frameName>
+          </plugin>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>1</visualize>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='fr_nocorner_center_lidar_fake_joint' type='fixed'>
+        <child>hokuyo_link_fake</child>
+        <parent>base_footprint</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
       <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
         <robotNamespace>/raskar</robotNamespace>
         <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-        <legacyModeNS>true</legacyModeNS>
+        <legacyModeNS>1</legacyModeNS>
+      </plugin>
+      <static>0</static>
+      <plugin name='omni_steering' filename='libgazebo_ros_planar_move.so'>
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryFrame>odom</odometryFrame>
+        <odometryTopic>odom</odometryTopic>
+        <odometryRate>50.0</odometryRate>
+        <robotBaseFrame>base_footprint</robotBaseFrame>
+        <publishTf>0</publishTf>
+        <robotNamespace>/</robotNamespace>
       </plugin>
       <pose frame=''>0 0 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>80 93000000</sim_time>
-      <real_time>80 766191593</real_time>
-      <wall_time>1576829234 324971313</wall_time>
-      <iterations>80093</iterations>
+      <sim_time>34 273000000</sim_time>
+      <real_time>59 744770184</real_time>
+      <wall_time>1579107871 337057262</wall_time>
+      <iterations>1312</iterations>
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -388,37 +921,73 @@
         </link>
       </model>
       <model name='raskar_gazebo'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose frame=''>0.009817 -0.000282 0.034985 6e-06 8e-06 0.000338</pose>
         <scale>1 1 1</scale>
-        <link name='base_robot'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+        <link name='base_footprint'>
+          <pose frame=''>0.009817 -0.000282 0.034985 6e-06 8e-06 0.000338</pose>
+          <velocity>0 -1e-06 2e-06 -3e-06 -2e-06 -1e-06</velocity>
+          <acceleration>-0.000224 -0.000221 0.001912 -0.002569 -0.001713 -0.001178</acceleration>
+          <wrench>-0.015388 -0.015154 0.131372 0 -0 0</wrench>
         </link>
-        <link name='wheel_left_back'>
-          <pose frame=''>-0.26 0.267 0.0635 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+        <link name='bk_left_wheel'>
+          <pose frame=''>-0.250273 0.26663 0.063489 5e-06 0.128116 0.000339</pose>
+          <velocity>0 0 -1e-06 0 6e-06 -1e-06</velocity>
+          <acceleration>0.00019 1.5e-05 -0.001337 -0.00018 0.005784 -0.001243</acceleration>
+          <wrench>0.000342 2.6e-05 -0.002406 0 -0 0</wrench>
         </link>
-        <link name='wheel_left_front'>
-          <pose frame=''>0.26 0.267 0.0635 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+        <link name='bk_right_wheel'>
+          <pose frame=''>-0.250092 -0.26737 0.063486 6e-06 0.13046 0.000339</pose>
+          <velocity>-0 0 -1e-06 -1e-06 -4e-06 -1e-06</velocity>
+          <acceleration>-0.000452 3.9e-05 -0.001218 -0.000575 -0.004492 -0.001133</acceleration>
+          <wrench>-0.000813 7.1e-05 -0.002192 0 -0 0</wrench>
         </link>
-        <link name='wheel_right_back'>
-          <pose frame=''>-0.26 -0.267 0.0635 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+        <link name='fr_left_wheel'>
+          <pose frame=''>0.269727 0.266806 0.063485 9e-06 0.131342 0.000339</pose>
+          <velocity>0 -0 -1e-06 6e-06 4e-06 -1e-06</velocity>
+          <acceleration>0.000113 -0.000366 -0.001194 0.00577 0.00427 -0.00126</acceleration>
+          <wrench>0.000203 -0.000659 -0.00215 0 -0 0</wrench>
         </link>
-        <link name='wheel_right_front'>
-          <pose frame=''>0.26 -0.267 0.0635 0 -0 0</pose>
+        <link name='fr_right_wheel'>
+          <pose frame=''>0.269908 -0.267194 0.063481 7e-06 0.133768 0.000339</pose>
+          <velocity>-0 -1e-06 7e-06 1.3e-05 -2.1e-05 -2e-06</velocity>
+          <acceleration>-0.000355 -0.000808 0.007215 0.012739 -0.020853 -0.002214</acceleration>
+          <wrench>-0.000639 -0.001454 0.012987 0 -0 0</wrench>
+        </link>
+        <link name='hokuyo_link_fake'>
+          <pose frame=''>0.33982 -0.000172 0.313983 6e-06 8e-06 0.000338</pose>
+          <velocity>-0 -0 2e-06 -2e-06 -1e-06 -1e-06</velocity>
+          <acceleration>-0.000337 -0.000165 0.00232 -0.002065 -0.001304 -0.001006</acceleration>
+          <wrench>-3.4e-05 -1.7e-05 0.000232 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box'>
+        <pose frame=''>2.0413 -1.48185 0.5 -0 -0 -0.017749</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>2.0413 -1.48185 0.5 -0 -0 -0.017749</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>-0 0 -0 -1e-06 -1e-06 0</acceleration>
+          <wrench>-0 0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_0'>
+        <pose frame=''>2.07553 -2.49486 0.5 0 0 -0.00269</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>2.07553 -2.49486 0.5 0 0 -0.00269</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.021603 -9.7811 9.78159 0.712637 -0.04321 4.3e-05</acceleration>
+          <wrench>-0.021603 -9.7811 9.78159 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_1'>
+        <pose frame=''>1.07557 -2.47261 0.499995 0 1e-05 -0.002691</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>1.07557 -2.47261 0.499995 0 1e-05 -0.002691</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.010596 -0.006192 -9.78231 0.01242 0.021189 1.6e-05</acceleration>
+          <wrench>0.010596 -0.006192 -9.78231 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
@@ -427,10 +996,166 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-2.15795 -0.405152 0.480136 0 0.247643 0.168194</pose>
+        <pose frame=''>-2.33858 1.66353 1.17087 0 0.318082 -0.549156</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <model name='unit_box'>
+      <pose frame=''>2.04443 -1.48499 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='unit_box_0'>
+      <pose frame=''>2.04937 -2.49202 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='unit_box_1'>
+      <pose frame=''>1.09859 -2.47233 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
   </world>
 </sdf>

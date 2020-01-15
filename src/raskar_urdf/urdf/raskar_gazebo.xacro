@@ -99,10 +99,11 @@
       <material name="pale_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.25"/>
+      <origin rpy="1.571 0 0" xyz="0 0 ${-height_body/2-floor_clearance-model_offset}"/>
       <geometry>
         <!--box size="0.948 0.636 0.3"/-->
-        <box size="0.998 0.678 0.35"/>
+        <!--box size="0.998 0.678 0.35"/-->
+        <mesh filename="package://raskar_urdf/meshes/body_parts.stl" scale="0.001 0.001 0.001" />
       </geometry>      
     </collision>
     <inertial>
@@ -162,7 +163,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryFrame>odom</odometryFrame> 
       <odometryTopic>odom</odometryTopic> 
-      <odometryRate>50.0</odometryRate> 
+      <odometryRate>50.0</odometryRate>
       <robotBaseFrame>base_footprint</robotBaseFrame>
       <publishTf>false</publishTf>
 

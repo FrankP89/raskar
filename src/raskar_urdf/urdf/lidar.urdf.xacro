@@ -39,9 +39,9 @@
     </link>
 
     <gazebo reference="${fb}_${cnc}_${lrc}_lidar">
-      <static>true</static>
+      <!-- static>true</static -->
       <material>Gazebo/Black</material>
-      <turnGravityOff>true</turnGravityOff>
+      <turnGravityOff>false</turnGravityOff>
     </gazebo>
 
     <joint name="${fb}_${cnc}_${lrc}_lidar_joint" type="fixed">

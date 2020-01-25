@@ -43,9 +43,13 @@
   <!-- Publish wheel odometry from MCU encoder data -->
   <node pkg="raskar_urdf" name="odometry_sim" type="odometry_sim" />
 
+  <!-- Publish ultrasound information from daq device -->
+  <node pkg="rosserial_python" name="serial_node" type="serial_node.py" />
+  <node pkg="raskar_urdf" name="ultrasound_transformer" type="ultrasound_transformer" />
+
   <!-- Publish laser sensor information -->
   <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
-    <param name="serial_port"         type="string" value="/dev/ttyUSB0"/>
+    <param name="serial_port"         type="string" value="/dev/ttyUSB1"/>
     <param name="serial_baudrate"     type="int"    value="115200"/><!--A1/A2 -->
     <!--param name="serial_baudrate"  type="int"    value="256000"--><!--A3 -->
     <param name="frame_id"            type="string" value="laser"/> <!-- Add your frame name next time here -->

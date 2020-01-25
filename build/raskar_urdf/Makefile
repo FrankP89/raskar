@@ -78,6 +78,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -123,17 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -273,6 +273,21 @@ actionlib_generate_messages_lisp/fast:
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
+raskar_urdf/CMakeFiles/ultrasound_transformer.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/ultrasound_transformer.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/ultrasound_transformer.dir/rule
+
+# Convenience name for target.
+ultrasound_transformer: raskar_urdf/CMakeFiles/ultrasound_transformer.dir/rule
+
+.PHONY : ultrasound_transformer
+
+# fast build rule for target.
+ultrasound_transformer/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/ultrasound_transformer.dir/build.make raskar_urdf/CMakeFiles/ultrasound_transformer.dir/build
+.PHONY : ultrasound_transformer/fast
+
+# Convenience name for target.
 raskar_urdf/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 .PHONY : raskar_urdf/CMakeFiles/actionlib_generate_messages_eus.dir/rule
@@ -331,6 +346,21 @@ actionlib_msgs_generate_messages_cpp: raskar_urdf/CMakeFiles/actionlib_msgs_gene
 actionlib_msgs_generate_messages_cpp/fast:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make raskar_urdf/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 raskar_urdf/CMakeFiles/tf_generate_messages_cpp.dir/rule:
@@ -513,6 +543,21 @@ move_base_msgs_generate_messages_nodejs/fast:
 .PHONY : move_base_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+raskar_urdf/CMakeFiles/raskar_urdf_OTHER_FILES.dir/rule:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/raskar_urdf_OTHER_FILES.dir/rule
+.PHONY : raskar_urdf/CMakeFiles/raskar_urdf_OTHER_FILES.dir/rule
+
+# Convenience name for target.
+raskar_urdf_OTHER_FILES: raskar_urdf/CMakeFiles/raskar_urdf_OTHER_FILES.dir/rule
+
+.PHONY : raskar_urdf_OTHER_FILES
+
+# fast build rule for target.
+raskar_urdf_OTHER_FILES/fast:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/raskar_urdf_OTHER_FILES.dir/build.make raskar_urdf/CMakeFiles/raskar_urdf_OTHER_FILES.dir/build
+.PHONY : raskar_urdf_OTHER_FILES/fast
+
+# Convenience name for target.
 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
 .PHONY : raskar_urdf/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
@@ -647,21 +692,6 @@ actionlib_generate_messages_nodejs/fast:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make raskar_urdf/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 .PHONY : actionlib_generate_messages_nodejs/fast
 
-# Convenience name for target.
-raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_cpp: raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make raskar_urdf/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
-
 src/lidar_frame_transformer.o: src/lidar_frame_transformer.cpp.o
 
 .PHONY : src/lidar_frame_transformer.o
@@ -743,6 +773,33 @@ src/simple_navigation_goals.cpp.s:
 	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/navigation.dir/build.make raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.s
 .PHONY : src/simple_navigation_goals.cpp.s
 
+src/ultrasound_frame_transformer.o: src/ultrasound_frame_transformer.cpp.o
+
+.PHONY : src/ultrasound_frame_transformer.o
+
+# target to build an object file
+src/ultrasound_frame_transformer.cpp.o:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/ultrasound_transformer.dir/build.make raskar_urdf/CMakeFiles/ultrasound_transformer.dir/src/ultrasound_frame_transformer.cpp.o
+.PHONY : src/ultrasound_frame_transformer.cpp.o
+
+src/ultrasound_frame_transformer.i: src/ultrasound_frame_transformer.cpp.i
+
+.PHONY : src/ultrasound_frame_transformer.i
+
+# target to preprocess a source file
+src/ultrasound_frame_transformer.cpp.i:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/ultrasound_transformer.dir/build.make raskar_urdf/CMakeFiles/ultrasound_transformer.dir/src/ultrasound_frame_transformer.cpp.i
+.PHONY : src/ultrasound_frame_transformer.cpp.i
+
+src/ultrasound_frame_transformer.s: src/ultrasound_frame_transformer.cpp.s
+
+.PHONY : src/ultrasound_frame_transformer.s
+
+# target to generate assembly for a file
+src/ultrasound_frame_transformer.cpp.s:
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f raskar_urdf/CMakeFiles/ultrasound_transformer.dir/build.make raskar_urdf/CMakeFiles/ultrasound_transformer.dir/src/ultrasound_frame_transformer.cpp.s
+.PHONY : src/ultrasound_frame_transformer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -758,16 +815,19 @@ help:
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... tf_generate_messages_py"
 	@echo "... actionlib_generate_messages_lisp"
+	@echo "... ultrasound_transformer"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... rebuild_cache"
+	@echo "... actionlib_generate_messages_cpp"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... edit_cache"
+	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... install/strip"
@@ -776,6 +836,7 @@ help:
 	@echo "... navigation"
 	@echo "... move_base_msgs_generate_messages_cpp"
 	@echo "... move_base_msgs_generate_messages_nodejs"
+	@echo "... raskar_urdf_OTHER_FILES"
 	@echo "... move_base_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_nodejs"
@@ -787,8 +848,6 @@ help:
 	@echo "... odometry_sim"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... test"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... rebuild_cache"
 	@echo "... src/lidar_frame_transformer.o"
 	@echo "... src/lidar_frame_transformer.i"
 	@echo "... src/lidar_frame_transformer.s"
@@ -798,6 +857,9 @@ help:
 	@echo "... src/simple_navigation_goals.o"
 	@echo "... src/simple_navigation_goals.i"
 	@echo "... src/simple_navigation_goals.s"
+	@echo "... src/ultrasound_frame_transformer.o"
+	@echo "... src/ultrasound_frame_transformer.i"
+	@echo "... src/ultrasound_frame_transformer.s"
 .PHONY : help
 
 

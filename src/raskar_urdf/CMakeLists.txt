@@ -121,7 +121,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  #include
   ${catkin_INCLUDE_DIRS}
   ${PROJECT_SOURCE_DIR}
 )
@@ -136,7 +136,15 @@ include_directories(
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+##################
+# FOR QT CREATOR
+##################
+FILE(GLOB_RECURSE QT_MOC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/YOUR_PACKAGE_NAME/*.hpp)
+FILE(GLOB_RECURSE INC_ALL "include/YOUR_PACKAGE_NAME/*.hpp")
+FILE(GLOB_RECURSE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/*.cpp)
 file(GLOB_RECURSE HEADERS include/*.hpp include/*.h)
+file(GLOB_RECURSE EXTRA_FILES */*)
+
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
@@ -153,6 +161,10 @@ add_executable(
   ${HEADERS} # for qtcreator...
   lidar_transformer_front src/lidar_frame_transformer.cpp)
 
+add_executable(
+  ${HEADERS} # for qtcreator...
+  ultrasound_transformer src/ultrasound_frame_transformer.cpp)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -165,14 +177,23 @@ add_executable(
 add_dependencies(navigation ${catkin_EXPORTED_TARGETS})
 add_dependencies(odometry_sim ${catkin_EXPORTED_TARGETS})
 add_dependencies(lidar_transformer_front ${catkin_EXPORTED_TARGETS})
+add_dependencies(ultrasound_transformer ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(navigation ${catkin_LIBRARIES})
-target_link_libraries(odometry_sim ${catkin_LIBRARIES})
-target_link_libraries(lidar_transformer_front ${catkin_LIBRARIES})
+target_link_libraries(navigation
+  ${catkin_LIBRARIES})
+target_link_libraries(odometry_sim
+  ${catkin_LIBRARIES})
+target_link_libraries(lidar_transformer_front
+  ${catkin_LIBRARIES})
+target_link_libraries(ultrasound_transformer
+  ${catkin_LIBRARIES})
+
+# link the library with your classes to the executable
+
 
 #############
 ## Install ##
@@ -228,3 +249,6 @@ target_link_libraries(lidar_transformer_front ${catkin_LIBRARIES})
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
+add_custom_target(${PROJECT_NAME}_OTHER_FILES ALL WORKING_DIRECTORY ${PROJECT_SOURCE_DIR} SOURCES ${EXTRA_FILES})

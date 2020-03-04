@@ -4,5 +4,5 @@ Name: raskar_navigation
 Description: Description of raskar_navigation
 Version: 0.1.0
 Cflags: 
-Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/install/lib 
+Libs: -L${prefix}/lib 
 Requires: 

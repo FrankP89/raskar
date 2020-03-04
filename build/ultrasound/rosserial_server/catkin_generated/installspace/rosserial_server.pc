@@ -3,6 +3,6 @@ prefix=/home/frank/Documents/ws_raskar/ws_raskar/install
 Name: rosserial_server
 Description: Description of rosserial_server
 Version: 0.8.0
-Cflags: -I/home/frank/Documents/ws_raskar/ws_raskar/install/include
-Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/install/lib -lrosserial_server_lookup
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrosserial_server_lookup
 Requires: roscpp rosserial_msgs std_msgs topic_tools

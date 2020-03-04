@@ -3,6 +3,6 @@ prefix=/home/frank/Documents/ws_raskar/ws_raskar/install
 Name: rosserial_msgs
 Description: Description of rosserial_msgs
 Version: 0.8.0
-Cflags: -I/home/frank/Documents/ws_raskar/ws_raskar/install/include
-Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/install/lib 
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
 Requires: message_runtime

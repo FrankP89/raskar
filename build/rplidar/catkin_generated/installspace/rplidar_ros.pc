@@ -4,5 +4,5 @@ Name: rplidar_ros
 Description: Description of rplidar_ros
 Version: 1.10.0
 Cflags: 
-Libs: -L/home/frank/Documents/ws_raskar/ws_raskar/install/lib 
+Libs: -L${prefix}/lib 
 Requires: 

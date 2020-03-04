@@ -18,15 +18,15 @@ int main(int argc, char** argv){
   * Utilize each motor info.
   */
 
-  double vx = 0.1;
-  double vy = -0.1;
-  double vth = 0.1;
+  double vx = 0.01;
+  double vy = -0.01;
+  double vth = 0.01;
 
   ros::Time current_time, last_time;
   current_time = ros::Time::now();
   last_time = ros::Time::now();
 
-  ros::Rate r(1.0);
+  ros::Rate r(0.5);
   while(n.ok()){
 
     ros::spinOnce();               // check for incoming messages
@@ -71,7 +71,7 @@ int main(int argc, char** argv){
     odom.pose.pose.orientation = odom_quat;
 
     //set the velocity
-    odom.child_frame_id = "base_link";
+    odom.child_frame_id = "base_footprint";
     odom.twist.twist.linear.x = vx;
     odom.twist.twist.linear.y = vy;
     odom.twist.twist.angular.z = vth;

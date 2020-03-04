@@ -1,0 +1,8 @@
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/devel
+
+Name: joint_state_publisher_gui
+Description: Description of joint_state_publisher_gui
+Version: 1.12.14
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

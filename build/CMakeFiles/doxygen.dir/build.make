@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/ws_raskar_urdf/src
+CMAKE_SOURCE_DIR = /home/frank/ws_raskar_kinetic/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/ws_raskar_urdf/build
+CMAKE_BINARY_DIR = /home/frank/ws_raskar_kinetic/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/ws_raskar_kinetic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

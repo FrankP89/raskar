@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/frank/ws_raskar_urdf/src/raskar_urdf/src/odometry_simulation.cpp
+/home/frank/ws_raskar_kinetic/src/raskar_urdf/src/odometry_simulation.cpp
 ros/ros.h
 -
 tf/transform_broadcaster.h

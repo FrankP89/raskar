@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o"
-  "/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation.pdb"
-  "/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation"
+  "/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation.pdb"
+  "/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation"
 )
 
 # Per-language clean rules from dependency scanning.

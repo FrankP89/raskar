@@ -1,0 +1,54 @@
+#include <ros.h>
+#include <std_msgs/Float32MultiArray.h>
+
+ros::NodeHAndle nh;
+
+std_msgs::Float32MultiArray distances;
+
+ros::Publisher pub_ultrasound("ultrasound_data", &distances);
+
+const int amount_of_sensor = 5;
+const int distance_array_length = amount_of_sensor;
+const int trigPin[] = {8,9,10,11,12,13};
+const int echoPin[] = {2,3,4,5,6,7};
+
+void setup() {
+	nh.initNode();
+	nh.advertise(pub_ultrasound);
+	
+	distances.data_length = distance_array_length;
+	
+	for(int x=0; x< amount_of_sensor; x++) {
+		pinMode(trigPin[x],OUTPUT);
+		pinMode(echoPin[x],INPUT);
+	}
+}
+
+float readSensor(int x) {
+	float distance;
+	int duration;
+	
+	digitalWrite(trigPin[x],LOW);
+	delayMicroseconds(1);
+	digitalWrite(trigPin[x],HIGH);
+	delayMicroseconds(5);
+	duration = pulseIn(echoPin[x], HIGH, 10000);
+
+	distance = duration * 0.342/2000;
+	Serial.println(distance);
+
+	if (distance < 0.015)
+		distance = 99.99; //defualt value as the sensor cannot reach below 0.02
+	return distance;
+}
+
+void loop() {
+	float sensor_datas[distance_array_length];
+	for (int counter=0; counter < amount_of_sensor; counter++) {
+		sensor_datas[counter] = readSensor(counter);
+	}
+	distances.data = sensor_datas;
+	pub_ultrasound.publish(&distance);
+	nh.spinOnce();
+	delay(100);
+}

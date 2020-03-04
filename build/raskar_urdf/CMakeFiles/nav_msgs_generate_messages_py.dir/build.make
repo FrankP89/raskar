@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/ws_raskar_urdf/src
+CMAKE_SOURCE_DIR = /home/frank/ws_raskar_kinetic/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/ws_raskar_urdf/build
+CMAKE_BINARY_DIR = /home/frank/ws_raskar_kinetic/build
 
 # Utility rule file for nav_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/build: nav_msgs_generat
 .PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 
 raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
-	cd /home/frank/ws_raskar_urdf/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/frank/ws_raskar_kinetic/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 
 raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/depend:
-	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/src/raskar_urdf /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build/raskar_urdf /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/ws_raskar_kinetic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/src/raskar_urdf /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build/raskar_urdf /home/frank/ws_raskar_kinetic/build/raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : raskar_urdf/CMakeFiles/nav_msgs_generate_messages_py.dir/depend
 

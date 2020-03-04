@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/frank/ws_raskar_urdf/src/raskar_urdf/src/lidar_frame_transformer.cpp
+/home/frank/ws_raskar_kinetic/src/raskar_urdf/src/lidar_frame_transformer.cpp
 ros/ros.h
 -
 tf/transform_broadcaster.h
 -
 sensor_msgs/LaserScan.h
-/home/frank/ws_raskar_urdf/src/raskar_urdf/src/sensor_msgs/LaserScan.h
+/home/frank/ws_raskar_kinetic/src/raskar_urdf/src/sensor_msgs/LaserScan.h
 std_srvs/Empty.h
-/home/frank/ws_raskar_urdf/src/raskar_urdf/src/std_srvs/Empty.h
+/home/frank/ws_raskar_kinetic/src/raskar_urdf/src/std_srvs/Empty.h
 std_msgs/Header.h
-/home/frank/ws_raskar_urdf/src/raskar_urdf/src/std_msgs/Header.h
+/home/frank/ws_raskar_kinetic/src/raskar_urdf/src/std_msgs/Header.h
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

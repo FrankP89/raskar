@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/subscriber_test.dir/test/subscriber_test.cpp.o  -o /home/frank/ws_raskar_kinetic/devel/lib/rosserial_client/subscriber_test  -L/home/frank/ws_raskar_kinetic/build/gtest -rdynamic ../../gtest/gtest/libgtest.so -lpthread -Wl,-rpath,/home/frank/ws_raskar_kinetic/build/gtest:/home/frank/ws_raskar_kinetic/build/gtest/gtest 

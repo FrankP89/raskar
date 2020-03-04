@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/ws_raskar_urdf/src
+# Install script for directory: /home/frank/ws_raskar_kinetic/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/ws_raskar_urdf/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/ws_raskar_kinetic/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,90 +44,105 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/frank/ws_raskar_urdf/install/_setup_util.py")
+   "/home/frank/ws_raskar_kinetic/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/frank/ws_raskar_urdf/install" TYPE PROGRAM FILES "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/frank/ws_raskar_kinetic/install" TYPE PROGRAM FILES "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/frank/ws_raskar_urdf/install/env.sh")
+   "/home/frank/ws_raskar_kinetic/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/frank/ws_raskar_urdf/install" TYPE PROGRAM FILES "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/frank/ws_raskar_kinetic/install" TYPE PROGRAM FILES "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/frank/ws_raskar_urdf/install/setup.bash;/home/frank/ws_raskar_urdf/install/local_setup.bash")
+   "/home/frank/ws_raskar_kinetic/install/setup.bash;/home/frank/ws_raskar_kinetic/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/frank/ws_raskar_urdf/install" TYPE FILE FILES
-    "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/setup.bash"
-    "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/frank/ws_raskar_kinetic/install" TYPE FILE FILES
+    "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/setup.bash"
+    "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/frank/ws_raskar_urdf/install/setup.sh;/home/frank/ws_raskar_urdf/install/local_setup.sh")
+   "/home/frank/ws_raskar_kinetic/install/setup.sh;/home/frank/ws_raskar_kinetic/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/frank/ws_raskar_urdf/install" TYPE FILE FILES
-    "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/setup.sh"
-    "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/frank/ws_raskar_kinetic/install" TYPE FILE FILES
+    "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/setup.sh"
+    "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/frank/ws_raskar_urdf/install/setup.zsh;/home/frank/ws_raskar_urdf/install/local_setup.zsh")
+   "/home/frank/ws_raskar_kinetic/install/setup.zsh;/home/frank/ws_raskar_kinetic/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/frank/ws_raskar_urdf/install" TYPE FILE FILES
-    "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/setup.zsh"
-    "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/frank/ws_raskar_kinetic/install" TYPE FILE FILES
+    "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/setup.zsh"
+    "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/frank/ws_raskar_urdf/install/.rosinstall")
+   "/home/frank/ws_raskar_kinetic/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/frank/ws_raskar_urdf/install" TYPE FILE FILES "/home/frank/ws_raskar_urdf/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/frank/ws_raskar_kinetic/install" TYPE FILE FILES "/home/frank/ws_raskar_kinetic/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/frank/ws_raskar_urdf/build/gtest/cmake_install.cmake")
-  include("/home/frank/ws_raskar_urdf/build/rplidar/cmake_install.cmake")
-  include("/home/frank/ws_raskar_urdf/build/raskar_urdf/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/gtest/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_arduino/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_mbed/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_msgs/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_python/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_tivac/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_vex_cortex/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_vex_v5/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_xbee/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_client/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_server/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/rplidar/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/raskar_urdf/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_embeddedlinux/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_test/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/ultrasound/rosserial_windows/cmake_install.cmake")
+  include("/home/frank/ws_raskar_kinetic/build/imu_bosch/ciss_ros_wrapper/src/ciss_imu/cmake_install.cmake")
 
 endif()
 
@@ -139,5 +154,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/frank/ws_raskar_urdf/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/frank/ws_raskar_kinetic/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

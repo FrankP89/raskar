@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/ws_raskar_urdf/src
+CMAKE_SOURCE_DIR = /home/frank/ws_raskar_kinetic/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/ws_raskar_urdf/build
+CMAKE_BINARY_DIR = /home/frank/ws_raskar_kinetic/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/ws_raskar_kinetic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

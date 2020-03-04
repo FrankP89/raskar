@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/frank/ws_raskar_urdf/src/rplidar/sdk/src/arch/linux/net_serial.cpp" "/home/frank/ws_raskar_urdf/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
-  "/home/frank/ws_raskar_urdf/src/rplidar/sdk/src/arch/linux/net_socket.cpp" "/home/frank/ws_raskar_urdf/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o"
-  "/home/frank/ws_raskar_urdf/src/rplidar/sdk/src/arch/linux/timer.cpp" "/home/frank/ws_raskar_urdf/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
-  "/home/frank/ws_raskar_urdf/src/rplidar/sdk/src/hal/thread.cpp" "/home/frank/ws_raskar_urdf/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
-  "/home/frank/ws_raskar_urdf/src/rplidar/sdk/src/rplidar_driver.cpp" "/home/frank/ws_raskar_urdf/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
-  "/home/frank/ws_raskar_urdf/src/rplidar/src/node.cpp" "/home/frank/ws_raskar_urdf/build/rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/sdk/src/arch/linux/net_serial.cpp" "/home/frank/ws_raskar_kinetic/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/sdk/src/arch/linux/net_socket.cpp" "/home/frank/ws_raskar_kinetic/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/sdk/src/arch/linux/timer.cpp" "/home/frank/ws_raskar_kinetic/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/sdk/src/hal/thread.cpp" "/home/frank/ws_raskar_kinetic/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/sdk/src/rplidar_driver.cpp" "/home/frank/ws_raskar_kinetic/build/rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/src/node.cpp" "/home/frank/ws_raskar_kinetic/build/rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/frank/ws_raskar_urdf/src/rplidar/./sdk/include"
-  "/home/frank/ws_raskar_urdf/src/rplidar/./sdk/src"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/./sdk/include"
+  "/home/frank/ws_raskar_kinetic/src/rplidar/./sdk/src"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

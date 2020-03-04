@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/ws_raskar_urdf/src
+CMAKE_SOURCE_DIR = /home/frank/ws_raskar_kinetic/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/ws_raskar_urdf/build
+CMAKE_BINARY_DIR = /home/frank/ws_raskar_kinetic/build
 
 # Utility rule file for tf_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/build: tf_generate_messages
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/build
 
 raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/clean:
-	cd /home/frank/ws_raskar_urdf/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/frank/ws_raskar_kinetic/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/clean
 
 raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/depend:
-	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/src/raskar_urdf /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build/raskar_urdf /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/ws_raskar_kinetic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/src/raskar_urdf /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build/raskar_urdf /home/frank/ws_raskar_kinetic/build/raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_lisp.dir/depend
 

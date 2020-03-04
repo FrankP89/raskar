@@ -32,7 +32,7 @@
 
   <!-- Navigation information -->
   <!-- Publish wheel odometry from MCU encoder data -->
-  <node pkg="raskar_urdf" name="odometry_sim" type="odometry_sim" />
+  <!-- node pkg="raskar_urdf" name="odometry_sim" type="odometry_sim" / -->
   
   <!-- Publish laser sensor information -->
   <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">

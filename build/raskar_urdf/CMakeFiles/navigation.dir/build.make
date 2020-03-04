@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/ws_raskar_urdf/src
+CMAKE_SOURCE_DIR = /home/frank/ws_raskar_kinetic/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/ws_raskar_urdf/build
+CMAKE_BINARY_DIR = /home/frank/ws_raskar_kinetic/build
 
 # Include any dependencies generated for this target.
 include raskar_urdf/CMakeFiles/navigation.dir/depend.make
@@ -58,17 +58,17 @@ include raskar_urdf/CMakeFiles/navigation.dir/progress.make
 include raskar_urdf/CMakeFiles/navigation.dir/flags.make
 
 raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o: raskar_urdf/CMakeFiles/navigation.dir/flags.make
-raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o: /home/frank/ws_raskar_urdf/src/raskar_urdf/src/simple_navigation_goals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/ws_raskar_urdf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o"
-	cd /home/frank/ws_raskar_urdf/build/raskar_urdf && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o -c /home/frank/ws_raskar_urdf/src/raskar_urdf/src/simple_navigation_goals.cpp
+raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o: /home/frank/ws_raskar_kinetic/src/raskar_urdf/src/simple_navigation_goals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/ws_raskar_kinetic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o"
+	cd /home/frank/ws_raskar_kinetic/build/raskar_urdf && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o -c /home/frank/ws_raskar_kinetic/src/raskar_urdf/src/simple_navigation_goals.cpp
 
 raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.i"
-	cd /home/frank/ws_raskar_urdf/build/raskar_urdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/ws_raskar_urdf/src/raskar_urdf/src/simple_navigation_goals.cpp > CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.i
+	cd /home/frank/ws_raskar_kinetic/build/raskar_urdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/ws_raskar_kinetic/src/raskar_urdf/src/simple_navigation_goals.cpp > CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.i
 
 raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.s"
-	cd /home/frank/ws_raskar_urdf/build/raskar_urdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/ws_raskar_urdf/src/raskar_urdf/src/simple_navigation_goals.cpp -o CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.s
+	cd /home/frank/ws_raskar_kinetic/build/raskar_urdf && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/ws_raskar_kinetic/src/raskar_urdf/src/simple_navigation_goals.cpp -o CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.s
 
 raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o.requires:
 
@@ -88,38 +88,38 @@ navigation_OBJECTS = \
 # External object files for target navigation
 navigation_EXTERNAL_OBJECTS =
 
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: raskar_urdf/CMakeFiles/navigation.dir/build.make
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libtf.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libtf2.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libactionlib.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libroscpp.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librosconsole.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librostime.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libcpp_common.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation: raskar_urdf/CMakeFiles/navigation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/ws_raskar_urdf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation"
-	cd /home/frank/ws_raskar_urdf/build/raskar_urdf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/navigation.dir/link.txt --verbose=$(VERBOSE)
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: raskar_urdf/CMakeFiles/navigation.dir/src/simple_navigation_goals.cpp.o
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: raskar_urdf/CMakeFiles/navigation.dir/build.make
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libtf.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libtf2.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libactionlib.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libroscpp.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librosconsole.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/librostime.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /opt/ros/kinetic/lib/libcpp_common.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation: raskar_urdf/CMakeFiles/navigation.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/ws_raskar_kinetic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation"
+	cd /home/frank/ws_raskar_kinetic/build/raskar_urdf && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/navigation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-raskar_urdf/CMakeFiles/navigation.dir/build: /home/frank/ws_raskar_urdf/devel/lib/raskar_urdf/navigation
+raskar_urdf/CMakeFiles/navigation.dir/build: /home/frank/ws_raskar_kinetic/devel/lib/raskar_urdf/navigation
 
 .PHONY : raskar_urdf/CMakeFiles/navigation.dir/build
 
@@ -128,10 +128,10 @@ raskar_urdf/CMakeFiles/navigation.dir/requires: raskar_urdf/CMakeFiles/navigatio
 .PHONY : raskar_urdf/CMakeFiles/navigation.dir/requires
 
 raskar_urdf/CMakeFiles/navigation.dir/clean:
-	cd /home/frank/ws_raskar_urdf/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/navigation.dir/cmake_clean.cmake
+	cd /home/frank/ws_raskar_kinetic/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/navigation.dir/cmake_clean.cmake
 .PHONY : raskar_urdf/CMakeFiles/navigation.dir/clean
 
 raskar_urdf/CMakeFiles/navigation.dir/depend:
-	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/src/raskar_urdf /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build/raskar_urdf /home/frank/ws_raskar_urdf/build/raskar_urdf/CMakeFiles/navigation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/ws_raskar_kinetic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/src/raskar_urdf /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build/raskar_urdf /home/frank/ws_raskar_kinetic/build/raskar_urdf/CMakeFiles/navigation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : raskar_urdf/CMakeFiles/navigation.dir/depend
 

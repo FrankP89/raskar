@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/ws_raskar_urdf/src
+CMAKE_SOURCE_DIR = /home/frank/ws_raskar_kinetic/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/ws_raskar_urdf/build
+CMAKE_BINARY_DIR = /home/frank/ws_raskar_kinetic/build
 
 # Utility rule file for sensor_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/build: sensor_msgs_gener
 .PHONY : rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 
 rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	cd /home/frank/ws_raskar_urdf/build/rplidar && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/frank/ws_raskar_kinetic/build/rplidar && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend:
-	cd /home/frank/ws_raskar_urdf/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_urdf/src /home/frank/ws_raskar_urdf/src/rplidar /home/frank/ws_raskar_urdf/build /home/frank/ws_raskar_urdf/build/rplidar /home/frank/ws_raskar_urdf/build/rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/ws_raskar_kinetic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/ws_raskar_kinetic/src /home/frank/ws_raskar_kinetic/src/rplidar /home/frank/ws_raskar_kinetic/build /home/frank/ws_raskar_kinetic/build/rplidar /home/frank/ws_raskar_kinetic/build/rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rplidar/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 

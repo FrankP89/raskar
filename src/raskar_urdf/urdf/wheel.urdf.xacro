@@ -21,8 +21,8 @@
       <visual>
         <origin xyz="0 0 0" rpy="${flipY*Pi/2} 0  0 " /> 
         <geometry>
-          <!-- cylinder length="${thickness_wheel}" radius="${diam_wheel/2}" /-->
-          <mesh filename="package://raskar_urdf/meshes/5_in_mecanum.stl" scale="0.001 0.001 0.001" />
+          < cylinder length="${thickness_wheel}" radius="${diam_wheel/2}" />
+          <!-- mesh filename="package://raskar_urdf/meshes/5_in_mecanum.stl"  scale="0.001 0.001 0.001" /-->
         </geometry>
         <material name="dark_yellow" />
       </visual>

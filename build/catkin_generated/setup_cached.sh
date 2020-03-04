@@ -7,6 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
-export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
-export PWD="/home/frank/ws_raskar_urdf/build"
+export CMAKE_PREFIX_PATH="/home/frank/ws_raskar_kinetic/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/frank/ws_raskar_kinetic/devel/lib:$LD_LIBRARY_PATH"
+export PWD="/home/frank/ws_raskar_kinetic/build"
+export PYTHONPATH="/home/frank/ws_raskar_kinetic/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/frank/ws_raskar_kinetic/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/frank/ws_raskar_kinetic/src:$ROS_PACKAGE_PATH"

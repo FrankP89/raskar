@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/frank/ws_raskar_urdf/src/raskar_urdf/src/simple_navigation_goals.cpp
+/home/frank/ws_raskar_kinetic/src/raskar_urdf/src/simple_navigation_goals.cpp
 ros/ros.h
 -
 move_base_msgs/MoveBaseAction.h

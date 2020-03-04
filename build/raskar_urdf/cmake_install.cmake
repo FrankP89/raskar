@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/ws_raskar_urdf/src/raskar_urdf
+# Install script for directory: /home/frank/ws_raskar_kinetic/src/raskar_urdf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/ws_raskar_urdf/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/ws_raskar_kinetic/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/ws_raskar_urdf/build/raskar_urdf/catkin_generated/installspace/raskar_urdf.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/ws_raskar_kinetic/build/raskar_urdf/catkin_generated/installspace/raskar_urdf.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/raskar_urdf/cmake" TYPE FILE FILES
-    "/home/frank/ws_raskar_urdf/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig.cmake"
-    "/home/frank/ws_raskar_urdf/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig-version.cmake"
+    "/home/frank/ws_raskar_kinetic/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig.cmake"
+    "/home/frank/ws_raskar_kinetic/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/raskar_urdf" TYPE FILE FILES "/home/frank/ws_raskar_urdf/src/raskar_urdf/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/raskar_urdf" TYPE FILE FILES "/home/frank/ws_raskar_kinetic/src/raskar_urdf/package.xml")
 endif()
 

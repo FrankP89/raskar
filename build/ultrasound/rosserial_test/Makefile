@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
+CMAKE_SOURCE_DIR = /home/frank/Desktop/raskar_ws/raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
+CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test/CMakeFiles/progress.marks
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles 0
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test/CMakeFiles/progress.marks
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/clean
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/preinstall
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/preinstall
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ run_tests_rosserial_test_rostest: ultrasound/rosserial_test/CMakeFiles/run_tests
 
 # fast build rule for target.
 run_tests_rosserial_test_rostest/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest.dir/build
 .PHONY : run_tests_rosserial_test_rostest/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ run_tests_rosserial_test: ultrasound/rosserial_test/CMakeFiles/run_tests_rosseri
 
 # fast build rule for target.
 run_tests_rosserial_test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test.dir/build
 .PHONY : run_tests_rosserial_test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ rosserial_test_rosserial_lib: ultrasound/rosserial_test/CMakeFiles/rosserial_tes
 
 # fast build rule for target.
 rosserial_test_rosserial_lib/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_rosserial_lib.dir/build
 .PHONY : rosserial_test_rosserial_lib/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ _run_tests_rosserial_test: ultrasound/rosserial_test/CMakeFiles/_run_tests_rosse
 
 # fast build rule for target.
 _run_tests_rosserial_test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test.dir/build
 .PHONY : _run_tests_rosserial_test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test: ultrasound/
 
 # fast build rule for target.
 _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build
 .PHONY : _run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test: ultrasound/
 
 # fast build rule for target.
 _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
 .PHONY : _run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ rosserial_test_publish_subscribe: ultrasound/rosserial_test/CMakeFiles/rosserial
 
 # fast build rule for target.
 rosserial_test_publish_subscribe/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build
 .PHONY : rosserial_test_publish_subscribe/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ run_tests_rosserial_test_rostest_test_rosserial_server_socket.test: ultrasound/r
 
 # fast build rule for target.
 run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_socket.test.dir/build
 .PHONY : run_tests_rosserial_test_rostest_test_rosserial_server_socket.test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ run_tests_rosserial_test_rostest_test_rosserial_server_serial.test: ultrasound/r
 
 # fast build rule for target.
 run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
 .PHONY : run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test: ultrasound/
 
 # fast build rule for target.
 _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
 .PHONY : _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ run_tests_rosserial_test_rostest_test_rosserial_python_socket.test: ultrasound/r
 
 # fast build rule for target.
 run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build.make ultrasound/rosserial_test/CMakeFiles/run_tests_rosserial_test_rostest_test_rosserial_python_socket.test.dir/build
 .PHONY : run_tests_rosserial_test_rostest_test_rosserial_python_socket.test/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _run_tests_rosserial_test_rostest: ultrasound/rosserial_test/CMakeFiles/_run_tes
 
 # fast build rule for target.
 _run_tests_rosserial_test_rostest/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build.make ultrasound/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest.dir/build
 .PHONY : _run_tests_rosserial_test_rostest/fast
 
 # Convenience name for target.
 ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/rule
 .PHONY : ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/rule
 
 # Convenience name for target.
@@ -359,7 +359,7 @@ clean_test_results_rosserial_test: ultrasound/rosserial_test/CMakeFiles/clean_te
 
 # fast build rule for target.
 clean_test_results_rosserial_test/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build.make ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build.make ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build
 .PHONY : clean_test_results_rosserial_test/fast
 
 src/publish_subscribe.o: src/publish_subscribe.cpp.o
@@ -368,7 +368,7 @@ src/publish_subscribe.o: src/publish_subscribe.cpp.o
 
 # target to build an object file
 src/publish_subscribe.cpp.o:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.o
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.o
 .PHONY : src/publish_subscribe.cpp.o
 
 src/publish_subscribe.i: src/publish_subscribe.cpp.i
@@ -377,7 +377,7 @@ src/publish_subscribe.i: src/publish_subscribe.cpp.i
 
 # target to preprocess a source file
 src/publish_subscribe.cpp.i:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.i
 .PHONY : src/publish_subscribe.cpp.i
 
 src/publish_subscribe.s: src/publish_subscribe.cpp.s
@@ -386,7 +386,7 @@ src/publish_subscribe.s: src/publish_subscribe.cpp.s
 
 # target to generate assembly for a file
 src/publish_subscribe.cpp.s:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/build.make ultrasound/rosserial_test/CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.s
 .PHONY : src/publish_subscribe.cpp.s
 
 # Help Target
@@ -429,6 +429,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

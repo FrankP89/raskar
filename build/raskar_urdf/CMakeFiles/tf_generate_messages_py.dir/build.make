@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
+CMAKE_SOURCE_DIR = /home/frank/Desktop/raskar_ws/raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
+CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
 
 # Utility rule file for tf_generate_messages_py.
 
@@ -63,10 +63,10 @@ raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/build: tf_generate_messages_p
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/build
 
 raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/clean:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/frank/Desktop/raskar_ws/raskar/build/raskar_urdf && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/clean
 
 raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/depend:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Documents/ws_raskar/ws_raskar/src /home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf /home/frank/Documents/ws_raskar/ws_raskar/build /home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf /home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Desktop/raskar_ws/raskar/src /home/frank/Desktop/raskar_ws/raskar/src/raskar_urdf /home/frank/Desktop/raskar_ws/raskar/build /home/frank/Desktop/raskar_ws/raskar/build/raskar_urdf /home/frank/Desktop/raskar_ws/raskar/build/raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : raskar_urdf/CMakeFiles/tf_generate_messages_py.dir/depend
 

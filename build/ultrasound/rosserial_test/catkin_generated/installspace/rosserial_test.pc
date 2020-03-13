@@ -1,4 +1,4 @@
-prefix=/home/frank/Documents/ws_raskar/ws_raskar/install
+prefix=/home/frank/Desktop/raskar_ws/raskar/install
 
 Name: rosserial_test
 Description: Description of rosserial_test

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "roscpp;rosserial_msgs;std_msgs;topic_tools".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lrosserial_server_lookup".split(';') if "-lrosserial_server_lookup" != "" else []
 PROJECT_NAME = "rosserial_server"
-PROJECT_SPACE_DIR = "/home/frank/Documents/ws_raskar/ws_raskar/install"
+PROJECT_SPACE_DIR = "/home/frank/Desktop/raskar_ws/raskar/install"
 PROJECT_VERSION = "0.8.0"

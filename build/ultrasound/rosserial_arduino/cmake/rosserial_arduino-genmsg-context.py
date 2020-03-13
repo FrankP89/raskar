@@ -1,11 +1,11 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_arduino/msg/Adc.msg"
-services_str = "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_arduino/srv/Test.srv"
+messages_str = "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_arduino/msg/Adc.msg"
+services_str = "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_arduino/srv/Test.srv"
 pkg_name = "rosserial_arduino"
 dependencies_str = ""
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
-dep_include_paths_str = "rosserial_arduino;/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_arduino/msg"
+dep_include_paths_str = "rosserial_arduino;/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_arduino/msg"
 PYTHON_EXECUTABLE = "/usr/bin/python2"
 package_has_static_sources = 'TRUE' == 'TRUE'
 genmsg_check_deps_script = "/opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

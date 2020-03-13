@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_tivac
+# Install script for directory: /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_tivac
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/Documents/ws_raskar/ws_raskar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/Desktop/raskar_ws/raskar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,39 +38,39 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivac.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivac.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac/cmake" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivac-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac/cmake" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivac-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac/cmake" TYPE FILE FILES
-    "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivacConfig.cmake"
-    "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivacConfig-version.cmake"
+    "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivacConfig.cmake"
+    "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_tivac/catkin_generated/installspace/rosserial_tivacConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_tivac/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_tivac/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac/src" TYPE DIRECTORY FILES
-    "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_tivac/src/ros_lib"
-    "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_tivac/src/ros_lib_energia"
+    "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_tivac/src/ros_lib"
+    "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_tivac/src/ros_lib_energia"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac" TYPE DIRECTORY FILES "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_tivac/tivac-cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac" TYPE DIRECTORY FILES "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_tivac/tivac-cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_tivac" TYPE PROGRAM FILES
-    "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_tivac/src/rosserial_tivac/make_libraries_energia"
-    "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_tivac/src/rosserial_tivac/make_libraries_tiva"
+    "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_tivac/src/rosserial_tivac/make_libraries_energia"
+    "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_tivac/src/rosserial_tivac/make_libraries_tiva"
     )
 endif()
 

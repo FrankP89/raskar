@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
   "CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
   "CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
-  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode.pdb"
-  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode"
+  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode.pdb"
+  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode"
 )
 
 # Per-language clean rules from dependency scanning.

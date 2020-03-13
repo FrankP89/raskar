@@ -1,8 +1,8 @@
-prefix=/home/frank/Documents/ws_raskar/ws_raskar/devel
+prefix=/home/frank/Desktop/raskar_ws/raskar/devel
 
 Name: rosserial_arduino
 Description: Description of rosserial_arduino
 Version: 0.8.0
-Cflags: -I/home/frank/Documents/ws_raskar/ws_raskar/devel/include
+Cflags: -I/home/frank/Desktop/raskar_ws/raskar/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime

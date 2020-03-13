@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial
+# Install script for directory: /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/Documents/ws_raskar/ws_raskar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/Desktop/raskar_ws/raskar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial/package.xml")
 endif()
 

@@ -67,14 +67,14 @@ set(rosserial_arduino_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rosserial_arduino_SOURCE_PREFIX /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_arduino)
-  set(rosserial_arduino_DEVEL_PREFIX /home/frank/Documents/ws_raskar/ws_raskar/devel)
+  set(rosserial_arduino_SOURCE_PREFIX /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_arduino)
+  set(rosserial_arduino_DEVEL_PREFIX /home/frank/Desktop/raskar_ws/raskar/devel)
   set(rosserial_arduino_INSTALL_PREFIX "")
   set(rosserial_arduino_PREFIX ${rosserial_arduino_DEVEL_PREFIX})
 else()
   set(rosserial_arduino_SOURCE_PREFIX "")
   set(rosserial_arduino_DEVEL_PREFIX "")
-  set(rosserial_arduino_INSTALL_PREFIX /home/frank/Documents/ws_raskar/ws_raskar/install)
+  set(rosserial_arduino_INSTALL_PREFIX /home/frank/Desktop/raskar_ws/raskar/install)
   set(rosserial_arduino_PREFIX ${rosserial_arduino_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/frank/Documents/ws_raskar/ws_raskar/install/lib;/home/frank/Documents/ws_raskar/ws_raskar/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/frank/Desktop/raskar_ws/raskar/install/lib;/home/frank/Desktop/raskar_ws/raskar/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

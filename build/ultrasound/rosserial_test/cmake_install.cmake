@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_test
+# Install script for directory: /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/Documents/ws_raskar/ws_raskar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/Desktop/raskar_ws/raskar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/rosserial_test.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/rosserial_test.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_test/cmake" TYPE FILE FILES
-    "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/rosserial_testConfig.cmake"
-    "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/rosserial_testConfig-version.cmake"
+    "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/rosserial_testConfig.cmake"
+    "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/rosserial_testConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_test" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_test/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_test" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_test/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_test" TYPE PROGRAM FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/generate_client_ros_lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_test" TYPE PROGRAM FILES "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test/catkin_generated/installspace/generate_client_ros_lib")
 endif()
 

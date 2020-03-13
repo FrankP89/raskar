@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o"
-  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rosserial_server/serial_node.pdb"
-  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rosserial_server/serial_node"
+  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/rosserial_server/serial_node.pdb"
+  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/rosserial_server/serial_node"
 )
 
 # Per-language clean rules from dependency scanning.

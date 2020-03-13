@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosserial_msgs_generate_messages_lisp"
-  "/home/frank/Documents/ws_raskar/ws_raskar/devel/share/common-lisp/ros/rosserial_msgs/msg/Log.lisp"
-  "/home/frank/Documents/ws_raskar/ws_raskar/devel/share/common-lisp/ros/rosserial_msgs/msg/TopicInfo.lisp"
-  "/home/frank/Documents/ws_raskar/ws_raskar/devel/share/common-lisp/ros/rosserial_msgs/srv/RequestParam.lisp"
+  "/home/frank/Desktop/raskar_ws/raskar/devel/share/common-lisp/ros/rosserial_msgs/msg/Log.lisp"
+  "/home/frank/Desktop/raskar_ws/raskar/devel/share/common-lisp/ros/rosserial_msgs/msg/TopicInfo.lisp"
+  "/home/frank/Desktop/raskar_ws/raskar/devel/share/common-lisp/ros/rosserial_msgs/srv/RequestParam.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
+CMAKE_SOURCE_DIR = /home/frank/Desktop/raskar_ws/raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
+CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -102,16 +102,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -135,16 +125,26 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server/CMakeFiles/progress.marks
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles 0
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server/CMakeFiles/progress.marks
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/clean
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/preinstall
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/preinstall
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/rule
 .PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ rosserial_server_udp_socket_node: ultrasound/rosserial_server/CMakeFiles/rosseri
 
 # fast build rule for target.
 rosserial_server_udp_socket_node/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build
 .PHONY : rosserial_server_udp_socket_node/fast
 
 # Convenience name for target.
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/rule
 .PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/rule
 
 # Convenience name for target.
@@ -194,312 +194,12 @@ rosserial_server_socket_node: ultrasound/rosserial_server/CMakeFiles/rosserial_s
 
 # fast build rule for target.
 rosserial_server_socket_node/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build
 .PHONY : rosserial_server_socket_node/fast
 
 # Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_py: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_nodejs: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-.PHONY : topic_tools_generate_messages_nodejs
-
-# fast build rule for target.
-topic_tools_generate_messages_nodejs/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
-.PHONY : topic_tools_generate_messages_nodejs/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_lisp: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_eus: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-
-.PHONY : topic_tools_generate_messages_eus
-
-# fast build rule for target.
-topic_tools_generate_messages_eus/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build
-.PHONY : topic_tools_generate_messages_eus/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule
-
-# Convenience name for target.
-rosserial_server_lookup: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule
-
-.PHONY : rosserial_server_lookup
-
-# fast build rule for target.
-rosserial_server_lookup/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build
-.PHONY : rosserial_server_lookup/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule
-
-# Convenience name for target.
-rosserial_server_serial_node: ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule
-
-.PHONY : rosserial_server_serial_node
-
-# fast build rule for target.
-rosserial_server_serial_node/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build
-.PHONY : rosserial_server_serial_node/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -509,23 +209,248 @@ roscpp_generate_messages_nodejs: ultrasound/rosserial_server/CMakeFiles/roscpp_g
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
-ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+roscpp_generate_messages_eus: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : roscpp_generate_messages_eus
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ultrasound/rosserial_server/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+roscpp_generate_messages_eus/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_eus: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+
+.PHONY : topic_tools_generate_messages_eus
+
+# fast build rule for target.
+topic_tools_generate_messages_eus/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_eus.dir/build
+.PHONY : topic_tools_generate_messages_eus/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_nodejs: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+
+.PHONY : topic_tools_generate_messages_nodejs
+
+# fast build rule for target.
+topic_tools_generate_messages_nodejs/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+.PHONY : topic_tools_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_py: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule
+
+# Convenience name for target.
+rosserial_server_serial_node: ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/rule
+
+.PHONY : rosserial_server_serial_node
+
+# fast build rule for target.
+rosserial_server_serial_node/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build
+.PHONY : rosserial_server_serial_node/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_lisp: ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+.PHONY : topic_tools_generate_messages_lisp
+
+# fast build rule for target.
+topic_tools_generate_messages_lisp/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make ultrasound/rosserial_server/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build.make ultrasound/rosserial_server/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f CMakeFiles/Makefile2 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule
+.PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule
+
+# Convenience name for target.
+rosserial_server_lookup: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/rule
+
+.PHONY : rosserial_server_lookup
+
+# fast build rule for target.
+rosserial_server_lookup/fast:
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build
+.PHONY : rosserial_server_lookup/fast
 
 src/msg_lookup.o: src/msg_lookup.cpp.o
 
@@ -533,7 +458,7 @@ src/msg_lookup.o: src/msg_lookup.cpp.o
 
 # target to build an object file
 src/msg_lookup.cpp.o:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o
 .PHONY : src/msg_lookup.cpp.o
 
 src/msg_lookup.i: src/msg_lookup.cpp.i
@@ -542,7 +467,7 @@ src/msg_lookup.i: src/msg_lookup.cpp.i
 
 # target to preprocess a source file
 src/msg_lookup.cpp.i:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.i
 .PHONY : src/msg_lookup.cpp.i
 
 src/msg_lookup.s: src/msg_lookup.cpp.s
@@ -551,7 +476,7 @@ src/msg_lookup.s: src/msg_lookup.cpp.s
 
 # target to generate assembly for a file
 src/msg_lookup.cpp.s:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.s
 .PHONY : src/msg_lookup.cpp.s
 
 src/serial_node.o: src/serial_node.cpp.o
@@ -560,7 +485,7 @@ src/serial_node.o: src/serial_node.cpp.o
 
 # target to build an object file
 src/serial_node.cpp.o:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o
 .PHONY : src/serial_node.cpp.o
 
 src/serial_node.i: src/serial_node.cpp.i
@@ -569,7 +494,7 @@ src/serial_node.i: src/serial_node.cpp.i
 
 # target to preprocess a source file
 src/serial_node.cpp.i:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.i
 .PHONY : src/serial_node.cpp.i
 
 src/serial_node.s: src/serial_node.cpp.s
@@ -578,7 +503,7 @@ src/serial_node.s: src/serial_node.cpp.s
 
 # target to generate assembly for a file
 src/serial_node.cpp.s:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.s
 .PHONY : src/serial_node.cpp.s
 
 src/socket_node.o: src/socket_node.cpp.o
@@ -587,7 +512,7 @@ src/socket_node.o: src/socket_node.cpp.o
 
 # target to build an object file
 src/socket_node.cpp.o:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/src/socket_node.cpp.o
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/src/socket_node.cpp.o
 .PHONY : src/socket_node.cpp.o
 
 src/socket_node.i: src/socket_node.cpp.i
@@ -596,7 +521,7 @@ src/socket_node.i: src/socket_node.cpp.i
 
 # target to preprocess a source file
 src/socket_node.cpp.i:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/src/socket_node.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/src/socket_node.cpp.i
 .PHONY : src/socket_node.cpp.i
 
 src/socket_node.s: src/socket_node.cpp.s
@@ -605,7 +530,7 @@ src/socket_node.s: src/socket_node.cpp.s
 
 # target to generate assembly for a file
 src/socket_node.cpp.s:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/src/socket_node.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_socket_node.dir/src/socket_node.cpp.s
 .PHONY : src/socket_node.cpp.s
 
 src/udp_socket_node.o: src/udp_socket_node.cpp.o
@@ -614,7 +539,7 @@ src/udp_socket_node.o: src/udp_socket_node.cpp.o
 
 # target to build an object file
 src/udp_socket_node.cpp.o:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.o
 .PHONY : src/udp_socket_node.cpp.o
 
 src/udp_socket_node.i: src/udp_socket_node.cpp.i
@@ -623,7 +548,7 @@ src/udp_socket_node.i: src/udp_socket_node.cpp.i
 
 # target to preprocess a source file
 src/udp_socket_node.cpp.i:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.i
 .PHONY : src/udp_socket_node.cpp.i
 
 src/udp_socket_node.s: src/udp_socket_node.cpp.s
@@ -632,7 +557,7 @@ src/udp_socket_node.s: src/udp_socket_node.cpp.s
 
 # target to generate assembly for a file
 src/udp_socket_node.cpp.s:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(MAKE) -f ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/build.make ultrasound/rosserial_server/CMakeFiles/rosserial_server_udp_socket_node.dir/src/udp_socket_node.cpp.s
 .PHONY : src/udp_socket_node.cpp.s
 
 # Help Target
@@ -647,31 +572,26 @@ help:
 	@echo "... rosserial_server_udp_socket_node"
 	@echo "... test"
 	@echo "... rosserial_server_socket_node"
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... topic_tools_generate_messages_nodejs"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... topic_tools_generate_messages_eus"
-	@echo "... list_install_components"
-	@echo "... rosserial_server_lookup"
-	@echo "... roscpp_generate_messages_py"
+	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
+	@echo "... topic_tools_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... topic_tools_generate_messages_py"
 	@echo "... rosserial_server_serial_node"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_eus"
 	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_py"
+	@echo "... topic_tools_generate_messages_lisp"
+	@echo "... list_install_components"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosserial_server_lookup"
 	@echo "... src/msg_lookup.o"
 	@echo "... src/msg_lookup.i"
 	@echo "... src/msg_lookup.s"
@@ -695,6 +615,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

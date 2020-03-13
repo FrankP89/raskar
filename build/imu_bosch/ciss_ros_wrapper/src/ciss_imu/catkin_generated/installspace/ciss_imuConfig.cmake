@@ -67,14 +67,14 @@ set(ciss_imu_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ciss_imu_SOURCE_PREFIX /home/frank/Documents/ws_raskar/ws_raskar/src/imu_bosch/ciss_ros_wrapper/src/ciss_imu)
-  set(ciss_imu_DEVEL_PREFIX /home/frank/Documents/ws_raskar/ws_raskar/devel)
+  set(ciss_imu_SOURCE_PREFIX /home/frank/Desktop/raskar_ws/raskar/src/imu_bosch/ciss_ros_wrapper/src/ciss_imu)
+  set(ciss_imu_DEVEL_PREFIX /home/frank/Desktop/raskar_ws/raskar/devel)
   set(ciss_imu_INSTALL_PREFIX "")
   set(ciss_imu_PREFIX ${ciss_imu_DEVEL_PREFIX})
 else()
   set(ciss_imu_SOURCE_PREFIX "")
   set(ciss_imu_DEVEL_PREFIX "")
-  set(ciss_imu_INSTALL_PREFIX /home/frank/Documents/ws_raskar/ws_raskar/install)
+  set(ciss_imu_INSTALL_PREFIX /home/frank/Desktop/raskar_ws/raskar/install)
   set(ciss_imu_PREFIX ${ciss_imu_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/frank/Documents/ws_raskar/ws_raskar/install/lib;/home/frank/Documents/ws_raskar/ws_raskar/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/frank/Desktop/raskar_ws/raskar/install/lib;/home/frank/Desktop/raskar_ws/raskar/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

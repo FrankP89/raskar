@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/Documents/ws_raskar/ws_raskar/src/joint_state_publisher/joint_state_publisher
+# Install script for directory: /home/frank/Desktop/raskar_ws/raskar/src/joint_state_publisher/joint_state_publisher
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/Documents/ws_raskar/ws_raskar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/Desktop/raskar_ws/raskar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisher.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisher.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_publisher/cmake" TYPE FILE FILES
-    "/home/frank/Documents/ws_raskar/ws_raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisherConfig.cmake"
-    "/home/frank/Documents/ws_raskar/ws_raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisherConfig-version.cmake"
+    "/home/frank/Desktop/raskar_ws/raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisherConfig.cmake"
+    "/home/frank/Desktop/raskar_ws/raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisherConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_publisher" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/src/joint_state_publisher/joint_state_publisher/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_publisher" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/src/joint_state_publisher/joint_state_publisher/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/frank/Documents/ws_raskar/ws_raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/safe_execute_install.cmake")
+  include("/home/frank/Desktop/raskar_ws/raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joint_state_publisher" TYPE PROGRAM FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisher")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joint_state_publisher" TYPE PROGRAM FILES "/home/frank/Desktop/raskar_ws/raskar/build/joint_state_publisher/joint_state_publisher/catkin_generated/installspace/joint_state_publisher")
 endif()
 

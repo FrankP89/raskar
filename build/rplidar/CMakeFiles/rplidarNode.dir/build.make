@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
+CMAKE_SOURCE_DIR = /home/frank/Desktop/raskar_ws/raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
+CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
 
 # Include any dependencies generated for this target.
 include rplidar/CMakeFiles/rplidarNode.dir/depend.make
@@ -58,17 +58,17 @@ include rplidar/CMakeFiles/rplidarNode.dir/progress.make
 include rplidar/CMakeFiles/rplidarNode.dir/flags.make
 
 rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o: rplidar/CMakeFiles/rplidarNode.dir/flags.make
-rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/src/node.cpp.o -c /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/node.cpp
+rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/src/node.cpp.o -c /home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/node.cpp
 
 rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/src/node.cpp.i"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/node.cpp > CMakeFiles/rplidarNode.dir/src/node.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/node.cpp > CMakeFiles/rplidarNode.dir/src/node.cpp.i
 
 rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/src/node.cpp.s"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/node.cpp -o CMakeFiles/rplidarNode.dir/src/node.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/node.cpp -o CMakeFiles/rplidarNode.dir/src/node.cpp.s
 
 rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o.requires:
 
@@ -82,17 +82,17 @@ rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o.provides.build: rplidar/CMakeF
 
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o: rplidar/CMakeFiles/rplidarNode.dir/flags.make
-rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o: /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o -c /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp
+rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o: /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o -c /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_serial.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o.requires:
 
@@ -106,17 +106,17 @@ rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o.provides.
 
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o: rplidar/CMakeFiles/rplidarNode.dir/flags.make
-rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o: /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o -c /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp
+rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o: /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o"
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o -c /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.i"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.i
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.s"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/net_socket.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.s
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o.requires:
 
@@ -130,17 +130,17 @@ rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o.provides.
 
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o: rplidar/CMakeFiles/rplidarNode.dir/flags.make
-rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o: /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o -c /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/timer.cpp
+rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o: /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o -c /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/timer.cpp
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/timer.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/timer.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/arch/linux/timer.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/arch/linux/timer.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o.requires:
 
@@ -154,17 +154,17 @@ rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o.provides.build
 
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o: rplidar/CMakeFiles/rplidarNode.dir/flags.make
-rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o: /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/hal/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o -c /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/hal/thread.cpp
+rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o: /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/hal/thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o -c /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/hal/thread.cpp
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/hal/thread.cpp > CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/hal/thread.cpp > CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/hal/thread.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/hal/thread.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o.requires:
 
@@ -178,17 +178,17 @@ rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o.provides.build: rpli
 
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o: rplidar/CMakeFiles/rplidarNode.dir/flags.make
-rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o: /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/rplidar_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o -c /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/rplidar_driver.cpp
+rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o: /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/rplidar_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o -c /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/rplidar_driver.cpp
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/rplidar_driver.cpp > CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/rplidar_driver.cpp > CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/sdk/src/rplidar_driver.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Desktop/raskar_ws/raskar/src/rplidar/sdk/src/rplidar_driver.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s
 
 rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o.requires:
 
@@ -213,38 +213,38 @@ rplidarNode_OBJECTS = \
 # External object files for target rplidarNode
 rplidarNode_EXTERNAL_OBJECTS =
 
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/build.make
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libroscpp.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librosconsole.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librostime.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libcpp_common.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode"
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rplidarNode.dir/link.txt --verbose=$(VERBOSE)
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/src/node.cpp.o
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_socket.cpp.o
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/build.make
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libroscpp.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librosconsole.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/librostime.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /opt/ros/melodic/lib/libcpp_common.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode: rplidar/CMakeFiles/rplidarNode.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode"
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rplidarNode.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-rplidar/CMakeFiles/rplidarNode.dir/build: /home/frank/Documents/ws_raskar/ws_raskar/devel/lib/rplidar_ros/rplidarNode
+rplidar/CMakeFiles/rplidarNode.dir/build: /home/frank/Desktop/raskar_ws/raskar/devel/lib/rplidar_ros/rplidarNode
 
 .PHONY : rplidar/CMakeFiles/rplidarNode.dir/build
 
@@ -258,10 +258,10 @@ rplidar/CMakeFiles/rplidarNode.dir/requires: rplidar/CMakeFiles/rplidarNode.dir/
 .PHONY : rplidar/CMakeFiles/rplidarNode.dir/requires
 
 rplidar/CMakeFiles/rplidarNode.dir/clean:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar && $(CMAKE_COMMAND) -P CMakeFiles/rplidarNode.dir/cmake_clean.cmake
+	cd /home/frank/Desktop/raskar_ws/raskar/build/rplidar && $(CMAKE_COMMAND) -P CMakeFiles/rplidarNode.dir/cmake_clean.cmake
 .PHONY : rplidar/CMakeFiles/rplidarNode.dir/clean
 
 rplidar/CMakeFiles/rplidarNode.dir/depend:
-	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Documents/ws_raskar/ws_raskar/src /home/frank/Documents/ws_raskar/ws_raskar/src/rplidar /home/frank/Documents/ws_raskar/ws_raskar/build /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar /home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/CMakeFiles/rplidarNode.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Desktop/raskar_ws/raskar/src /home/frank/Desktop/raskar_ws/raskar/src/rplidar /home/frank/Desktop/raskar_ws/raskar/build /home/frank/Desktop/raskar_ws/raskar/build/rplidar /home/frank/Desktop/raskar_ws/raskar/build/rplidar/CMakeFiles/rplidarNode.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rplidar/CMakeFiles/rplidarNode.dir/depend
 

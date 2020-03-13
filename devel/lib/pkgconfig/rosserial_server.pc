@@ -1,8 +1,8 @@
-prefix=/home/frank/Documents/ws_raskar/ws_raskar/devel
+prefix=/home/frank/Desktop/raskar_ws/raskar/devel
 
 Name: rosserial_server
 Description: Description of rosserial_server
 Version: 0.8.0
-Cflags: -I/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include
+Cflags: -I/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include
 Libs: -L${prefix}/lib -lrosserial_server_lookup
 Requires: roscpp rosserial_msgs std_msgs topic_tools

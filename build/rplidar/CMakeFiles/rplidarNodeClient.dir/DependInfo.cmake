@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/client.cpp" "/home/frank/Documents/ws_raskar/ws_raskar/build/rplidar/CMakeFiles/rplidarNodeClient.dir/src/client.cpp.o"
+  "/home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/client.cpp" "/home/frank/Desktop/raskar_ws/raskar/build/rplidar/CMakeFiles/rplidarNodeClient.dir/src/client.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/include"
-  "/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/./sdk/src"
+  "/home/frank/Desktop/raskar_ws/raskar/src/rplidar/./sdk/include"
+  "/home/frank/Desktop/raskar_ws/raskar/src/rplidar/./sdk/src"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

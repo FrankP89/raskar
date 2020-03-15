@@ -1,0 +1,7 @@
+global_costmap:
+  global_frame: map                     # set map frame
+  robot_base_frame: base_footprint      # set robot's base frame
+  update_frequency: 2.0                 # update frequency
+  publish_frequency: 0.1                # publish frequency
+  static_map: true                      # setting whether or not to use given map
+  transform_tolerance: 1.0              # transform tolerance time

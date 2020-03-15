@@ -1,0 +1,11 @@
+local_costmap:
+  global_frame: odom                    # set map frame
+  robot_base_frame: base_footprint      # set robot's base frame
+  update_frequency: 2.0                 # update frequency
+  publish_frequency: 0.5                # publish frequency
+  static_map: false                     # setting whether or not to use given map
+  rolling_window: true                  # local map window setting
+  width: 3.5                            # area of local map window
+  height: 3.5                           # height of local map window
+  resolution: 0.05                      # resolution of local map window (meter/cell)
+  transform_tolerance: 1.0              # transform tolerance time

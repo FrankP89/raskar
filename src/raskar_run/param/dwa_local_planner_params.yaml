@@ -1,0 +1,48 @@
+DWAPlannerROS:
+
+  # robot parameters
+  max_vel_x: 0.5                        # max. velocity for x axis(meter/sec)
+  min_vel_x: -0.5                       # min. velocity for x axis(meter/sec)
+  max_vel_y: 0.5                        # max. velocity for y axis(meter/sec)
+  min_vel_y: -0.5                       # min. velocity for y axis(meter/sec)
+  max_trans_vel: 0.5                    # max translation velocity(meter/sec)
+  min_trans_vel: -0.5                   # min translation velocity(meter/sec)
+  max_rot_vel: 0.5                      # max rotational velocity(radian/sec)
+  min_rot_vel: -0.5                     # min rotational velocity(radian/sec)
+  acc_lim_x: 2.0                        # limit for x axis acceleration(meter/sec^2)
+  acc_lim_y: 2.0                        # limit for y axis acceleration(meter/sec^2)
+  acc_lim_theta: 2.0                    # limit for theta (angular) acceleration(meter/sec^2)
+
+  # Target point error tolerance
+  yaw_goal_tolerance: 0.15              # yaw axis target point error tolerance (Radian)
+  xy_goal_tolerance: 0.05               # x, y distance Target point error tolerance (meter)
+  
+  # Forward simulation parameter
+  sim_time: 3.5                         # forward simulation trajectory time
+  vx_samples: 20                        # number of sample in x axis velocity space
+  vy_samples: 20                        # number of sample in y axis velocity space
+  vtheta_samples: 40                    # number of samples in theta axis velocity space
+
+  # Trajectory scoring parameter (trajectory evaluation)
+  # Score calculation used for the trajectory evaluation cost function is as follows
+  # cost =
+  # path_distance_bias * (distance to path from the endpoint of the trajectory in meters)
+  # + goal_distance_bias * (distance to local goal from the endpoint of the trajectory in meters)
+  # + occdist_scale * (maximum obstacle cost along the trajectory in obstacle cost (0-254))
+  path_distance_bias: 32.0              # weight value of the controller that follows the given path
+  goal_distance_bias: 24.0              # weight value for the goal pose and control velocity
+  occdist_scale: 0.04                   # weight value for the obstacle avoidance
+  forward_point_distance: 0.325         # distance between the robot and additional scoring point (meter)
+  stop_time_buffer: 0.2                 # time required for the robot to stop before collision (sec)
+  scaling_speed: 0.25                   # scaling Speed (meter/sec)
+  max_scaling_factor: 0.2               # max scaling factor
+
+  # Oscillation motion prevention parameter
+  # distance the robot must move before the oscillation flag is reset
+  oscillation_reset_dist: 0.05          # 
+
+  # Debugging
+  publish_traj_pc: true                 # debugging setting for the movement trajectory
+  publish_cost_grid_pc: true            # debugging setting for costmap
+  global_frame_id: odom                 # ID setting for global frame
+

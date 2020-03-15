@@ -2,8 +2,10 @@
 
 <launch>
 
-  
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <!-- Map saved -->
+  <arg name="map_arena" default="$(find raskar_run)/maps/5_floor_arena.yaml"/>
+
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
   <arg name="gui" default="true"/>
@@ -35,9 +37,9 @@
     command="$(find xacro)/xacro --inorder '$(find raskar_urdf)/urdf/raskar_gazebo.xacro'" />
   <param name="use_gui" value="$(arg gui)"/>
 
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
     <param name="/use_gui" value="false"/>
-  <node/>
+  </node>
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
@@ -62,8 +64,28 @@
 
 
   <!-- Including Navigation -->
+  <!-- Map -->  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_arena)">
+  </node>
+  
+  <!-- AMCL -->
+  <include file="$(find raskar_run)/launch/fake/fake_amcl_properties.launch"/>
 
+  <!-- Move Base -->
+  <arg name="cmd_vel_topic" default="/cmd_vel"/>
+  <arg name="odom_topic" default="odom"/>
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" >
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    
+    <rosparam file="$(find raskar_run)/param/costmap_common_params_raskar.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find raskar_run)/param/costmap_common_params_raskar.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find raskar_run)/param/local_costmap_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find raskar_run)/param/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find raskar_run)/param/move_base_params.yaml" command="load" />
+    <rosparam file="$(find raskar_run)/param/dwa_local_planner_params.yaml" command="load" />
 
-
+    <remap from="cmd_vel" to="$(arg cmd_vel_topic)" />
+    <remap from="odom" to="$(arg odom_topic)" />
+  </node>
 
 </launch>

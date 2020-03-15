@@ -1,0 +1,23 @@
+# Indicate the object as an obstacle when the distance between the robot and the obstacle is within this range
+obstacle_range: 2.5
+# sensor value that exceeds this range will be indicated as a freespace
+raytrace_range: 3.5
+# external dimension of the robot is provided as polygons in serveral points
+footprint: [[-0.314, -0.474], [-0.314, 0.474], [0.314, 0.474], [0.314, -0.474]]
+# radius of robot
+# robot_radius: 0.105
+# radius of the inflation area to prevent collision with obstacles
+inflation_radius: 0.15
+# scaling variable used in costmap calculation. Calculation formula is as follows:
+# scaling
+# exp(-1.0 * cost_scaling_factor * (distance_from_obstacle - inscribed_radius)) * (254 -1)
+cost_scaling_factor: 0.5
+# select costmap to use between voxel(voxel-grid) and costmap(costmap_2d)
+map_type: costmap
+# tolerance of relative coordinate conversion time between tf
+transform_tolerance: 0.2
+# specify which sensor to use
+observation_sources: scan
+# set data type and topic, marking status, minimum obstacle for the laser scan
+scan: {data_type: LaserScan, topic: hokuyo_laser_fake, marking: true, clearing: true}
+

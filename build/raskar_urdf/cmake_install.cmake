@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/Desktop/raskar_ws/raskar/src/raskar_urdf
+# Install script for directory: /home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/Desktop/raskar_ws/raskar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/Documents/ws_raskar/ws_raskar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/build/raskar_urdf/catkin_generated/installspace/raskar_urdf.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/catkin_generated/installspace/raskar_urdf.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/raskar_urdf/cmake" TYPE FILE FILES
-    "/home/frank/Desktop/raskar_ws/raskar/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig.cmake"
-    "/home/frank/Desktop/raskar_ws/raskar/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig-version.cmake"
+    "/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig.cmake"
+    "/home/frank/Documents/ws_raskar/ws_raskar/build/raskar_urdf/catkin_generated/installspace/raskar_urdfConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/raskar_urdf" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/src/raskar_urdf/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/raskar_urdf" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/src/raskar_urdf/package.xml")
 endif()
 

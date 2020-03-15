@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/client.cpp
+/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/client.cpp
 ros/ros.h
-/home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/ros/ros.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/frank/Desktop/raskar_ws/raskar/src/rplidar/src/sensor_msgs/LaserScan.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/rplidar/src/sensor_msgs/LaserScan.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

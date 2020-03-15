@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosserial_mbed_generate_messages_py"
-  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/msg/_Adc.py"
-  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/srv/_Test.py"
-  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/msg/__init__.py"
-  "/home/frank/Desktop/raskar_ws/raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/srv/__init__.py"
+  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/msg/_Adc.py"
+  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/srv/_Test.py"
+  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/msg/__init__.py"
+  "/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/python2.7/dist-packages/rosserial_mbed/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

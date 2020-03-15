@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_client/src -I/home/frank/Desktop/raskar_ws/raskar/devel/include -I/opt/ros/melodic/include -I/usr/src/googletest/googletest/include 
+CXX_INCLUDES = -I/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_client/src -I/home/frank/Documents/ws_raskar/ws_raskar/devel/include -I/opt/ros/melodic/include -I/usr/src/googletest/googletest/include 
 

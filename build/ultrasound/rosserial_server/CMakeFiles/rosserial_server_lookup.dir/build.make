@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Desktop/raskar_ws/raskar/src
+CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
+CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
 
 # Include any dependencies generated for this target.
 include ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/depend.make
@@ -58,17 +58,17 @@ include ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/progr
 include ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/flags.make
 
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/flags.make
-ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o: /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o"
-	cd /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o -c /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp
+ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o: /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o"
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o -c /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp
 
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.i"
-	cd /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp > CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.i
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp > CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.i
 
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.s"
-	cd /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp -o CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.s
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp -o CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.s
 
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o.requires:
 
@@ -88,15 +88,15 @@ rosserial_server_lookup_OBJECTS = \
 # External object files for target rosserial_server_lookup
 rosserial_server_lookup_EXTERNAL_OBJECTS =
 
-/home/frank/Desktop/raskar_ws/raskar/devel/lib/librosserial_server_lookup.so: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o
-/home/frank/Desktop/raskar_ws/raskar/devel/lib/librosserial_server_lookup.so: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make
-/home/frank/Desktop/raskar_ws/raskar/devel/lib/librosserial_server_lookup.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/frank/Desktop/raskar_ws/raskar/devel/lib/librosserial_server_lookup.so: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/frank/Desktop/raskar_ws/raskar/devel/lib/librosserial_server_lookup.so"
-	cd /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rosserial_server_lookup.dir/link.txt --verbose=$(VERBOSE)
+/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/librosserial_server_lookup.so: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o
+/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/librosserial_server_lookup.so: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build.make
+/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/librosserial_server_lookup.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/frank/Documents/ws_raskar/ws_raskar/devel/lib/librosserial_server_lookup.so: ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/frank/Documents/ws_raskar/ws_raskar/devel/lib/librosserial_server_lookup.so"
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rosserial_server_lookup.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build: /home/frank/Desktop/raskar_ws/raskar/devel/lib/librosserial_server_lookup.so
+ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build: /home/frank/Documents/ws_raskar/ws_raskar/devel/lib/librosserial_server_lookup.so
 
 .PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/build
 
@@ -105,10 +105,10 @@ ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/requires: ult
 .PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/requires
 
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/clean:
-	cd /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server && $(CMAKE_COMMAND) -P CMakeFiles/rosserial_server_lookup.dir/cmake_clean.cmake
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server && $(CMAKE_COMMAND) -P CMakeFiles/rosserial_server_lookup.dir/cmake_clean.cmake
 .PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/clean
 
 ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/depend:
-	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Desktop/raskar_ws/raskar/src /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server /home/frank/Desktop/raskar_ws/raskar/build /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Documents/ws_raskar/ws_raskar/src /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server /home/frank/Documents/ws_raskar/ws_raskar/build /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ultrasound/rosserial_server/CMakeFiles/rosserial_server_lookup.dir/depend
 

@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/msg_lookup.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/msg_lookup.h
 string
 -
 stdexcept
 -
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/msg_lookup.cpp
 rosserial_server/msg_lookup.h
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/rosserial_server/msg_lookup.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/rosserial_server/msg_lookup.h
 Python.h
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/Python.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/Python.h
 
 /usr/include/python2.7/Python.h
 patchlevel.h

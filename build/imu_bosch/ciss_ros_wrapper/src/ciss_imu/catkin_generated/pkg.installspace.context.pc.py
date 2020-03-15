@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "ciss_imu"
-PROJECT_SPACE_DIR = "/home/frank/Desktop/raskar_ws/raskar/install"
+PROJECT_SPACE_DIR = "/home/frank/Documents/ws_raskar/ws_raskar/install"
 PROJECT_VERSION = "0.0.0"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_python
+# Install script for directory: /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_python
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/frank/Desktop/raskar_ws/raskar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/frank/Documents/ws_raskar/ws_raskar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/rosserial_python.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/rosserial_python.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_python/cmake" TYPE FILE FILES
-    "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/rosserial_pythonConfig.cmake"
-    "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/rosserial_pythonConfig-version.cmake"
+    "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/rosserial_pythonConfig.cmake"
+    "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/rosserial_pythonConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_python" TYPE FILE FILES "/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_python/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_python" TYPE FILE FILES "/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_python/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_python/catkin_generated/safe_execute_install.cmake")
+  include("/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_python/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_python" TYPE PROGRAM FILES "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/message_info_service.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_python" TYPE PROGRAM FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/message_info_service.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_python" TYPE PROGRAM FILES "/home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/serial_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_python" TYPE PROGRAM FILES "/home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_python/catkin_generated/installspace/serial_node.py")
 endif()
 

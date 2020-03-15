@@ -1,4 +1,4 @@
-prefix=/home/frank/Desktop/raskar_ws/raskar/install
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/install
 
 Name: rosserial_tivac
 Description: Description of rosserial_tivac

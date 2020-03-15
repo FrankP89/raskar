@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  <!-- arg name="model" default="$(find raskar_urdf)/urdf/raskar_gazebo.urdf"/ -->
+  <arg name="rvizconfig" default="$(find raskar_urdf)/rviz/rviz_raskar.rviz" />
+
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find raskar_urdf)/gazebo/world.world"/>
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include >
+
+  <node pkg="laser_assembler" type="laser_scan_assembler" output="screen"  name="laser_scan_assembler">
+    <remap from="scan" to="/hokuyo_fake/laserscan"/>
+    <param name="tf_cache_time_secs" type="double" value="10.0" />
+    <param name="max_scans" type="int" value="400" />
+    <param name="ignore_laser_skew" type="bool" value="true" />
+    <param name="fixed_frame" type="string" value="fr_nocorner_center_lidar" />
+  </node>
+
+   <!-- Load the URDF into the ROS Parameter Server -->
+  <param name="robot_description"
+    command="$(find xacro)/xacro --inorder '$(find raskar_urdf)/urdf/raskar_gazebo.xacro'" />
+  <param name="use_gui" value="$(arg gui)"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <param name="/use_gui" value="false"/>
+  <node/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
+  
+  <!-- Navigation information -->
+  <!-- Publish wheel fake odometry from MCU encoder data -->
+  <node pkg="raskar_urdf" name="odometry_sim" type="odometry_sim" />
+
+  <!-- Controller managers -->
+  <rosparam command="load"
+            file="$(find raskar_urdf)/config/joints.yaml"
+            ns="raskar_urdf_joint_state_controller" />
+
+  <node name="raskar_urdf_controller_spawner" pkg="controller_manager" type="spawner"
+    args="raskar_urdf_joint_state_controller
+          --shutdown-timeout 3"/>
+
+  <!-- Spawn model -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -x 0 -y 0 -z 0  -model raskar_gazebo -param robot_description"/>
+
+
+
+  <!-- Including Navigation -->
+
+
+
+
+</launch>

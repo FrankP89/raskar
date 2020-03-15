@@ -1,0 +1,8 @@
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/devel
+
+Name: raskar_run
+Description: Description of raskar_run
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

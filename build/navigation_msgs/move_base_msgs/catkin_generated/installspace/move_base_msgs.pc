@@ -1,8 +1,0 @@
-prefix=/home/frank/Desktop/raskar_ws/raskar/install
-
-Name: move_base_msgs
-Description: Description of move_base_msgs
-Version: 1.14.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: actionlib_msgs geometry_msgs message_runtime

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Desktop/raskar_ws/raskar/src
+CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
+CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Desktop/raskar_ws/raskar/src /home/frank/Desktop/raskar_ws/raskar/src /home/frank/Desktop/raskar_ws/raskar/build /home/frank/Desktop/raskar_ws/raskar/build /home/frank/Desktop/raskar_ws/raskar/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Documents/ws_raskar/ws_raskar/src /home/frank/Documents/ws_raskar/ws_raskar/src /home/frank/Documents/ws_raskar/ws_raskar/build /home/frank/Documents/ws_raskar/ws_raskar/build /home/frank/Documents/ws_raskar/ws_raskar/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

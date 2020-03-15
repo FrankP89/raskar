@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/frank/Desktop/raskar_ws/raskar/devel/include/rosserial_msgs/Log.h
+/home/frank/Documents/ws_raskar/ws_raskar/devel/include/rosserial_msgs/Log.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/frank/Desktop/raskar_ws/raskar/devel/include/rosserial_msgs/TopicInfo.h
+/home/frank/Documents/ws_raskar/ws_raskar/devel/include/rosserial_msgs/TopicInfo.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/async_read_buffer.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/async_read_buffer.h
 boost/bind.hpp
 -
 boost/asio.hpp
@@ -48,13 +48,13 @@ boost/function.hpp
 ros/ros.h
 -
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/msg_lookup.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/msg_lookup.h
 string
 -
 stdexcept
 -
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/session.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/session.h
 map
 -
 boost/bind.hpp
@@ -76,11 +76,11 @@ topic_tools/shape_shifter.h
 std_msgs/Time.h
 -
 rosserial_server/async_read_buffer.h
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/rosserial_server/async_read_buffer.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/rosserial_server/async_read_buffer.h
 rosserial_server/topic_handlers.h
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/rosserial_server/topic_handlers.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/rosserial_server/topic_handlers.h
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/tcp_server.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/tcp_server.h
 iostream
 -
 boost/bind.hpp
@@ -90,9 +90,9 @@ boost/asio.hpp
 ros/ros.h
 -
 rosserial_server/session.h
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/rosserial_server/session.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/rosserial_server/session.h
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/include/rosserial_server/topic_handlers.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/include/rosserial_server/topic_handlers.h
 ros/ros.h
 -
 rosserial_msgs/TopicInfo.h
@@ -102,7 +102,7 @@ topic_tools/shape_shifter.h
 rosserial_server/msg_lookup.h
 -
 
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/socket_node.cpp
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/socket_node.cpp
 boost/asio.hpp
 -
 boost/bind.hpp
@@ -112,7 +112,7 @@ boost/thread.hpp
 ros/ros.h
 -
 rosserial_server/tcp_server.h
-/home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_server/src/rosserial_server/tcp_server.h
+/home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_server/src/rosserial_server/tcp_server.h
 
 /opt/ros/melodic/include/boost_161_condition_variable.h
 boost/thread/detail/platform.hpp

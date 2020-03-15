@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frank/Desktop/raskar_ws/raskar/src
+CMAKE_SOURCE_DIR = /home/frank/Documents/ws_raskar/ws_raskar/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
+CMAKE_BINARY_DIR = /home/frank/Documents/ws_raskar/ws_raskar/build
 
 # Utility rule file for clean_test_results_rosserial_test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/frank/Desktop/raskar_ws/raskar/build
 include ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/progress.make
 
 ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test:
-	cd /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/frank/Desktop/raskar_ws/raskar/build/test_results/rosserial_test
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/frank/Documents/ws_raskar/ws_raskar/build/test_results/rosserial_test
 
 clean_test_results_rosserial_test: ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test
 clean_test_results_rosserial_test: ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build.make
@@ -67,10 +67,10 @@ ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build
 .PHONY : ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/build
 
 ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/clean:
-	cd /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_rosserial_test.dir/cmake_clean.cmake
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_rosserial_test.dir/cmake_clean.cmake
 .PHONY : ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/clean
 
 ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/depend:
-	cd /home/frank/Desktop/raskar_ws/raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Desktop/raskar_ws/raskar/src /home/frank/Desktop/raskar_ws/raskar/src/ultrasound/rosserial_test /home/frank/Desktop/raskar_ws/raskar/build /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test /home/frank/Desktop/raskar_ws/raskar/build/ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/frank/Documents/ws_raskar/ws_raskar/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/frank/Documents/ws_raskar/ws_raskar/src /home/frank/Documents/ws_raskar/ws_raskar/src/ultrasound/rosserial_test /home/frank/Documents/ws_raskar/ws_raskar/build /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test /home/frank/Documents/ws_raskar/ws_raskar/build/ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ultrasound/rosserial_test/CMakeFiles/clean_test_results_rosserial_test.dir/depend
 

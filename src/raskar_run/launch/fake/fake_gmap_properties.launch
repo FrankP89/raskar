@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="gmapping" type="slam_gmapping" name="gmapping_raskar_fake" output="screen" >
+    <remap from="scan" to="hokuyo_laser_fake" />
+    <param name="odom_frame" value="odom" />
+    <param name="base_frame" value="base_link" />
+  </node>
+
+</launch>

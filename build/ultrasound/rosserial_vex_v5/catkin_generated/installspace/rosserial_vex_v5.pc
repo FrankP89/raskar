@@ -1,4 +1,4 @@
-prefix=/home/frank/Desktop/raskar_ws/raskar/install
+prefix=/home/frank/Documents/ws_raskar/ws_raskar/install
 
 Name: rosserial_vex_v5
 Description: Description of rosserial_vex_v5

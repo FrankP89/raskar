@@ -1,2 +1,0 @@
-raskar_urdf
--DCATKIN_DEVEL_PREFIX=/home/frank/ws_raskar_urdf/devel -DCMAKE_INSTALL_PREFIX=/home/frank/ws_raskar_urdf/install -G Unix Makefiles

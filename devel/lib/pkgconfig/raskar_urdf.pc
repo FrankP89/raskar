@@ -1,8 +1,0 @@
-prefix=/home/frank/ws_raskar_urdf/devel
-
-Name: raskar_urdf
-Description: Description of raskar_urdf
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/frank/ws_raskar_urdf/devel/lib 
-Requires: 

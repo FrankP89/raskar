@@ -1,0 +1,23 @@
+<launch>
+  <node pkg="jbd_bms_status" type="jbd_bms_status_node" name="batt1node" output="screen" respawn="true">
+    <param name="port" value="/dev/purple_vga" type="string" />
+    <param name="frame_id" value="jbd_bms" type="string" />
+    <param name="baudrate" value="9600" type="int"/>
+    <param name="looprate" value="1" type="int"/>
+    <remap from="/batt1node/jbd_bms" to="/batt1level"/>
+  </node>
+
+
+  <node pkg="jbd_bms_status" type="jbd_bms_status_node" name="batt2node" output="screen" respawn="true">
+    <param name="port" value="/dev/blue_vga" type="string" />
+    <param name="frame_id" value="jbd_bms" type="string" />
+    <param name="baudrate" value="9600" type="int"/>
+    <param name="looprate" value="1" type="int"/>
+    <remap from="/batt2node/jbd_bms" to="/batt2level"/>
+  </node >
+
+
+ <node pkg="jbd_bms_status" name="batt1_alertnode" type="alert_node.py" output="screen">
+  </node>
+
+</launch>
